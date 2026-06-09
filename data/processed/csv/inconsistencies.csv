@@ -1,0 +1,395 @@
+﻿inconsistency_id,cargo_id,inconsistency_type,inconsistency_description,detected_datetime,resolved_datetime,rework_flag,rework_type,responsibility_group,controllability_level
+INC00001,CGO00001,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-23 13:02,2026-03-23 18:33,Sim,Recontagem,Transportadora / cliente,Controlável
+INC00002,CGO00004,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-23 13:12,2026-03-23 13:58,Não,,Causa mista,Não controlável
+INC00003,CGO00008,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-16 06:44,2026-01-16 11:22,Não,,Companhia aérea,Não controlável
+INC00004,CGO00010,Violação,Ocorrência simulada: Violação,2026-01-16 06:51,2026-01-16 09:43,Não,,Companhia aérea,Não controlável
+INC00005,CGO00010,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-16 06:51,2026-01-16 11:23,Não,,Companhia aérea,Parcialmente controlável
+INC00006,CGO00014,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-16 07:25,2026-01-16 11:21,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00007,CGO00018,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-07 01:42,2026-03-07 06:54,Sim,Repesagem,Companhia aérea,Parcialmente controlável
+INC00008,CGO00022,Violação,Ocorrência simulada: Violação,2026-03-07 00:33,2026-03-07 02:02,Sim,Tratamento de DSIC,Aeroporto / fiel depositário,Não controlável
+INC00009,CGO00028,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-30 09:49,2026-03-30 15:39,Sim,Correção de identificação,Causa mista,Não controlável
+INC00010,CGO00033,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-30 08:28,2026-03-30 11:04,Sim,Recontagem,Companhia aérea,Controlável
+INC00011,CGO00033,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-30 08:35,2026-03-30 13:07,Não,,Companhia aérea,Controlável
+INC00012,CGO00034,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-30 08:10,2026-03-30 13:43,Não,,Companhia aérea,Controlável
+INC00013,CGO00035,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-30 08:42,2026-03-30 12:53,Não,,Companhia aérea,Não controlável
+INC00014,CGO00038,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-27 23:30,2026-03-28 02:56,Sim,Tratamento de DSIC,Transportadora / cliente,Não controlável
+INC00015,CGO00040,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-27 20:46,2026-03-28 02:42,Não,,Companhia aérea,Não controlável
+INC00016,CGO00041,DSIC,Ocorrência simulada: DSIC,2026-03-27 21:40,2026-03-28 00:45,Sim,Repesagem,Companhia aérea,Não controlável
+INC00017,CGO00042,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-03-27 22:59,2026-03-28 00:10,Sim,Repesagem,Companhia aérea,Não controlável
+INC00018,CGO00044,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-27 23:16,2026-03-28 03:12,Não,,Companhia aérea,Não controlável
+INC00019,CGO00046,Indício de furto,Ocorrência simulada: Indício de furto,2026-03-27 22:52,2026-03-28 02:47,Não,,Causa mista,Parcialmente controlável
+INC00020,CGO00055,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-24 13:54,2026-03-24 15:53,Sim,Correção de identificação,Causa mista,Controlável
+INC00021,CGO00059,Indício de furto,Ocorrência simulada: Indício de furto,2026-03-24 14:40,2026-03-24 19:46,Não,,Companhia aérea,Controlável
+INC00022,CGO00066,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-10 12:01,2026-03-10 16:34,Sim,Retorno para conferência,Causa mista,Não controlável
+INC00023,CGO00066,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-03-10 12:29,2026-03-10 14:52,Não,,Companhia aérea,Parcialmente controlável
+INC00024,CGO00070,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-21 22:52,2026-02-22 02:21,Não,,Causa mista,Não controlável
+INC00025,CGO00071,Avaria,Ocorrência simulada: Avaria,2026-02-21 22:26,2026-02-22 00:28,Não,,Aeroporto / fiel depositário,Parcialmente controlável
+INC00026,CGO00077,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-12 22:51,2026-01-13 01:32,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00027,CGO00079,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-12 22:34,2026-01-13 04:01,Sim,Recontagem,Companhia aérea,Não controlável
+INC00028,CGO00080,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-12 23:39,2026-01-13 03:27,Sim,Retorno para conferência,Causa mista,Parcialmente controlável
+INC00029,CGO00086,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-04 16:16,2026-03-04 18:39,Não,,Companhia aérea,Parcialmente controlável
+INC00030,CGO00087,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-04 16:21,2026-03-04 20:51,Sim,Recontagem,Companhia aérea,Não controlável
+INC00031,CGO00089,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-08 05:09,2026-03-08 11:04,Sim,Retorno para conferência,Causa mista,Parcialmente controlável
+INC00032,CGO00093,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-08 03:02,2026-03-08 08:40,Não,,Causa mista,Parcialmente controlável
+INC00033,CGO00095,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-08 03:43,2026-03-08 07:22,Sim,Recontagem,Companhia aérea,Não controlável
+INC00034,CGO00098,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-08 04:18,2026-03-08 05:32,Sim,Correção de identificação,Causa mista,Não controlável
+INC00035,CGO00100,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-08 04:01,2026-03-08 09:13,Sim,Retorno para conferência,Importador / despachante,Controlável
+INC00036,CGO00103,Indício de furto,Ocorrência simulada: Indício de furto,2026-02-14 04:14,2026-02-14 06:05,Não,,Causa mista,Parcialmente controlável
+INC00037,CGO00107,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-14 05:28,2026-02-14 11:11,Sim,Correção de identificação,Aeroporto / fiel depositário,Controlável
+INC00038,CGO00108,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-14 05:44,2026-02-14 11:12,Sim,Tratamento de DSIC,Causa mista,Controlável
+INC00039,CGO00109,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-14 05:29,2026-02-14 08:45,Não,,Aeroporto / fiel depositário,Controlável
+INC00040,CGO00113,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-11 21:00,2026-03-12 02:23,Sim,Recontagem,Companhia aérea,Controlável
+INC00041,CGO00122,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-11 20:00,2026-03-11 23:41,Não,,Causa mista,Não controlável
+INC00042,CGO00124,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-11 12:11,2026-03-11 14:46,Não,,Causa mista,Não controlável
+INC00043,CGO00124,Indício de furto,Ocorrência simulada: Indício de furto,2026-03-11 12:42,2026-03-11 15:03,Não,,Aeroporto / fiel depositário,Controlável
+INC00044,CGO00126,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-11 15:34,2026-03-11 18:37,Sim,Tratamento de DSIC,Transportadora / cliente,Parcialmente controlável
+INC00045,CGO00127,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-11 14:19,2026-03-11 18:02,Não,,Companhia aérea,Não controlável
+INC00046,CGO00127,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-11 14:14,2026-03-11 19:44,Não,,Companhia aérea,Controlável
+INC00047,CGO00132,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-19 09:10,2026-01-19 14:11,Não,,Transportadora / cliente,Controlável
+INC00048,CGO00137,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-01-19 09:08,2026-01-19 09:53,Sim,Correção de identificação,Causa mista,Parcialmente controlável
+INC00049,CGO00139,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-19 10:05,2026-01-19 15:40,Sim,Retorno para conferência,Importador / despachante,Não controlável
+INC00050,CGO00139,Indício de furto,Ocorrência simulada: Indício de furto,2026-01-19 10:26,2026-01-19 14:14,Não,,Companhia aérea,Parcialmente controlável
+INC00051,CGO00150,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-21 21:11,2026-01-22 00:41,Não,,Aeroporto / fiel depositário,Controlável
+INC00052,CGO00151,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-21 21:46,2026-01-21 23:41,Sim,Repesagem,Causa mista,Não controlável
+INC00053,CGO00153,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-01-21 21:58,2026-01-22 03:07,Sim,Correção de identificação,Causa mista,Não controlável
+INC00054,CGO00153,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-01-21 21:32,2026-01-22 01:52,Sim,Recontagem,Companhia aérea,Parcialmente controlável
+INC00055,CGO00154,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-21 20:42,2026-01-21 23:40,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00056,CGO00159,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-06 08:55,2026-02-06 10:32,Sim,Repesagem,Causa mista,Não controlável
+INC00057,CGO00159,Indício de furto,Ocorrência simulada: Indício de furto,2026-02-06 08:34,2026-02-06 09:56,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00058,CGO00162,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-19 18:23,2026-03-19 22:28,Sim,Repesagem,Órgão anuente,Parcialmente controlável
+INC00059,CGO00163,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-19 19:05,2026-03-19 22:13,Sim,Repesagem,Companhia aérea,Parcialmente controlável
+INC00060,CGO00164,DSIC,Ocorrência simulada: DSIC,2026-03-19 17:30,2026-03-19 18:06,Não,,Causa mista,Não controlável
+INC00061,CGO00166,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-19 18:11,2026-03-19 18:42,Sim,Recontagem,Companhia aérea,Não controlável
+INC00062,CGO00170,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-19 19:00,2026-03-19 20:00,Não,,Órgão anuente,Parcialmente controlável
+INC00063,CGO00173,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-31 22:06,2026-03-31 23:51,Sim,Repesagem,Companhia aérea,Não controlável
+INC00064,CGO00174,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-03-31 21:30,2026-03-31 23:06,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00065,CGO00175,DSIC,Ocorrência simulada: DSIC,2026-03-31 20:58,2026-04-01 01:42,Sim,Correção de identificação,Companhia aérea,Parcialmente controlável
+INC00066,CGO00176,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-31 22:34,2026-04-01 01:11,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00067,CGO00177,Avaria,Ocorrência simulada: Avaria,2026-03-31 20:52,2026-04-01 00:25,Não,,Companhia aérea,Parcialmente controlável
+INC00068,CGO00178,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-08 17:44,2026-01-08 20:52,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00069,CGO00181,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-08 17:32,2026-01-08 19:35,Sim,Tratamento de DSIC,Aeroporto / fiel depositário,Não controlável
+INC00070,CGO00184,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-08 15:54,2026-01-08 17:02,Sim,Recontagem,Companhia aérea,Não controlável
+INC00071,CGO00186,Avaria,Ocorrência simulada: Avaria,2026-02-06 18:48,2026-02-06 21:55,Não,,Companhia aérea,Parcialmente controlável
+INC00072,CGO00190,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-06 18:54,2026-02-07 00:08,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00073,CGO00191,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-06 19:41,2026-02-06 23:07,Não,,Causa mista,Parcialmente controlável
+INC00074,CGO00192,Avaria,Ocorrência simulada: Avaria,2026-02-06 19:07,2026-02-06 22:12,Sim,Correção de identificação,Aeroporto / fiel depositário,Controlável
+INC00075,CGO00194,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-05 09:48,2026-02-05 13:28,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00076,CGO00197,Violação,Ocorrência simulada: Violação,2026-02-05 10:02,2026-02-05 15:43,Sim,Recontagem,Causa mista,Não controlável
+INC00077,CGO00200,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-05 10:40,2026-02-05 11:55,Sim,Repesagem,Companhia aérea,Não controlável
+INC00078,CGO00206,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-01-01 11:17,2026-01-01 12:11,Não,,Aeroporto / fiel depositário,Controlável
+INC00079,CGO00207,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-01 11:12,2026-01-01 15:16,Não,,Causa mista,Não controlável
+INC00080,CGO00208,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-01 11:05,2026-01-01 11:36,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00081,CGO00209,DSIC,Ocorrência simulada: DSIC,2026-01-01 11:45,2026-01-01 15:53,Não,,Causa mista,Parcialmente controlável
+INC00082,CGO00210,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-01 11:30,2026-01-01 12:57,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00083,CGO00211,DSIC,Ocorrência simulada: DSIC,2026-01-01 12:10,2026-01-01 12:46,Não,,Companhia aérea,Parcialmente controlável
+INC00084,CGO00218,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-08 21:11,2026-03-09 02:37,Sim,Repesagem,Transportadora / cliente,Não controlável
+INC00085,CGO00219,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-03-08 21:07,2026-03-09 03:00,Sim,Repesagem,Causa mista,Parcialmente controlável
+INC00086,CGO00221,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-08 20:39,2026-03-08 23:40,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00087,CGO00222,Indício de furto,Ocorrência simulada: Indício de furto,2026-03-08 22:39,2026-03-08 23:36,Sim,Retorno para conferência,Causa mista,Parcialmente controlável
+INC00088,CGO00228,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-06 09:58,2026-02-06 11:21,Sim,Correção de identificação,Companhia aérea,Controlável
+INC00089,CGO00232,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-06 11:05,2026-02-06 12:57,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00090,CGO00234,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-12 12:00,2026-03-12 16:18,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00091,CGO00242,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-12 12:56,2026-03-12 17:50,Não,,Companhia aérea,Parcialmente controlável
+INC00092,CGO00243,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-12 12:02,2026-03-12 15:27,Não,,Aeroporto / fiel depositário,Parcialmente controlável
+INC00093,CGO00244,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-12 11:42,2026-03-12 16:48,Não,,Companhia aérea,Controlável
+INC00094,CGO00244,Indício de furto,Ocorrência simulada: Indício de furto,2026-03-12 11:27,2026-03-12 12:19,Não,,Causa mista,Parcialmente controlável
+INC00095,CGO00247,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-29 22:57,2026-03-30 02:52,Não,,Companhia aérea,Não controlável
+INC00096,CGO00248,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-29 23:15,2026-03-30 05:12,Sim,Recontagem,Causa mista,Não controlável
+INC00097,CGO00253,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-29 21:43,2026-03-30 03:06,Sim,Repesagem,Companhia aérea,Não controlável
+INC00098,CGO00256,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-29 21:45,2026-03-29 22:21,Não,,Transportadora / cliente,Parcialmente controlável
+INC00099,CGO00259,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-12 17:02,2026-03-12 18:21,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00100,CGO00263,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-12 17:25,2026-03-12 18:27,Não,,Companhia aérea,Não controlável
+INC00101,CGO00266,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-11 11:47,2026-01-11 16:50,Sim,Correção de identificação,Causa mista,Parcialmente controlável
+INC00102,CGO00269,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-11 12:28,2026-01-11 13:05,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00103,CGO00273,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-23 08:06,2026-03-23 12:45,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00104,CGO00275,Indício de furto,Ocorrência simulada: Indício de furto,2026-03-23 08:49,2026-03-23 14:36,Não,,Causa mista,Controlável
+INC00105,CGO00276,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-23 08:15,2026-03-23 10:16,Não,,Receita Federal,Controlável
+INC00106,CGO00278,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-03-23 07:44,2026-03-23 12:46,Sim,Repesagem,Companhia aérea,Não controlável
+INC00107,CGO00283,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-11 02:55,2026-02-11 06:58,Não,,Causa mista,Parcialmente controlável
+INC00108,CGO00285,DSIC,Ocorrência simulada: DSIC,2026-02-11 02:19,2026-02-11 06:13,Sim,Repesagem,Causa mista,Parcialmente controlável
+INC00109,CGO00287,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-11 03:40,2026-02-11 05:07,Não,,Causa mista,Não controlável
+INC00110,CGO00292,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-11 02:22,2026-02-11 03:36,Não,,Transportadora / cliente,Não controlável
+INC00111,CGO00293,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-11 04:03,2026-02-11 05:43,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00112,CGO00294,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-10 12:56,2026-02-10 18:16,Sim,Tratamento de DSIC,Causa mista,Parcialmente controlável
+INC00113,CGO00295,DSIC,Ocorrência simulada: DSIC,2026-02-10 12:35,2026-02-10 16:36,Sim,Repesagem,Causa mista,Não controlável
+INC00114,CGO00299,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-17 09:06,2026-03-17 12:41,Sim,Correção de identificação,Companhia aérea,Parcialmente controlável
+INC00115,CGO00299,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-03-17 09:01,2026-03-17 12:45,Sim,Repesagem,Companhia aérea,Parcialmente controlável
+INC00116,CGO00300,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-17 08:42,2026-03-17 14:23,Não,,Transportadora / cliente,Não controlável
+INC00117,CGO00301,Violação,Ocorrência simulada: Violação,2026-03-17 09:26,2026-03-17 14:51,Não,,Companhia aérea,Controlável
+INC00118,CGO00302,Violação,Ocorrência simulada: Violação,2026-03-17 08:41,2026-03-17 13:52,Sim,Correção de identificação,Aeroporto / fiel depositário,Controlável
+INC00119,CGO00306,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-17 08:31,2026-03-17 11:50,Não,,Companhia aérea,Não controlável
+INC00120,CGO00308,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-17 09:16,2026-03-17 12:27,Não,,Aeroporto / fiel depositário,Controlável
+INC00121,CGO00312,Violação,Ocorrência simulada: Violação,2026-03-01 10:18,2026-03-01 11:54,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00122,CGO00315,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-01 10:24,2026-03-01 15:38,Sim,Retorno para conferência,Companhia aérea,Controlável
+INC00123,CGO00321,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-21 20:38,2026-02-22 00:51,Não,,Órgão anuente,Não controlável
+INC00124,CGO00323,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-21 23:12,2026-02-22 04:11,Não,,Companhia aérea,Controlável
+INC00125,CGO00325,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-21 22:14,2026-02-21 23:10,Não,,Aeroporto / fiel depositário,Controlável
+INC00126,CGO00327,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-21 23:44,2026-02-22 05:09,Não,,Causa mista,Não controlável
+INC00127,CGO00330,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-11 01:03,2026-02-11 01:50,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00128,CGO00333,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-11 02:19,2026-02-11 08:18,Sim,Correção de identificação,Causa mista,Não controlável
+INC00129,CGO00333,Avaria,Ocorrência simulada: Avaria,2026-02-11 01:44,2026-02-11 02:50,Sim,Retorno para conferência,Companhia aérea,Controlável
+INC00130,CGO00338,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-11 01:43,2026-02-11 06:07,Não,,Companhia aérea,Não controlável
+INC00131,CGO00339,DSIC,Ocorrência simulada: DSIC,2026-02-11 01:57,2026-02-11 07:39,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00132,CGO00341,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-11 01:32,2026-02-11 06:11,Sim,Recontagem,Aeroporto / fiel depositário,Controlável
+INC00133,CGO00341,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-11 01:57,2026-02-11 06:30,Não,,Companhia aérea,Parcialmente controlável
+INC00134,CGO00343,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-12 01:07,2026-03-12 02:03,Não,,Causa mista,Não controlável
+INC00135,CGO00345,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-12 01:13,2026-03-12 04:01,Sim,Repesagem,Órgão anuente,Não controlável
+INC00136,CGO00350,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-12 03:46,2026-03-12 08:47,Sim,Correção de identificação,Companhia aérea,Parcialmente controlável
+INC00137,CGO00350,Avaria,Ocorrência simulada: Avaria,2026-03-12 03:59,2026-03-12 09:23,Não,,Causa mista,Não controlável
+INC00138,CGO00351,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-07 13:02,2026-01-07 16:16,Sim,Retorno para conferência,Causa mista,Controlável
+INC00139,CGO00354,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-07 13:08,2026-01-07 16:33,Não,,Causa mista,Parcialmente controlável
+INC00140,CGO00356,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-01-07 11:41,2026-01-07 15:56,Sim,Repesagem,Importador / despachante,Não controlável
+INC00141,CGO00356,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-07 11:55,2026-01-07 13:40,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00142,CGO00362,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-14 21:02,2026-02-14 23:14,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00143,CGO00369,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-14 20:57,2026-02-14 22:32,Não,,Causa mista,Controlável
+INC00144,CGO00369,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-14 20:51,2026-02-14 23:08,Sim,Recontagem,Companhia aérea,Parcialmente controlável
+INC00145,CGO00370,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-02-14 20:13,2026-02-14 23:42,Sim,Repesagem,Companhia aérea,Não controlável
+INC00146,CGO00370,Avaria,Ocorrência simulada: Avaria,2026-02-14 20:24,2026-02-14 22:16,Não,,Causa mista,Parcialmente controlável
+INC00147,CGO00376,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-07 02:46,2026-02-07 08:37,Não,,Companhia aérea,Não controlável
+INC00148,CGO00379,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-07 03:50,2026-02-07 08:20,Sim,Repesagem,Companhia aérea,Não controlável
+INC00149,CGO00380,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-07 03:10,2026-02-07 07:19,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00150,CGO00381,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-07 02:49,2026-02-07 05:35,Sim,Correção de identificação,Aeroporto / fiel depositário,Não controlável
+INC00151,CGO00385,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-27 22:12,2026-01-28 00:45,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00152,CGO00386,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-27 21:02,2026-01-28 02:18,Não,,Causa mista,Parcialmente controlável
+INC00153,CGO00389,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-27 21:27,2026-01-27 23:10,Sim,Repesagem,Companhia aérea,Não controlável
+INC00154,CGO00393,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-27 21:27,2026-01-28 00:10,Sim,Retorno para conferência,Causa mista,Controlável
+INC00155,CGO00394,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-01-27 20:03,2026-01-28 01:37,Não,,Órgão anuente,Não controlável
+INC00156,CGO00394,Violação,Ocorrência simulada: Violação,2026-01-27 20:03,2026-01-27 22:46,Sim,Tratamento de DSIC,Aeroporto / fiel depositário,Parcialmente controlável
+INC00157,CGO00399,Indício de furto,Ocorrência simulada: Indício de furto,2026-01-30 08:54,2026-01-30 10:31,Não,,Aeroporto / fiel depositário,Parcialmente controlável
+INC00158,CGO00402,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-30 07:28,2026-01-30 11:00,Não,,Causa mista,Não controlável
+INC00159,CGO00403,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-30 08:53,2026-01-30 13:52,Não,,Companhia aérea,Não controlável
+INC00160,CGO00404,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-30 06:35,2026-01-30 12:26,Não,,Companhia aérea,Não controlável
+INC00161,CGO00410,Avaria,Ocorrência simulada: Avaria,2026-03-22 22:47,2026-03-23 03:07,Sim,Retorno para conferência,Aeroporto / fiel depositário,Não controlável
+INC00162,CGO00411,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-23 00:29,2026-03-23 03:34,Sim,Tratamento de DSIC,Aeroporto / fiel depositário,Não controlável
+INC00163,CGO00415,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-22 22:25,2026-03-23 03:08,Sim,Retorno para conferência,Transportadora / cliente,Parcialmente controlável
+INC00164,CGO00418,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-06 17:44,2026-03-06 20:30,Não,,Causa mista,Controlável
+INC00165,CGO00419,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-06 17:28,2026-03-06 21:44,Não,,Causa mista,Não controlável
+INC00166,CGO00420,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-06 17:18,2026-03-06 20:52,Sim,Repesagem,Importador / despachante,Não controlável
+INC00167,CGO00420,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-06 17:00,2026-03-06 21:09,Sim,Correção de identificação,Causa mista,Não controlável
+INC00168,CGO00421,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-06 17:09,2026-03-06 22:05,Não,,Companhia aérea,Não controlável
+INC00169,CGO00423,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-06 18:45,2026-03-06 21:54,Sim,Repesagem,Receita Federal,Não controlável
+INC00170,CGO00424,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-06 17:01,2026-03-06 22:24,Não,,Receita Federal,Parcialmente controlável
+INC00171,CGO00427,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-11 05:17,2026-03-11 09:40,Sim,Repesagem,Receita Federal,Não controlável
+INC00172,CGO00428,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-11 05:04,2026-03-11 07:59,Sim,Correção de identificação,Aeroporto / fiel depositário,Controlável
+INC00173,CGO00431,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-11 05:02,2026-03-11 06:33,Não,,Transportadora / cliente,Não controlável
+INC00174,CGO00435,DSIC,Ocorrência simulada: DSIC,2026-03-11 05:22,2026-03-11 10:36,Não,,Causa mista,Não controlável
+INC00175,CGO00439,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-19 22:54,2026-01-20 00:27,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00176,CGO00446,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-05 23:58,2026-02-06 04:14,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00177,CGO00459,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-18 01:57,2026-02-18 06:49,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00178,CGO00460,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-18 02:57,2026-02-18 05:23,Sim,Recontagem,Companhia aérea,Não controlável
+INC00179,CGO00460,Violação,Ocorrência simulada: Violação,2026-02-18 02:52,2026-02-18 06:12,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00180,CGO00463,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-18 02:38,2026-02-18 04:19,Sim,Repesagem,Aeroporto / fiel depositário,Controlável
+INC00181,CGO00466,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-18 00:29,2026-02-18 02:58,Sim,Tratamento de DSIC,Transportadora / cliente,Parcialmente controlável
+INC00182,CGO00466,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-02-18 00:39,2026-02-18 05:34,Sim,Retorno para conferência,Causa mista,Não controlável
+INC00183,CGO00472,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-05 23:18,2026-03-06 00:59,Sim,Retorno para conferência,Órgão anuente,Não controlável
+INC00184,CGO00480,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-05 23:49,2026-03-06 02:02,Sim,Repesagem,Importador / despachante,Parcialmente controlável
+INC00185,CGO00480,DSIC,Ocorrência simulada: DSIC,2026-03-05 23:52,2026-03-06 01:30,Sim,Recontagem,Companhia aérea,Parcialmente controlável
+INC00186,CGO00487,DSIC,Ocorrência simulada: DSIC,2026-01-23 01:49,2026-01-23 06:12,Não,,Companhia aérea,Parcialmente controlável
+INC00187,CGO00492,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-23 01:49,2026-01-23 04:35,Não,,Companhia aérea,Não controlável
+INC00188,CGO00495,Violação,Ocorrência simulada: Violação,2026-01-23 01:56,2026-01-23 02:49,Não,,Companhia aérea,Não controlável
+INC00189,CGO00501,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-11 21:21,2026-01-11 23:06,Sim,Repesagem,Transportadora / cliente,Não controlável
+INC00190,CGO00505,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-01-11 20:51,2026-01-12 00:59,Não,,Causa mista,Controlável
+INC00191,CGO00505,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-11 20:49,2026-01-12 01:21,Sim,Recontagem,Companhia aérea,Não controlável
+INC00192,CGO00507,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-01-11 21:28,2026-01-11 22:46,Não,,Aeroporto / fiel depositário,Parcialmente controlável
+INC00193,CGO00509,Violação,Ocorrência simulada: Violação,2026-01-11 21:19,2026-01-12 02:43,Sim,Repesagem,Companhia aérea,Controlável
+INC00194,CGO00512,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-17 03:21,2026-02-17 09:21,Sim,Retorno para conferência,Companhia aérea,Parcialmente controlável
+INC00195,CGO00512,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-17 03:13,2026-02-17 08:52,Sim,Repesagem,Causa mista,Não controlável
+INC00196,CGO00514,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-17 04:00,2026-02-17 09:41,Sim,Recontagem,Aeroporto / fiel depositário,Não controlável
+INC00197,CGO00517,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-11 03:54,2026-03-11 08:47,Não,,Órgão anuente,Parcialmente controlável
+INC00198,CGO00518,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-11 05:25,2026-03-11 09:02,Não,,Companhia aérea,Não controlável
+INC00199,CGO00520,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-03-07 10:14,2026-03-07 14:53,Sim,Retorno para conferência,Companhia aérea,Parcialmente controlável
+INC00200,CGO00526,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-07 10:56,2026-03-07 15:54,Sim,Repesagem,Companhia aérea,Parcialmente controlável
+INC00201,CGO00526,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-07 11:00,2026-03-07 12:01,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00202,CGO00527,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-07 11:18,2026-03-07 14:39,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00203,CGO00531,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-07 11:11,2026-03-07 16:03,Não,,Causa mista,Parcialmente controlável
+INC00204,CGO00540,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-01-02 04:29,2026-01-02 06:53,Sim,Correção de identificação,Causa mista,Não controlável
+INC00205,CGO00541,Violação,Ocorrência simulada: Violação,2026-01-02 05:37,2026-01-02 07:24,Sim,Tratamento de DSIC,Companhia aérea,Controlável
+INC00206,CGO00553,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-10 11:59,2026-02-10 17:29,Não,,Companhia aérea,Parcialmente controlável
+INC00207,CGO00554,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-10 13:50,2026-02-10 17:13,Sim,Tratamento de DSIC,Importador / despachante,Parcialmente controlável
+INC00208,CGO00556,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-10 12:26,2026-02-10 17:05,Sim,Retorno para conferência,Órgão anuente,Controlável
+INC00209,CGO00560,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-10 10:55,2026-02-10 14:30,Não,,Causa mista,Parcialmente controlável
+INC00210,CGO00561,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-10 13:37,2026-02-10 15:41,Não,,Companhia aérea,Não controlável
+INC00211,CGO00564,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-10 13:55,2026-02-10 17:38,Sim,Repesagem,Causa mista,Não controlável
+INC00212,CGO00565,Indício de furto,Ocorrência simulada: Indício de furto,2026-02-10 12:58,2026-02-10 18:32,Sim,Correção de identificação,Aeroporto / fiel depositário,Controlável
+INC00213,CGO00571,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-13 12:13,2026-01-13 18:06,Não,,Companhia aérea,Não controlável
+INC00214,CGO00574,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-13 12:34,2026-01-13 18:18,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00215,CGO00574,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-13 12:16,2026-01-13 17:56,Sim,Recontagem,Causa mista,Não controlável
+INC00216,CGO00578,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-22 11:08,2026-01-22 14:48,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00217,CGO00578,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-01-22 10:45,2026-01-22 14:03,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00218,CGO00580,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-22 12:08,2026-01-22 18:07,Não,,Companhia aérea,Não controlável
+INC00219,CGO00580,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-22 12:25,2026-01-22 14:02,Não,,Companhia aérea,Parcialmente controlável
+INC00220,CGO00584,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-22 10:24,2026-01-22 14:42,Não,,Causa mista,Parcialmente controlável
+INC00221,CGO00586,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-22 11:57,2026-01-22 15:06,Não,,Causa mista,Não controlável
+INC00222,CGO00588,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-22 11:19,2026-01-22 15:12,Sim,Tratamento de DSIC,Transportadora / cliente,Controlável
+INC00223,CGO00588,Violação,Ocorrência simulada: Violação,2026-01-22 11:27,2026-01-22 15:06,Sim,Correção de identificação,Companhia aérea,Parcialmente controlável
+INC00224,CGO00589,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-22 10:09,2026-01-22 15:56,Não,,Companhia aérea,Parcialmente controlável
+INC00225,CGO00590,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-22 11:32,2026-01-22 14:04,Sim,Recontagem,Aeroporto / fiel depositário,Não controlável
+INC00226,CGO00597,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-04 03:09,2026-01-04 05:57,Sim,Repesagem,Causa mista,Não controlável
+INC00227,CGO00603,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-29 05:37,2026-03-29 08:13,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00228,CGO00603,DSIC,Ocorrência simulada: DSIC,2026-03-29 05:34,2026-03-29 07:06,Sim,Correção de identificação,Causa mista,Parcialmente controlável
+INC00229,CGO00604,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-29 07:04,2026-03-29 10:02,Sim,Recontagem,Companhia aérea,Parcialmente controlável
+INC00230,CGO00609,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-14 00:10,2026-02-14 03:53,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00231,CGO00615,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-14 00:18,2026-02-14 01:24,Não,,Causa mista,Controlável
+INC00232,CGO00616,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-13 22:45,2026-02-14 03:21,Sim,Correção de identificação,Causa mista,Não controlável
+INC00233,CGO00622,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-18 04:02,2026-01-18 07:08,Sim,Retorno para conferência,Transportadora / cliente,Não controlável
+INC00234,CGO00630,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-16 21:12,2026-03-17 00:55,Não,,Companhia aérea,Não controlável
+INC00235,CGO00634,Avaria,Ocorrência simulada: Avaria,2026-02-22 21:14,2026-02-22 22:35,Sim,Recontagem,Causa mista,Não controlável
+INC00236,CGO00635,Violação,Ocorrência simulada: Violação,2026-02-22 21:32,2026-02-22 22:57,Não,,Causa mista,Não controlável
+INC00237,CGO00638,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-22 21:28,2026-02-23 00:55,Sim,Recontagem,Aeroporto / fiel depositário,Parcialmente controlável
+INC00238,CGO00641,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-22 20:23,2026-02-22 21:31,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00239,CGO00642,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-22 21:39,2026-02-23 03:30,Sim,Repesagem,Companhia aérea,Controlável
+INC00240,CGO00643,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-02-22 20:30,2026-02-23 00:34,Não,,Companhia aérea,Não controlável
+INC00241,CGO00643,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-22 21:05,2026-02-22 23:35,Sim,Correção de identificação,Aeroporto / fiel depositário,Não controlável
+INC00242,CGO00647,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-01 19:28,2026-03-01 23:03,Sim,Repesagem,Receita Federal,Não controlável
+INC00243,CGO00647,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-03-01 19:33,2026-03-01 21:25,Não,,Causa mista,Não controlável
+INC00244,CGO00648,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-01 19:43,2026-03-01 22:31,Não,,Causa mista,Parcialmente controlável
+INC00245,CGO00649,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-01 20:05,2026-03-01 23:09,Sim,Repesagem,Transportadora / cliente,Não controlável
+INC00246,CGO00656,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-01 21:19,2026-03-01 22:58,Sim,Correção de identificação,Causa mista,Não controlável
+INC00247,CGO00658,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-25 15:07,2026-01-25 20:37,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00248,CGO00659,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-25 15:38,2026-01-25 19:53,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00249,CGO00664,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-25 16:30,2026-01-25 20:34,Não,,Companhia aérea,Não controlável
+INC00250,CGO00664,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-01-25 17:05,2026-01-25 18:06,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00251,CGO00678,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-13 10:11,2026-03-13 13:35,Sim,Recontagem,Companhia aérea,Parcialmente controlável
+INC00252,CGO00680,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-25 12:11,2026-02-25 15:16,Sim,Recontagem,Transportadora / cliente,Parcialmente controlável
+INC00253,CGO00683,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-25 11:52,2026-02-25 14:29,Sim,Tratamento de DSIC,Aeroporto / fiel depositário,Não controlável
+INC00254,CGO00684,DSIC,Ocorrência simulada: DSIC,2026-02-25 13:53,2026-02-25 18:45,Não,,Companhia aérea,Não controlável
+INC00255,CGO00689,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-20 00:12,2026-03-20 06:01,Sim,Tratamento de DSIC,Transportadora / cliente,Controlável
+INC00256,CGO00690,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-20 00:29,2026-03-20 04:28,Sim,Repesagem,Companhia aérea,Parcialmente controlável
+INC00257,CGO00698,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-20 00:33,2026-03-20 03:51,Sim,Recontagem,Órgão anuente,Parcialmente controlável
+INC00258,CGO00702,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-26 19:56,2026-02-26 21:27,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00259,CGO00705,DSIC,Ocorrência simulada: DSIC,2026-02-26 22:02,2026-02-27 02:36,Sim,Recontagem,Causa mista,Não controlável
+INC00260,CGO00708,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-25 13:59,2026-02-25 19:41,Sim,Repesagem,Companhia aérea,Não controlável
+INC00261,CGO00711,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-25 13:58,2026-02-25 19:13,Sim,Repesagem,Causa mista,Parcialmente controlável
+INC00262,CGO00711,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-25 13:44,2026-02-25 14:52,Sim,Retorno para conferência,Causa mista,Parcialmente controlável
+INC00263,CGO00712,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-25 13:39,2026-02-25 18:10,Sim,Recontagem,Companhia aérea,Não controlável
+INC00264,CGO00717,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-03 15:04,2026-01-03 20:28,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00265,CGO00719,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-03 12:33,2026-01-03 16:04,Sim,Correção de identificação,Causa mista,Não controlável
+INC00266,CGO00720,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-28 01:50,2026-02-28 05:24,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00267,CGO00723,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-27 22:57,2026-02-28 02:03,Sim,Retorno para conferência,Receita Federal,Parcialmente controlável
+INC00268,CGO00724,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-28 00:39,2026-02-28 04:43,Não,,Importador / despachante,Controlável
+INC00269,CGO00724,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-02-28 01:00,2026-02-28 06:04,Sim,Tratamento de DSIC,Causa mista,Parcialmente controlável
+INC00270,CGO00725,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-27 23:30,2026-02-28 00:48,Não,,Órgão anuente,Controlável
+INC00271,CGO00728,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-02-08 21:58,2026-02-09 02:06,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00272,CGO00732,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-08 21:58,2026-02-08 23:39,Sim,Repesagem,Companhia aérea,Não controlável
+INC00273,CGO00734,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-08 19:38,2026-02-08 20:44,Não,,Aeroporto / fiel depositário,Parcialmente controlável
+INC00274,CGO00735,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-08 20:44,2026-02-09 01:27,Não,,Causa mista,Parcialmente controlável
+INC00275,CGO00736,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-03 07:36,2026-02-03 13:16,Não,,Companhia aérea,Não controlável
+INC00276,CGO00743,Avaria,Ocorrência simulada: Avaria,2026-02-13 23:52,2026-02-14 03:07,Não,,Causa mista,Não controlável
+INC00277,CGO00747,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-14 01:02,2026-02-14 03:49,Sim,Recontagem,Causa mista,Não controlável
+INC00278,CGO00751,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-03-14 06:20,2026-03-14 10:30,Não,,Causa mista,Parcialmente controlável
+INC00279,CGO00752,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-14 05:18,2026-03-14 08:35,Sim,Recontagem,Companhia aérea,Não controlável
+INC00280,CGO00753,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-14 06:20,2026-03-14 07:05,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00281,CGO00755,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-14 05:24,2026-03-14 06:44,Não,,Companhia aérea,Não controlável
+INC00282,CGO00756,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-14 06:50,2026-03-14 07:32,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00283,CGO00757,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-14 06:12,2026-03-14 11:15,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00284,CGO00758,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-09 16:12,2026-03-09 18:45,Não,,Companhia aérea,Parcialmente controlável
+INC00285,CGO00760,DSIC,Ocorrência simulada: DSIC,2026-03-09 15:47,2026-03-09 16:53,Sim,Recontagem,Causa mista,Não controlável
+INC00286,CGO00763,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-09 14:38,2026-03-09 18:28,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00287,CGO00765,DSIC,Ocorrência simulada: DSIC,2026-03-09 13:46,2026-03-09 19:37,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00288,CGO00765,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-03-09 14:08,2026-03-09 20:08,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00289,CGO00772,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-28 21:38,2026-01-28 22:59,Não,,Companhia aérea,Parcialmente controlável
+INC00290,CGO00775,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-28 20:41,2026-01-28 21:53,Sim,Correção de identificação,Companhia aérea,Parcialmente controlável
+INC00291,CGO00777,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-28 19:52,2026-01-28 20:40,Não,,Transportadora / cliente,Parcialmente controlável
+INC00292,CGO00784,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-25 00:01,2026-01-25 01:04,Sim,Retorno para conferência,Causa mista,Parcialmente controlável
+INC00293,CGO00785,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-25 01:23,2026-01-25 03:05,Não,,Transportadora / cliente,Parcialmente controlável
+INC00294,CGO00786,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-01-25 00:16,2026-01-25 02:02,Sim,Repesagem,Receita Federal,Parcialmente controlável
+INC00295,CGO00791,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-30 16:47,2026-01-30 20:23,Não,,Órgão anuente,Parcialmente controlável
+INC00296,CGO00796,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-30 17:29,2026-01-30 19:10,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00297,CGO00798,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-30 14:59,2026-01-30 18:47,Não,,Companhia aérea,Parcialmente controlável
+INC00298,CGO00799,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-06 16:49,2026-01-06 20:30,Sim,Repesagem,Aeroporto / fiel depositário,Parcialmente controlável
+INC00299,CGO00800,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-01-06 16:48,2026-01-06 19:50,Não,,Companhia aérea,Não controlável
+INC00300,CGO00802,DSIC,Ocorrência simulada: DSIC,2026-01-06 17:15,2026-01-06 17:45,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00301,CGO00802,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-06 17:01,2026-01-06 20:39,Sim,Repesagem,Companhia aérea,Controlável
+INC00302,CGO00805,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-31 03:56,2026-03-31 08:36,Não,,Companhia aérea,Parcialmente controlável
+INC00303,CGO00808,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-03-31 04:33,2026-03-31 06:00,Não,,Causa mista,Não controlável
+INC00304,CGO00812,Indício de furto,Ocorrência simulada: Indício de furto,2026-01-28 02:28,2026-01-28 07:58,Sim,Retorno para conferência,Causa mista,Controlável
+INC00305,CGO00814,Avaria,Ocorrência simulada: Avaria,2026-01-28 03:00,2026-01-28 08:04,Não,,Causa mista,Não controlável
+INC00306,CGO00819,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-01-28 03:40,2026-01-28 04:30,Sim,Repesagem,Causa mista,Não controlável
+INC00307,CGO00824,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-02 14:03,2026-01-02 18:33,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00308,CGO00828,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-30 18:37,2026-03-30 23:48,Sim,Retorno para conferência,Importador / despachante,Parcialmente controlável
+INC00309,CGO00829,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-30 18:28,2026-03-30 23:32,Sim,Recontagem,Companhia aérea,Não controlável
+INC00310,CGO00831,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-30 19:24,2026-03-31 00:02,Sim,Repesagem,Causa mista,Não controlável
+INC00311,CGO00832,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-30 18:56,2026-03-30 20:42,Não,,Companhia aérea,Não controlável
+INC00312,CGO00832,Indício de furto,Ocorrência simulada: Indício de furto,2026-03-30 18:29,2026-03-30 23:36,Não,,Causa mista,Parcialmente controlável
+INC00313,CGO00845,Indício de furto,Ocorrência simulada: Indício de furto,2026-01-09 11:44,2026-01-09 17:20,Sim,Tratamento de DSIC,Causa mista,Parcialmente controlável
+INC00314,CGO00846,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-09 11:53,2026-01-09 16:12,Sim,Tratamento de DSIC,Aeroporto / fiel depositário,Parcialmente controlável
+INC00315,CGO00855,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-06 07:16,2026-03-06 10:53,Não,,Receita Federal,Controlável
+INC00316,CGO00856,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-03-06 09:16,2026-03-06 12:11,Sim,Correção de identificação,Causa mista,Controlável
+INC00317,CGO00859,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-11 16:52,2026-02-11 17:38,Não,,Causa mista,Não controlável
+INC00318,CGO00862,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-11 15:15,2026-02-11 18:05,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00319,CGO00864,Avaria,Ocorrência simulada: Avaria,2026-01-29 23:46,2026-01-30 00:24,Sim,Retorno para conferência,Causa mista,Não controlável
+INC00320,CGO00864,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-29 23:51,2026-01-30 05:18,Sim,Tratamento de DSIC,Causa mista,Controlável
+INC00321,CGO00865,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-29 22:16,2026-01-30 02:18,Sim,Correção de identificação,Importador / despachante,Não controlável
+INC00322,CGO00867,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-29 23:47,2026-01-30 00:26,Não,,Companhia aérea,Não controlável
+INC00323,CGO00870,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-29 23:46,2026-01-30 05:19,Sim,Correção de identificação,Causa mista,Não controlável
+INC00324,CGO00873,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-01-30 00:13,2026-01-30 05:41,Não,,Companhia aérea,Não controlável
+INC00325,CGO00875,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-12 16:14,2026-02-12 22:06,Não,,Aeroporto / fiel depositário,Não controlável
+INC00326,CGO00885,Violação,Ocorrência simulada: Violação,2026-01-26 07:47,2026-01-26 13:07,Sim,Correção de identificação,Causa mista,Não controlável
+INC00327,CGO00887,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-05 04:12,2026-02-05 06:33,Sim,Recontagem,Órgão anuente,Controlável
+INC00328,CGO00889,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-05 03:19,2026-02-05 06:47,Não,,Aeroporto / fiel depositário,Controlável
+INC00329,CGO00897,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-18 13:27,2026-01-18 14:13,Não,,Causa mista,Parcialmente controlável
+INC00330,CGO00899,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-18 14:09,2026-01-18 18:43,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00331,CGO00900,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-18 13:17,2026-01-18 16:41,Sim,Tratamento de DSIC,Causa mista,Parcialmente controlável
+INC00332,CGO00903,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-01-18 14:53,2026-01-18 17:35,Não,,Companhia aérea,Parcialmente controlável
+INC00333,CGO00904,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-18 14:19,2026-01-18 19:41,Sim,Retorno para conferência,Causa mista,Não controlável
+INC00334,CGO00910,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-18 10:01,2026-02-18 14:27,Não,,Causa mista,Parcialmente controlável
+INC00335,CGO00915,DSIC,Ocorrência simulada: DSIC,2026-01-25 14:23,2026-01-25 19:19,Não,,Companhia aérea,Não controlável
+INC00336,CGO00919,AWB divergente,Ocorrência simulada: AWB divergente,2026-01-25 14:13,2026-01-25 17:11,Sim,Repesagem,Aeroporto / fiel depositário,Não controlável
+INC00337,CGO00925,DSIC,Ocorrência simulada: DSIC,2026-01-24 17:29,2026-01-24 19:13,Não,,Causa mista,Parcialmente controlável
+INC00338,CGO00928,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-24 17:04,2026-01-24 18:01,Sim,Repesagem,Receita Federal,Não controlável
+INC00339,CGO00934,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-28 12:11,2026-03-28 15:06,Não,,Companhia aérea,Parcialmente controlável
+INC00340,CGO00935,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-03-28 12:37,2026-03-28 18:28,Sim,Tratamento de DSIC,Causa mista,Não controlável
+INC00341,CGO00938,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-28 12:33,2026-03-28 16:10,Sim,Retorno para conferência,Companhia aérea,Não controlável
+INC00342,CGO00951,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-06 18:53,2026-03-06 22:44,Sim,Retorno para conferência,Receita Federal,Parcialmente controlável
+INC00343,CGO00957,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-13 12:33,2026-03-13 15:04,Sim,Recontagem,Companhia aérea,Não controlável
+INC00344,CGO00968,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-01 08:03,2026-02-01 09:30,Sim,Retorno para conferência,Aeroporto / fiel depositário,Não controlável
+INC00345,CGO00969,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-02-01 08:13,2026-02-01 13:00,Sim,Tratamento de DSIC,Causa mista,Parcialmente controlável
+INC00346,CGO00969,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-01 08:02,2026-02-01 10:19,Não,,Companhia aérea,Não controlável
+INC00347,CGO00972,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-01-06 14:43,2026-01-06 20:23,Não,,Companhia aérea,Não controlável
+INC00348,CGO00974,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-01-06 16:54,2026-01-06 18:15,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00349,CGO00974,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-01-06 17:04,2026-01-06 17:38,Sim,Retorno para conferência,Causa mista,Não controlável
+INC00350,CGO00975,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-01-06 16:03,2026-01-06 21:31,Sim,Recontagem,Causa mista,Parcialmente controlável
+INC00351,CGO00977,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-12 20:43,2026-03-12 23:56,Sim,Repesagem,Causa mista,Não controlável
+INC00352,CGO00985,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-05 09:14,2026-03-05 10:09,Sim,Correção de identificação,Receita Federal,Controlável
+INC00353,CGO00988,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-03-05 09:59,2026-03-05 14:37,Sim,Recontagem,Receita Federal,Controlável
+INC00354,CGO00993,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-19 12:10,2026-01-19 15:54,Sim,Retorno para conferência,Receita Federal,Controlável
+INC00355,CGO00994,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-19 13:12,2026-01-19 14:07,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00356,CGO01002,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-05 16:37,2026-01-05 21:03,Não,,Companhia aérea,Controlável
+INC00357,CGO01006,Avaria,Ocorrência simulada: Avaria,2026-01-05 16:42,2026-01-05 17:40,Sim,Recontagem,Aeroporto / fiel depositário,Parcialmente controlável
+INC00358,CGO01009,Violação,Ocorrência simulada: Violação,2026-02-25 18:14,2026-02-25 20:41,Não,,Causa mista,Não controlável
+INC00359,CGO01010,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-02-25 18:39,2026-02-25 19:49,Sim,Recontagem,Causa mista,Não controlável
+INC00360,CGO01011,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-25 17:25,2026-02-25 22:41,Sim,Recontagem,Transportadora / cliente,Parcialmente controlável
+INC00361,CGO01014,Indício de furto,Ocorrência simulada: Indício de furto,2026-02-25 17:28,2026-02-25 20:24,Não,,Aeroporto / fiel depositário,Parcialmente controlável
+INC00362,CGO01016,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-25 17:55,2026-02-25 23:02,Sim,Recontagem,Transportadora / cliente,Parcialmente controlável
+INC00363,CGO01018,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-03-24 08:53,2026-03-24 12:28,Não,,Aeroporto / fiel depositário,Controlável
+INC00364,CGO01018,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-24 08:57,2026-03-24 14:44,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00365,CGO01027,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-24 09:28,2026-03-24 10:08,Não,,Companhia aérea,Não controlável
+INC00366,CGO01030,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-24 10:13,2026-03-24 16:11,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00367,CGO01033,Indício de furto,Ocorrência simulada: Indício de furto,2026-02-28 22:18,2026-03-01 00:18,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00368,CGO01034,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-28 22:16,2026-03-01 01:29,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00369,CGO01035,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-28 21:00,2026-03-01 01:30,Não,,Companhia aérea,Não controlável
+INC00370,CGO01038,AWB divergente,Ocorrência simulada: AWB divergente,2026-03-26 11:59,2026-03-26 16:47,Sim,Retorno para conferência,Transportadora / cliente,Parcialmente controlável
+INC00371,CGO01038,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-03-26 12:08,2026-03-26 18:08,Sim,Tratamento de DSIC,Causa mista,Parcialmente controlável
+INC00372,CGO01043,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-26 12:09,2026-03-26 16:00,Sim,Tratamento de DSIC,Companhia aérea,Não controlável
+INC00373,CGO01046,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-03-26 11:55,2026-03-26 13:55,Não,,Companhia aérea,Não controlável
+INC00374,CGO01047,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-03-26 12:11,2026-03-26 18:05,Não,,Causa mista,Parcialmente controlável
+INC00375,CGO01051,Erro de manifesto,Ocorrência simulada: Erro de manifesto,2026-02-27 09:21,2026-02-27 13:09,Não,,Companhia aérea,Não controlável
+INC00376,CGO01053,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-27 06:28,2026-02-27 09:08,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00377,CGO01054,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-27 06:01,2026-02-27 11:23,Sim,Correção de identificação,Companhia aérea,Não controlável
+INC00378,CGO01058,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-27 07:38,2026-02-27 08:58,Sim,Tratamento de DSIC,Companhia aérea,Parcialmente controlável
+INC00379,CGO01058,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-27 08:01,2026-02-27 09:34,Sim,Correção de identificação,Companhia aérea,Parcialmente controlável
+INC00380,CGO01060,Embalagem danificada,Ocorrência simulada: Embalagem danificada,2026-02-27 09:52,2026-02-27 14:27,Não,,Companhia aérea,Não controlável
+INC00381,CGO01061,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-02-27 08:22,2026-02-27 09:22,Sim,Retorno para conferência,Órgão anuente,Controlável
+INC00382,CGO01072,Violação,Ocorrência simulada: Violação,2026-02-17 22:46,2026-02-18 02:43,Sim,Retorno para conferência,Causa mista,Não controlável
+INC00383,CGO01074,Avaria,Ocorrência simulada: Avaria,2026-02-17 22:50,2026-02-17 23:24,Sim,Tratamento de DSIC,Aeroporto / fiel depositário,Controlável
+INC00384,CGO01075,Avaria,Ocorrência simulada: Avaria,2026-02-17 22:45,2026-02-18 04:16,Não,,Companhia aérea,Controlável
+INC00385,CGO01078,Erro de digitação,Ocorrência simulada: Erro de digitação,2026-01-11 21:53,2026-01-12 02:37,Sim,Repesagem,Transportadora / cliente,Controlável
+INC00386,CGO01082,Violação,Ocorrência simulada: Violação,2026-01-11 20:35,2026-01-12 01:30,Não,,Aeroporto / fiel depositário,Não controlável
+INC00387,CGO01086,Natureza da carga não informada,Ocorrência simulada: Natureza da carga não informada,2026-02-15 18:32,2026-02-15 20:35,Não,,Companhia aérea,Não controlável
+INC00388,CGO01091,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-15 16:57,2026-02-15 20:44,Sim,Retorno para conferência,Companhia aérea,Parcialmente controlável
+INC00389,CGO01093,Divergência de peso,Ocorrência simulada: Divergência de peso,2026-02-15 17:07,2026-02-15 21:19,Não,,Companhia aérea,Parcialmente controlável
+INC00390,CGO01097,Carga sem identificação,Ocorrência simulada: Carga sem identificação,2026-02-15 16:39,2026-02-15 20:07,Sim,Correção de identificação,Companhia aérea,Parcialmente controlável
+INC00391,CGO01097,Avaria,Ocorrência simulada: Avaria,2026-02-15 17:18,2026-02-15 21:41,Não,,Aeroporto / fiel depositário,Não controlável
+INC00392,CGO01098,AWB divergente,Ocorrência simulada: AWB divergente,2026-02-20 18:32,2026-02-20 22:30,Sim,Retorno para conferência,Importador / despachante,Controlável
+INC00393,CGO01099,Descrição incompleta,Ocorrência simulada: Descrição incompleta,2026-02-20 18:54,2026-02-21 00:27,Sim,Recontagem,Órgão anuente,Controlável
+INC00394,CGO01103,Divergência de volumes,Ocorrência simulada: Divergência de volumes,2026-02-20 19:42,2026-02-20 21:32,Sim,Recontagem,Causa mista,Não controlável

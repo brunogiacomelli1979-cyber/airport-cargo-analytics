@@ -1,0 +1,1112 @@
+﻿release_id,cargo_id,customs_release_required,customs_release_datetime,anuence_required,anuence_agency,anuence_release_datetime,release_status,release_delay_reason,release_responsibility_group
+REL00001,CGO00001,Sim,2026-03-24 21:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00002,CGO00002,Sim,2026-03-25 02:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00003,CGO00003,Não,2026-03-25 09:19,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00004,CGO00004,Sim,2026-03-24 14:07,Sim,Ibama,2026-03-25 22:59,Liberada,Aguardando anuência,Órgão anuente
+REL00005,CGO00005,Sim,2026-03-24 15:08,Sim,Anvisa,2026-03-25 23:00,Liberada,,Sem atraso
+REL00006,CGO00006,Sim,2026-03-24 05:54,Sim,Anvisa,2026-03-26 04:49,Liberada,Aguardando anuência,Órgão anuente
+REL00007,CGO00007,Não,2026-01-16 17:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00008,CGO00008,Sim,2026-01-18 00:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00009,CGO00009,Sim,2026-01-17 20:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00010,CGO00010,Sim,2026-01-20 07:26,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00011,CGO00011,Sim,2026-01-17 11:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00012,CGO00012,Sim,2026-01-17 03:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00013,CGO00013,Sim,2026-01-20 01:12,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00014,CGO00014,Sim,2026-01-17 13:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00015,CGO00015,Sim,2026-01-17 12:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00016,CGO00016,Sim,2026-01-17 09:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00017,CGO00017,Sim,2026-01-18 09:11,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00018,CGO00018,Não,2026-03-07 14:44,Sim,Ibama,2026-03-08 21:50,Liberada,,Sem atraso
+REL00019,CGO00019,Sim,2026-03-07 23:19,Sim,Inmetro,2026-03-08 03:50,Liberada,Aguardando anuência,Órgão anuente
+REL00020,CGO00020,Sim,2026-03-08 10:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00021,CGO00021,Não,2026-03-08 07:34,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00022,CGO00022,Sim,2026-03-10 19:53,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00023,CGO00023,Sim,2026-03-31 21:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00024,CGO00024,Não,2026-03-30 21:45,Sim,Exército,2026-03-31 13:54,Liberada,Aguardando anuência,Órgão anuente
+REL00025,CGO00025,Sim,2026-03-31 15:08,Sim,Exército,2026-04-02 11:04,Liberada,,Sem atraso
+REL00026,CGO00026,Sim,2026-03-31 19:09,Sim,Ibama,2026-04-01 23:34,Liberada,Aguardando anuência,Órgão anuente
+REL00027,CGO00027,Não,2026-03-30 22:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00028,CGO00028,Sim,2026-03-31 04:59,Não,Não aplicável,,Liberada,,Sem atraso
+REL00029,CGO00029,Sim,2026-04-01 05:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00030,CGO00030,Sim,2026-04-01 04:40,Sim,Anvisa,2026-04-02 07:07,Liberada,Aguardando anuência,Órgão anuente
+REL00031,CGO00031,Sim,2026-04-01 21:36,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00032,CGO00032,Sim,2026-03-31 08:47,Sim,Exército,2026-04-02 15:48,Liberada,Aguardando anuência,Órgão anuente
+REL00033,CGO00033,Sim,2026-03-31 03:03,Não,Não aplicável,,Liberada,,Sem atraso
+REL00034,CGO00034,Sim,2026-03-31 00:19,Sim,Inmetro,2026-04-02 00:44,Liberada,Aguardando anuência,Órgão anuente
+REL00035,CGO00035,Sim,2026-03-31 23:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00036,CGO00036,Sim,2026-04-01 03:28,Não,Não aplicável,,Liberada,,Sem atraso
+REL00037,CGO00037,Sim,2026-03-28 12:28,Não,Não aplicável,,Liberada,,Sem atraso
+REL00038,CGO00038,Sim,2026-03-29 08:03,Sim,Anvisa,2026-03-30 23:43,Liberada,,Sem atraso
+REL00039,CGO00039,Não,2026-03-28 21:28,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00040,CGO00040,Sim,2026-03-29 01:54,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00041,CGO00041,Não,2026-03-28 08:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00042,CGO00042,Sim,2026-03-29 08:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00043,CGO00043,Sim,2026-03-28 11:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00044,CGO00044,Sim,2026-03-29 18:47,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00045,CGO00045,Sim,2026-03-29 01:46,Sim,Ibama,2026-03-31 11:28,Liberada,Aguardando anuência,Órgão anuente
+REL00046,CGO00046,Não,2026-03-29 19:27,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00047,CGO00047,Sim,2026-03-28 16:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00048,CGO00048,Sim,2026-03-30 13:25,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00049,CGO00049,Sim,2026-03-25 11:32,Sim,Anvisa,2026-03-26 03:18,Liberada,Aguardando anuência,Órgão anuente
+REL00050,CGO00050,Sim,2026-03-26 11:54,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00051,CGO00051,Sim,2026-03-28 08:38,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00052,CGO00052,Sim,2026-03-25 01:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00053,CGO00053,Sim,2026-03-26 05:23,Sim,Ministério da Agricultura,2026-03-26 19:47,Liberada,Aguardando anuência,Órgão anuente
+REL00054,CGO00054,Sim,2026-03-26 03:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00055,CGO00055,Não,2026-03-25 00:03,Não,Não aplicável,,Liberada,,Sem atraso
+REL00056,CGO00056,Sim,2026-03-25 05:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00057,CGO00057,Não,2026-03-24 23:25,Sim,Anvisa,2026-03-25 12:16,Liberada,Aguardando anuência,Órgão anuente
+REL00058,CGO00058,Sim,2026-03-26 05:05,Sim,Exército,2026-03-28 10:15,Liberada,Aguardando anuência,Órgão anuente
+REL00059,CGO00059,Sim,2026-03-25 10:45,Sim,Inmetro,2026-03-28 06:24,Liberada,Aguardando anuência,Órgão anuente
+REL00060,CGO00060,Sim,2026-03-25 14:09,Sim,Anvisa,2026-03-27 12:11,Liberada,Aguardando anuência,Órgão anuente
+REL00061,CGO00061,Não,2026-03-10 21:34,Sim,Anvisa,2026-03-11 16:52,Liberada,Aguardando anuência,Órgão anuente
+REL00062,CGO00062,Não,2026-03-10 22:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00063,CGO00063,Sim,2026-03-11 05:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00064,CGO00064,Sim,2026-03-11 21:44,Sim,Ministério da Agricultura,2026-03-13 02:06,Liberada,Aguardando anuência,Órgão anuente
+REL00065,CGO00065,Sim,2026-03-11 09:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00066,CGO00066,Sim,2026-03-11 16:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00067,CGO00067,Sim,2026-02-23 05:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00068,CGO00068,Sim,2026-02-24 15:42,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00069,CGO00069,Sim,2026-02-22 21:15,Sim,Exército,2026-02-23 00:45,Liberada,Aguardando anuência,Órgão anuente
+REL00070,CGO00070,Sim,2026-02-23 02:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00071,CGO00071,Sim,2026-02-22 14:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00072,CGO00072,Sim,2026-02-23 12:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00073,CGO00073,Sim,2026-02-23 02:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00074,CGO00074,Sim,2026-02-23 11:06,Sim,Anvisa,2026-02-24 00:45,Liberada,Aguardando anuência,Órgão anuente
+REL00075,CGO00075,Sim,2026-02-22 13:07,Sim,Anvisa,2026-02-23 00:53,Liberada,Aguardando anuência,Órgão anuente
+REL00076,CGO00076,Sim,2026-02-22 13:39,Sim,Exército,2026-02-24 05:04,Liberada,Aguardando anuência,Órgão anuente
+REL00077,CGO00077,Sim,2026-01-13 14:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00078,CGO00078,Sim,2026-01-13 16:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00079,CGO00079,Sim,2026-01-13 22:35,Sim,Ibama,2026-01-16 13:10,Liberada,Aguardando anuência,Órgão anuente
+REL00080,CGO00080,Sim,2026-01-14 07:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00081,CGO00081,Sim,2026-01-15 15:23,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00082,CGO00082,Sim,2026-01-14 18:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00083,CGO00083,Sim,2026-03-06 09:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00084,CGO00084,Sim,2026-03-05 02:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00085,CGO00085,Sim,2026-03-06 09:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00086,CGO00086,Não,2026-03-05 02:12,Sim,Ibama,2026-03-07 23:01,Liberada,Aguardando anuência,Órgão anuente
+REL00087,CGO00087,Sim,2026-03-05 14:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00088,CGO00088,Sim,2026-03-05 06:17,Sim,Inmetro,2026-03-08 01:33,Liberada,,Sem atraso
+REL00089,CGO00089,Sim,2026-03-08 22:23,Sim,Ministério da Agricultura,2026-03-10 20:50,Liberada,Aguardando anuência,Órgão anuente
+REL00090,CGO00090,Sim,2026-03-09 01:28,Sim,Inmetro,2026-03-09 23:40,Liberada,,Sem atraso
+REL00091,CGO00091,Sim,2026-03-09 20:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00092,CGO00092,Sim,2026-03-08 19:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00093,CGO00093,Sim,2026-03-10 20:56,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00094,CGO00094,Não,2026-03-08 15:06,Sim,Inmetro,2026-03-11 09:43,Liberada,Aguardando anuência,Órgão anuente
+REL00095,CGO00095,Sim,2026-03-09 09:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00096,CGO00096,Sim,2026-03-08 20:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL00097,CGO00097,Sim,2026-03-09 01:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00098,CGO00098,Sim,2026-03-08 16:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00099,CGO00099,Sim,2026-03-08 23:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00100,CGO00100,Sim,2026-03-09 17:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00101,CGO00101,Sim,2026-03-08 19:01,Sim,Inmetro,2026-03-10 13:39,Liberada,Aguardando anuência,Órgão anuente
+REL00102,CGO00102,Sim,2026-03-08 21:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00103,CGO00103,Sim,2026-02-15 06:46,Sim,Ministério da Agricultura,2026-02-17 21:56,Liberada,Aguardando anuência,Órgão anuente
+REL00104,CGO00104,Sim,2026-02-14 22:24,Não,Não aplicável,,Liberada,,Sem atraso
+REL00105,CGO00105,Não,2026-02-16 08:21,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00106,CGO00106,Sim,2026-02-15 18:54,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00107,CGO00107,Sim,2026-02-15 03:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00108,CGO00108,Sim,2026-02-15 22:15,Não,Não aplicável,,Liberada,,Sem atraso
+REL00109,CGO00109,Sim,2026-02-14 19:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00110,CGO00110,Sim,2026-03-13 17:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00111,CGO00111,Sim,2026-03-12 17:59,Não,Não aplicável,,Liberada,,Sem atraso
+REL00112,CGO00112,Sim,2026-03-13 20:40,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00113,CGO00113,Sim,2026-03-13 03:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00114,CGO00114,Sim,2026-03-13 05:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL00115,CGO00115,Sim,2026-03-13 12:10,Sim,Exército,2026-03-14 10:59,Liberada,,Sem atraso
+REL00116,CGO00116,Sim,2026-03-12 14:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00117,CGO00117,Sim,2026-03-12 21:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00118,CGO00118,Sim,2026-03-12 11:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00119,CGO00119,Sim,2026-03-14 06:10,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00120,CGO00120,Sim,2026-03-12 09:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00121,CGO00121,Não,2026-03-12 09:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00122,CGO00122,Não,2026-03-13 06:36,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00123,CGO00123,Sim,2026-03-12 18:46,Não,Não aplicável,,Liberada,,Sem atraso
+REL00124,CGO00124,Sim,2026-03-12 20:10,Sim,Ibama,2026-03-15 12:17,Liberada,Aguardando anuência,Órgão anuente
+REL00125,CGO00125,Sim,2026-03-14 02:46,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00126,CGO00126,Não,2026-03-12 00:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00127,CGO00127,Sim,2026-03-12 00:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00128,CGO00128,Sim,2026-03-13 15:20,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00129,CGO00129,Sim,2026-03-16 05:02,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00130,CGO00130,Sim,2026-01-19 20:43,Sim,Inmetro,2026-01-20 02:51,Liberada,Aguardando anuência,Órgão anuente
+REL00131,CGO00131,Não,2026-01-19 18:45,Sim,Ibama,2026-01-22 10:18,Liberada,Aguardando anuência,Órgão anuente
+REL00132,CGO00132,Sim,2026-01-20 19:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00133,CGO00133,Sim,2026-01-19 22:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00134,CGO00134,Sim,2026-01-20 03:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00135,CGO00135,Sim,2026-01-21 05:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00136,CGO00136,Não,2026-01-19 18:52,Sim,Ministério da Agricultura,2026-01-21 18:24,Liberada,,Sem atraso
+REL00137,CGO00137,Sim,2026-01-20 22:53,Sim,Ibama,2026-01-21 08:58,Liberada,Aguardando anuência,Órgão anuente
+REL00138,CGO00138,Sim,2026-01-21 03:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00139,CGO00139,Sim,2026-01-21 06:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00140,CGO00140,Sim,2026-02-10 05:11,Sim,Inmetro,2026-02-11 01:07,Liberada,,Sem atraso
+REL00141,CGO00141,Não,2026-02-09 02:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00142,CGO00142,Sim,2026-02-09 11:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00143,CGO00143,Sim,2026-02-10 04:35,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00144,CGO00144,Sim,2026-02-10 19:20,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00145,CGO00145,Sim,2026-02-10 04:43,Sim,Ibama,2026-02-12 23:34,Liberada,Aguardando anuência,Órgão anuente
+REL00146,CGO00146,Sim,2026-02-10 03:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00147,CGO00147,Não,2026-02-09 00:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00148,CGO00148,Sim,2026-02-10 07:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00149,CGO00149,Sim,2026-01-23 10:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00150,CGO00150,Sim,2026-01-23 06:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00151,CGO00151,Sim,2026-01-23 13:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00152,CGO00152,Sim,2026-01-23 04:51,Sim,Ministério da Agricultura,2026-01-25 12:03,Liberada,,Sem atraso
+REL00153,CGO00153,Sim,2026-01-22 20:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00154,CGO00154,Sim,2026-01-22 08:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00155,CGO00155,Sim,2026-01-23 17:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00156,CGO00156,Não,2026-02-06 18:07,Sim,Ministério da Agricultura,2026-02-07 05:26,Liberada,Aguardando anuência,Órgão anuente
+REL00157,CGO00157,Sim,2026-02-07 23:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00158,CGO00158,Sim,2026-02-06 21:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00159,CGO00159,Sim,2026-02-07 13:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00160,CGO00160,Sim,2026-02-07 01:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00161,CGO00161,Sim,2026-02-08 02:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00162,CGO00162,Não,2026-03-20 04:49,Sim,Exército,2026-03-20 17:23,Liberada,Aguardando anuência,Órgão anuente
+REL00163,CGO00163,Sim,2026-03-20 16:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00164,CGO00164,Sim,2026-03-20 09:35,Sim,Ministério da Agricultura,2026-03-20 18:33,Liberada,Aguardando anuência,Órgão anuente
+REL00165,CGO00165,Sim,2026-03-20 07:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00166,CGO00166,Sim,2026-03-23 12:14,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00167,CGO00167,Sim,2026-03-21 04:48,Sim,Inmetro,2026-03-21 11:42,Liberada,Aguardando anuência,Órgão anuente
+REL00168,CGO00168,Sim,2026-03-20 20:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00169,CGO00169,Sim,2026-03-20 03:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00170,CGO00170,Sim,2026-03-21 17:26,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00171,CGO00171,Sim,2026-04-02 16:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00172,CGO00172,Sim,2026-04-01 20:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00173,CGO00173,Sim,2026-04-03 03:18,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00174,CGO00174,Sim,2026-04-02 13:57,Sim,Ministério da Agricultura,2026-04-04 21:07,Liberada,Aguardando anuência,Órgão anuente
+REL00175,CGO00175,Sim,2026-04-03 03:20,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00176,CGO00176,Sim,2026-04-02 17:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00177,CGO00177,Sim,2026-04-02 01:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL00178,CGO00178,Sim,2026-01-11 04:39,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00179,CGO00179,Sim,2026-01-09 03:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00180,CGO00180,Sim,2026-01-10 13:30,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00181,CGO00181,Sim,2026-01-09 22:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00182,CGO00182,Não,2026-01-09 02:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00183,CGO00183,Sim,2026-01-10 05:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00184,CGO00184,Sim,2026-01-10 05:28,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00185,CGO00185,Sim,2026-01-10 01:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00186,CGO00186,Sim,2026-02-08 12:21,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00187,CGO00187,Sim,2026-02-08 08:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00188,CGO00188,Sim,2026-02-08 16:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00189,CGO00189,Sim,2026-02-10 21:08,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00190,CGO00190,Sim,2026-02-08 02:48,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00191,CGO00191,Sim,2026-02-07 05:46,Sim,Ibama,2026-02-07 22:20,Liberada,Aguardando anuência,Órgão anuente
+REL00192,CGO00192,Sim,2026-02-07 15:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00193,CGO00193,Sim,2026-02-06 14:35,Sim,Exército,2026-02-08 22:21,Liberada,Aguardando anuência,Órgão anuente
+REL00194,CGO00194,Sim,2026-02-07 05:46,Sim,Exército,2026-02-09 19:17,Liberada,Aguardando anuência,Órgão anuente
+REL00195,CGO00195,Sim,2026-02-06 03:24,Sim,Inmetro,2026-02-07 13:22,Liberada,,Sem atraso
+REL00196,CGO00196,Sim,2026-02-05 21:54,Sim,Exército,2026-02-06 00:31,Liberada,,Sem atraso
+REL00197,CGO00197,Não,2026-02-05 21:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00198,CGO00198,Sim,2026-02-07 06:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00199,CGO00199,Sim,2026-02-07 01:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00200,CGO00200,Não,2026-02-05 22:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00201,CGO00201,Sim,2026-02-07 06:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00202,CGO00202,Sim,2026-02-05 22:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00203,CGO00203,Sim,2026-02-07 05:22,Sim,Inmetro,2026-02-09 01:52,Liberada,Aguardando anuência,Órgão anuente
+REL00204,CGO00204,Não,2026-01-01 20:15,Sim,Ministério da Agricultura,2026-01-02 04:56,Liberada,Aguardando anuência,Órgão anuente
+REL00205,CGO00205,Sim,2026-01-03 04:38,Sim,Exército,2026-01-05 06:50,Liberada,Aguardando anuência,Órgão anuente
+REL00206,CGO00206,Sim,2026-01-02 23:53,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00207,CGO00207,Sim,2026-01-02 13:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00208,CGO00208,Sim,2026-01-02 08:50,Sim,Ministério da Agricultura,2026-01-03 18:38,Liberada,Aguardando anuência,Órgão anuente
+REL00209,CGO00209,Não,2026-01-01 20:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00210,CGO00210,Sim,2026-01-02 18:46,Não,Não aplicável,,Liberada,,Sem atraso
+REL00211,CGO00211,Sim,2026-01-02 10:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL00212,CGO00212,Sim,2026-01-04 07:00,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00213,CGO00213,Sim,2026-01-04 19:12,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00214,CGO00214,Sim,2026-01-03 05:54,Sim,Ibama,2026-01-05 09:58,Liberada,Aguardando anuência,Órgão anuente
+REL00215,CGO00215,Sim,2026-01-02 22:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00216,CGO00216,Sim,2026-01-02 19:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00217,CGO00217,Não,2026-03-09 07:49,Sim,Anvisa,2026-03-11 05:21,Liberada,Aguardando anuência,Órgão anuente
+REL00218,CGO00218,Sim,2026-03-10 09:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00219,CGO00219,Sim,2026-03-10 01:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00220,CGO00220,Sim,2026-03-10 00:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00221,CGO00221,Sim,2026-03-09 21:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00222,CGO00222,Não,2026-03-09 10:01,Sim,Anvisa,2026-03-12 01:34,Liberada,,Sem atraso
+REL00223,CGO00223,Sim,2026-03-09 18:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00224,CGO00224,Sim,2026-03-09 08:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00225,CGO00225,Sim,2026-03-10 18:11,Sim,Ibama,2026-03-11 04:58,Liberada,Aguardando anuência,Órgão anuente
+REL00226,CGO00226,Sim,2026-03-10 14:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00227,CGO00227,Sim,2026-03-10 06:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00228,CGO00228,Sim,2026-02-10 00:31,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00229,CGO00229,Sim,2026-02-07 19:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00230,CGO00230,Sim,2026-02-06 18:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00231,CGO00231,Sim,2026-02-07 12:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00232,CGO00232,Sim,2026-02-07 13:35,Sim,Inmetro,2026-02-10 13:05,Liberada,Aguardando anuência,Órgão anuente
+REL00233,CGO00233,Sim,2026-03-14 08:59,Não,Não aplicável,,Liberada,,Sem atraso
+REL00234,CGO00234,Sim,2026-03-13 07:59,Não,Não aplicável,,Liberada,,Sem atraso
+REL00235,CGO00235,Sim,2026-03-13 09:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00236,CGO00236,Não,2026-03-12 21:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00237,CGO00237,Sim,2026-03-13 00:25,Sim,Ministério da Agricultura,2026-03-15 03:20,Liberada,Aguardando anuência,Órgão anuente
+REL00238,CGO00238,Sim,2026-03-13 10:01,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00239,CGO00239,Sim,2026-03-14 00:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00240,CGO00240,Sim,2026-03-14 05:11,Sim,Anvisa,2026-03-16 12:13,Liberada,,Sem atraso
+REL00241,CGO00241,Sim,2026-03-13 00:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00242,CGO00242,Sim,2026-03-13 09:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00243,CGO00243,Sim,2026-03-13 10:03,Sim,Ministério da Agricultura,2026-03-13 23:38,Liberada,Aguardando anuência,Órgão anuente
+REL00244,CGO00244,Sim,2026-03-14 00:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00245,CGO00245,Sim,2026-03-13 02:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00246,CGO00246,Sim,2026-03-13 14:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00247,CGO00247,Sim,2026-03-30 22:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00248,CGO00248,Sim,2026-03-31 04:35,Sim,Inmetro,2026-03-31 14:00,Liberada,,Sem atraso
+REL00249,CGO00249,Sim,2026-03-31 04:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00250,CGO00250,Sim,2026-03-31 08:25,Sim,Ibama,2026-04-01 06:56,Liberada,,Sem atraso
+REL00251,CGO00251,Não,2026-03-30 09:55,Sim,Anvisa,2026-04-01 04:52,Liberada,,Sem atraso
+REL00252,CGO00252,Sim,2026-03-30 18:05,Sim,Inmetro,2026-04-01 18:43,Liberada,Aguardando anuência,Órgão anuente
+REL00253,CGO00253,Sim,2026-03-31 09:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00254,CGO00254,Sim,2026-04-03 01:05,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00255,CGO00255,Sim,2026-03-30 09:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00256,CGO00256,Não,2026-03-30 10:28,Não,Não aplicável,,Liberada,,Sem atraso
+REL00257,CGO00257,Sim,2026-03-13 06:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00258,CGO00258,Sim,2026-03-15 23:19,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00259,CGO00259,Sim,2026-03-13 13:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00260,CGO00260,Sim,2026-03-14 05:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00261,CGO00261,Sim,2026-03-14 01:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00262,CGO00262,Sim,2026-03-13 14:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00263,CGO00263,Sim,2026-03-13 08:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00264,CGO00264,Não,2026-01-11 21:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00265,CGO00265,Não,2026-01-11 19:59,Sim,Exército,2026-01-14 13:23,Liberada,,Sem atraso
+REL00266,CGO00266,Sim,2026-01-12 16:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00267,CGO00267,Sim,2026-01-12 12:34,Sim,Exército,2026-01-13 06:27,Liberada,Aguardando anuência,Órgão anuente
+REL00268,CGO00268,Sim,2026-01-13 07:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00269,CGO00269,Sim,2026-01-11 23:58,Sim,Inmetro,2026-01-13 10:12,Liberada,Aguardando anuência,Órgão anuente
+REL00270,CGO00270,Sim,2026-01-12 19:14,Não,Não aplicável,,Liberada,,Sem atraso
+REL00271,CGO00271,Sim,2026-01-12 13:27,Sim,Anvisa,2026-01-13 12:55,Liberada,Aguardando anuência,Órgão anuente
+REL00272,CGO00272,Sim,2026-03-24 12:53,Sim,Ibama,2026-03-25 13:35,Liberada,Aguardando anuência,Órgão anuente
+REL00273,CGO00273,Sim,2026-03-24 19:16,Sim,Inmetro,2026-03-26 01:27,Liberada,Aguardando anuência,Órgão anuente
+REL00274,CGO00274,Sim,2026-03-24 10:59,Não,Não aplicável,,Liberada,,Sem atraso
+REL00275,CGO00275,Não,2026-03-23 19:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00276,CGO00276,Sim,2026-03-25 05:07,Sim,Exército,2026-03-26 11:10,Liberada,Aguardando anuência,Órgão anuente
+REL00277,CGO00277,Sim,2026-03-25 00:32,Sim,Exército,2026-03-26 21:03,Liberada,Aguardando anuência,Órgão anuente
+REL00278,CGO00278,Sim,2026-03-24 13:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00279,CGO00279,Sim,2026-03-24 04:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00280,CGO00280,Sim,2026-02-12 07:12,Sim,Ministério da Agricultura,2026-02-14 13:09,Liberada,,Sem atraso
+REL00281,CGO00281,Sim,2026-02-11 11:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00282,CGO00282,Sim,2026-02-12 04:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00283,CGO00283,Sim,2026-02-11 13:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00284,CGO00284,Sim,2026-02-11 17:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00285,CGO00285,Sim,2026-02-12 11:41,Sim,Anvisa,2026-02-13 01:57,Liberada,Aguardando anuência,Órgão anuente
+REL00286,CGO00286,Sim,2026-02-11 23:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00287,CGO00287,Sim,2026-02-13 22:03,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00288,CGO00288,Sim,2026-02-12 19:52,Sim,Ministério da Agricultura,2026-02-15 08:21,Liberada,,Sem atraso
+REL00289,CGO00289,Sim,2026-02-12 18:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00290,CGO00290,Sim,2026-02-11 20:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00291,CGO00291,Sim,2026-02-12 17:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00292,CGO00292,Sim,2026-02-12 19:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00293,CGO00293,Sim,2026-02-11 21:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00294,CGO00294,Sim,2026-02-11 10:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00295,CGO00295,Sim,2026-02-11 12:34,Sim,Inmetro,2026-02-12 07:28,Liberada,Aguardando anuência,Órgão anuente
+REL00296,CGO00296,Sim,2026-02-12 05:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00297,CGO00297,Sim,2026-02-11 01:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00298,CGO00298,Sim,2026-02-11 23:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00299,CGO00299,Sim,2026-03-18 17:32,Sim,Ibama,2026-03-19 16:25,Liberada,,Sem atraso
+REL00300,CGO00300,Sim,2026-03-18 10:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00301,CGO00301,Sim,2026-03-18 01:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00302,CGO00302,Sim,2026-03-18 12:24,Sim,Anvisa,2026-03-20 04:37,Liberada,Aguardando anuência,Órgão anuente
+REL00303,CGO00303,Não,2026-03-18 02:42,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00304,CGO00304,Não,2026-03-20 05:53,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00305,CGO00305,Não,2026-03-17 18:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00306,CGO00306,Sim,2026-03-18 00:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00307,CGO00307,Não,2026-03-17 18:08,Sim,Anvisa,2026-03-18 06:54,Liberada,Aguardando anuência,Órgão anuente
+REL00308,CGO00308,Não,2026-03-17 18:55,Sim,Exército,2026-03-20 18:10,Liberada,Aguardando anuência,Órgão anuente
+REL00309,CGO00309,Sim,2026-03-18 12:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00310,CGO00310,Sim,2026-03-18 21:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00311,CGO00311,Sim,2026-03-02 21:48,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00312,CGO00312,Não,2026-03-01 21:33,Sim,Ministério da Agricultura,2026-03-04 04:14,Liberada,Aguardando anuência,Órgão anuente
+REL00313,CGO00313,Sim,2026-03-03 03:46,Não,Não aplicável,,Liberada,,Sem atraso
+REL00314,CGO00314,Sim,2026-03-01 23:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL00315,CGO00315,Sim,2026-03-02 18:00,Sim,Ministério da Agricultura,2026-03-05 08:41,Liberada,Aguardando anuência,Órgão anuente
+REL00316,CGO00316,Sim,2026-03-03 13:08,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00317,CGO00317,Sim,2026-03-02 01:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00318,CGO00318,Sim,2026-03-03 05:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00319,CGO00319,Sim,2026-03-02 12:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00320,CGO00320,Sim,2026-03-02 15:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00321,CGO00321,Sim,2026-02-22 23:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00322,CGO00322,Sim,2026-02-24 04:31,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00323,CGO00323,Sim,2026-02-23 18:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00324,CGO00324,Não,2026-02-22 10:36,Sim,Ibama,2026-02-22 23:19,Liberada,Aguardando anuência,Órgão anuente
+REL00325,CGO00325,Sim,2026-02-22 22:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00326,CGO00326,Sim,2026-02-23 05:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00327,CGO00327,Sim,2026-02-22 18:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00328,CGO00328,Sim,2026-02-23 19:47,Sim,Exército,2026-02-24 09:23,Liberada,Aguardando anuência,Órgão anuente
+REL00329,CGO00329,Sim,2026-02-12 00:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00330,CGO00330,Sim,2026-02-12 08:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00331,CGO00331,Sim,2026-02-13 17:41,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00332,CGO00332,Sim,2026-02-12 21:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00333,CGO00333,Sim,2026-02-12 02:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00334,CGO00334,Sim,2026-02-12 01:25,Sim,Ministério da Agricultura,2026-02-14 11:07,Liberada,,Sem atraso
+REL00335,CGO00335,Sim,2026-02-11 19:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL00336,CGO00336,Não,2026-02-11 13:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00337,CGO00337,Sim,2026-02-12 10:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00338,CGO00338,Sim,2026-02-12 03:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00339,CGO00339,Sim,2026-02-13 21:16,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00340,CGO00340,Sim,2026-02-11 16:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00341,CGO00341,Sim,2026-02-11 23:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00342,CGO00342,Sim,2026-02-12 03:46,Sim,Anvisa,2026-02-12 07:15,Liberada,Aguardando anuência,Órgão anuente
+REL00343,CGO00343,Sim,2026-03-13 22:57,Sim,Anvisa,2026-03-16 05:20,Liberada,,Sem atraso
+REL00344,CGO00344,Não,2026-03-12 16:07,Sim,Ministério da Agricultura,2026-03-14 20:02,Liberada,Aguardando anuência,Órgão anuente
+REL00345,CGO00345,Sim,2026-03-12 17:47,Sim,Inmetro,2026-03-15 05:36,Liberada,Aguardando anuência,Órgão anuente
+REL00346,CGO00346,Sim,2026-03-12 21:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00347,CGO00347,Sim,2026-03-14 00:24,Sim,Anvisa,2026-03-14 23:22,Liberada,,Sem atraso
+REL00348,CGO00348,Sim,2026-03-12 18:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00349,CGO00349,Sim,2026-03-13 07:18,Sim,Ibama,2026-03-14 14:42,Liberada,,Sem atraso
+REL00350,CGO00350,Sim,2026-03-13 00:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00351,CGO00351,Sim,2026-01-07 23:42,Sim,Ibama,2026-01-09 16:14,Liberada,Aguardando anuência,Órgão anuente
+REL00352,CGO00352,Sim,2026-01-08 02:14,Não,Não aplicável,,Liberada,,Sem atraso
+REL00353,CGO00353,Sim,2026-01-08 05:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00354,CGO00354,Sim,2026-01-08 07:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00355,CGO00355,Sim,2026-01-07 20:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00356,CGO00356,Sim,2026-01-08 10:49,Sim,Ministério da Agricultura,2026-01-10 04:33,Liberada,Aguardando anuência,Órgão anuente
+REL00357,CGO00357,Sim,2026-01-09 20:31,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00358,CGO00358,Sim,2026-01-08 22:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00359,CGO00359,Sim,2026-01-08 17:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00360,CGO00360,Sim,2026-01-07 21:56,Sim,Inmetro,2026-01-09 10:08,Liberada,Aguardando anuência,Órgão anuente
+REL00361,CGO00361,Sim,2026-02-16 13:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00362,CGO00362,Sim,2026-02-16 07:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00363,CGO00363,Sim,2026-02-15 21:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00364,CGO00364,Sim,2026-02-17 18:03,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00365,CGO00365,Sim,2026-02-16 01:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00366,CGO00366,Sim,2026-02-15 05:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL00367,CGO00367,Sim,2026-02-15 18:46,Não,Não aplicável,,Liberada,,Sem atraso
+REL00368,CGO00368,Não,2026-02-15 05:31,Sim,Anvisa,2026-02-17 08:55,Liberada,Aguardando anuência,Órgão anuente
+REL00369,CGO00369,Sim,2026-02-16 04:36,Sim,Inmetro,2026-02-16 08:09,Liberada,Aguardando anuência,Órgão anuente
+REL00370,CGO00370,Sim,2026-02-15 20:01,Sim,Ministério da Agricultura,2026-02-18 12:09,Liberada,Aguardando anuência,Órgão anuente
+REL00371,CGO00371,Sim,2026-02-15 21:07,Sim,Exército,2026-02-17 20:24,Liberada,Aguardando anuência,Órgão anuente
+REL00372,CGO00372,Sim,2026-02-15 06:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00373,CGO00373,Sim,2026-02-08 13:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00374,CGO00374,Sim,2026-02-08 17:24,Não,Não aplicável,,Liberada,,Sem atraso
+REL00375,CGO00375,Sim,2026-02-08 06:03,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00376,CGO00376,Sim,2026-02-08 08:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00377,CGO00377,Sim,2026-02-09 12:34,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00378,CGO00378,Sim,2026-02-10 23:27,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00379,CGO00379,Sim,2026-02-08 06:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00380,CGO00380,Sim,2026-02-08 05:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00381,CGO00381,Sim,2026-02-10 15:56,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00382,CGO00382,Sim,2026-02-08 13:03,Não,Não aplicável,,Liberada,,Sem atraso
+REL00383,CGO00383,Sim,2026-02-08 02:00,Sim,Ibama,2026-02-09 19:35,Liberada,,Sem atraso
+REL00384,CGO00384,Sim,2026-01-29 10:29,Sim,Ibama,2026-01-30 19:13,Liberada,Aguardando anuência,Órgão anuente
+REL00385,CGO00385,Sim,2026-01-28 13:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00386,CGO00386,Sim,2026-01-29 06:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00387,CGO00387,Sim,2026-01-28 09:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00388,CGO00388,Sim,2026-01-28 15:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00389,CGO00389,Sim,2026-01-29 08:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00390,CGO00390,Sim,2026-01-29 14:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00391,CGO00391,Sim,2026-01-29 08:58,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00392,CGO00392,Sim,2026-01-28 12:55,Sim,Anvisa,2026-01-30 02:50,Liberada,Aguardando anuência,Órgão anuente
+REL00393,CGO00393,Sim,2026-01-30 06:16,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00394,CGO00394,Sim,2026-01-28 17:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00395,CGO00395,Sim,2026-01-29 02:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00396,CGO00396,Sim,2026-01-28 08:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00397,CGO00397,Sim,2026-02-01 01:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00398,CGO00398,Sim,2026-01-31 13:00,Sim,Anvisa,2026-02-03 01:50,Liberada,Aguardando anuência,Órgão anuente
+REL00399,CGO00399,Sim,2026-02-01 02:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00400,CGO00400,Sim,2026-01-31 16:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00401,CGO00401,Sim,2026-02-03 09:01,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00402,CGO00402,Sim,2026-01-31 01:58,Sim,Ibama,2026-02-01 21:44,Liberada,Aguardando anuência,Órgão anuente
+REL00403,CGO00403,Sim,2026-02-01 02:16,Sim,Exército,2026-02-02 20:09,Liberada,Aguardando anuência,Órgão anuente
+REL00404,CGO00404,Sim,2026-02-01 20:35,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00405,CGO00405,Não,2026-01-30 19:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00406,CGO00406,Sim,2026-01-31 22:58,Sim,Exército,2026-02-03 08:15,Liberada,,Sem atraso
+REL00407,CGO00407,Não,2026-01-30 18:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00408,CGO00408,Sim,2026-03-23 23:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00409,CGO00409,Sim,2026-03-24 17:26,Sim,Ministério da Agricultura,2026-03-25 11:35,Liberada,Aguardando anuência,Órgão anuente
+REL00410,CGO00410,Sim,2026-03-23 22:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00411,CGO00411,Sim,2026-03-24 15:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00412,CGO00412,Não,2026-03-23 09:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00413,CGO00413,Sim,2026-03-23 21:45,Sim,Inmetro,2026-03-26 19:24,Liberada,,Sem atraso
+REL00414,CGO00414,Sim,2026-03-24 05:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00415,CGO00415,Sim,2026-03-24 09:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00416,CGO00416,Sim,2026-03-08 00:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00417,CGO00417,Sim,2026-03-08 22:51,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00418,CGO00418,Sim,2026-03-07 13:28,Não,Não aplicável,,Liberada,,Sem atraso
+REL00419,CGO00419,Não,2026-03-07 04:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00420,CGO00420,Não,2026-03-07 04:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00421,CGO00421,Sim,2026-03-07 07:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00422,CGO00422,Não,2026-03-07 22:02,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00423,CGO00423,Sim,2026-03-08 03:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00424,CGO00424,Sim,2026-03-10 14:23,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00425,CGO00425,Sim,2026-03-13 12:24,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00426,CGO00426,Não,2026-03-11 15:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL00427,CGO00427,Sim,2026-03-12 23:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00428,CGO00428,Sim,2026-03-12 03:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00429,CGO00429,Sim,2026-03-12 05:03,Sim,Exército,2026-03-12 14:05,Liberada,Aguardando anuência,Órgão anuente
+REL00430,CGO00430,Sim,2026-03-12 13:14,Não,Não aplicável,,Liberada,,Sem atraso
+REL00431,CGO00431,Sim,2026-03-14 16:42,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00432,CGO00432,Sim,2026-03-13 09:53,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00433,CGO00433,Não,2026-03-11 14:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00434,CGO00434,Sim,2026-03-12 19:55,Sim,Ibama,2026-03-15 02:00,Liberada,Aguardando anuência,Órgão anuente
+REL00435,CGO00435,Sim,2026-03-12 06:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00436,CGO00436,Não,2026-01-20 04:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL00437,CGO00437,Sim,2026-01-20 18:14,Sim,Exército,2026-01-21 05:14,Liberada,Aguardando anuência,Órgão anuente
+REL00438,CGO00438,Sim,2026-01-20 14:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00439,CGO00439,Sim,2026-01-21 09:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00440,CGO00440,Não,2026-01-20 05:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00441,CGO00441,Sim,2026-02-07 12:17,Sim,Exército,2026-02-09 05:22,Liberada,Aguardando anuência,Órgão anuente
+REL00442,CGO00442,Sim,2026-02-07 12:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00443,CGO00443,Sim,2026-02-07 07:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00444,CGO00444,Sim,2026-02-08 21:57,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00445,CGO00445,Sim,2026-02-06 11:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00446,CGO00446,Sim,2026-02-07 12:26,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00447,CGO00447,Sim,2026-03-22 04:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00448,CGO00448,Sim,2026-03-23 13:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00449,CGO00449,Sim,2026-03-22 08:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00450,CGO00450,Sim,2026-03-23 00:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00451,CGO00451,Sim,2026-03-23 00:14,Sim,Ministério da Agricultura,2026-03-24 11:01,Liberada,Aguardando anuência,Órgão anuente
+REL00452,CGO00452,Não,2026-03-25 02:08,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00453,CGO00453,Sim,2026-03-23 00:02,Sim,Anvisa,2026-03-24 21:05,Liberada,Aguardando anuência,Órgão anuente
+REL00454,CGO00454,Não,2026-03-24 06:49,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00455,CGO00455,Sim,2026-03-22 22:26,Sim,Ibama,2026-03-24 15:41,Liberada,Aguardando anuência,Órgão anuente
+REL00456,CGO00456,Sim,2026-03-25 13:09,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00457,CGO00457,Sim,2026-03-23 10:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00458,CGO00458,Sim,2026-02-19 13:05,Sim,Inmetro,2026-02-22 10:11,Liberada,Aguardando anuência,Órgão anuente
+REL00459,CGO00459,Sim,2026-02-18 14:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00460,CGO00460,Sim,2026-02-19 13:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00461,CGO00461,Sim,2026-02-19 01:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00462,CGO00462,Não,2026-02-18 23:40,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00463,CGO00463,Sim,2026-02-18 11:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00464,CGO00464,Não,2026-02-18 11:05,Sim,Ministério da Agricultura,2026-02-19 16:49,Liberada,Aguardando anuência,Órgão anuente
+REL00465,CGO00465,Sim,2026-02-19 10:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00466,CGO00466,Sim,2026-02-18 12:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00467,CGO00467,Sim,2026-02-19 19:31,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00468,CGO00468,Sim,2026-02-19 14:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00469,CGO00469,Não,2026-02-18 11:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00470,CGO00470,Sim,2026-02-18 23:52,Sim,Inmetro,2026-02-21 10:53,Liberada,Aguardando anuência,Órgão anuente
+REL00471,CGO00471,Sim,2026-03-08 05:17,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00472,CGO00472,Sim,2026-03-06 23:14,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00473,CGO00473,Sim,2026-03-07 00:51,Sim,Ibama,2026-03-07 22:41,Liberada,,Sem atraso
+REL00474,CGO00474,Não,2026-03-06 06:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00475,CGO00475,Sim,2026-03-06 17:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00476,CGO00476,Sim,2026-03-07 11:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00477,CGO00477,Sim,2026-03-06 11:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00478,CGO00478,Sim,2026-03-06 19:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00479,CGO00479,Sim,2026-03-07 06:06,Sim,Ministério da Agricultura,2026-03-09 04:32,Liberada,Aguardando anuência,Órgão anuente
+REL00480,CGO00480,Sim,2026-03-07 17:12,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00481,CGO00481,Sim,2026-03-10 00:10,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00482,CGO00482,Sim,2026-03-07 06:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00483,CGO00483,Sim,2026-03-07 08:52,Sim,Anvisa,2026-03-10 04:08,Liberada,Aguardando anuência,Órgão anuente
+REL00484,CGO00484,Não,2026-01-23 13:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00485,CGO00485,Sim,2026-01-24 13:31,Sim,Ibama,2026-01-26 02:09,Liberada,Aguardando anuência,Órgão anuente
+REL00486,CGO00486,Não,2026-01-23 12:00,Sim,Inmetro,2026-01-25 20:02,Liberada,,Sem atraso
+REL00487,CGO00487,Sim,2026-01-24 11:31,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00488,CGO00488,Sim,2026-01-23 19:11,Sim,Ministério da Agricultura,2026-01-26 06:23,Liberada,Aguardando anuência,Órgão anuente
+REL00489,CGO00489,Sim,2026-01-24 08:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00490,CGO00490,Não,2026-01-23 12:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00491,CGO00491,Sim,2026-01-24 11:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00492,CGO00492,Sim,2026-01-23 20:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00493,CGO00493,Sim,2026-01-23 21:20,Sim,Anvisa,2026-01-26 20:44,Liberada,Aguardando anuência,Órgão anuente
+REL00494,CGO00494,Sim,2026-01-23 22:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00495,CGO00495,Sim,2026-01-26 10:35,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00496,CGO00496,Sim,2026-01-12 19:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00497,CGO00497,Sim,2026-01-12 09:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00498,CGO00498,Sim,2026-01-13 18:00,Sim,Ibama,2026-01-14 10:56,Liberada,Aguardando anuência,Órgão anuente
+REL00499,CGO00499,Sim,2026-01-13 00:47,Sim,Ministério da Agricultura,2026-01-14 11:30,Liberada,Aguardando anuência,Órgão anuente
+REL00500,CGO00500,Sim,2026-01-13 16:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00501,CGO00501,Não,2026-01-12 09:10,Sim,Ministério da Agricultura,2026-01-13 12:28,Liberada,Aguardando anuência,Órgão anuente
+REL00502,CGO00502,Sim,2026-01-12 12:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00503,CGO00503,Sim,2026-01-14 10:18,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00504,CGO00504,Sim,2026-01-13 01:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00505,CGO00505,Não,2026-01-12 08:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00506,CGO00506,Sim,2026-01-13 01:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00507,CGO00507,Não,2026-01-12 08:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00508,CGO00508,Sim,2026-01-16 02:50,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00509,CGO00509,Sim,2026-01-13 02:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00510,CGO00510,Sim,2026-02-18 07:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00511,CGO00511,Sim,2026-02-18 13:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00512,CGO00512,Sim,2026-02-20 22:22,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00513,CGO00513,Sim,2026-02-18 12:53,Sim,Exército,2026-02-21 08:18,Liberada,Aguardando anuência,Órgão anuente
+REL00514,CGO00514,Sim,2026-02-19 01:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00515,CGO00515,Sim,2026-03-11 19:30,Sim,Ministério da Agricultura,2026-03-12 11:01,Liberada,Aguardando anuência,Órgão anuente
+REL00516,CGO00516,Não,2026-03-11 15:24,Sim,Ministério da Agricultura,2026-03-12 21:14,Liberada,Aguardando anuência,Órgão anuente
+REL00517,CGO00517,Sim,2026-03-12 09:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00518,CGO00518,Sim,2026-03-13 00:44,Sim,Exército,2026-03-13 23:02,Liberada,Aguardando anuência,Órgão anuente
+REL00519,CGO00519,Não,2026-03-11 15:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00520,CGO00520,Sim,2026-03-08 14:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00521,CGO00521,Sim,2026-03-08 20:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00522,CGO00522,Sim,2026-03-10 19:25,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00523,CGO00523,Sim,2026-03-07 22:07,Sim,Exército,2026-03-10 13:43,Liberada,Aguardando anuência,Órgão anuente
+REL00524,CGO00524,Sim,2026-03-08 21:41,Sim,Ibama,2026-03-10 23:35,Liberada,Aguardando anuência,Órgão anuente
+REL00525,CGO00525,Não,2026-03-07 20:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00526,CGO00526,Sim,2026-03-08 12:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00527,CGO00527,Sim,2026-03-09 00:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00528,CGO00528,Sim,2026-03-08 08:24,Sim,Inmetro,2026-03-09 09:09,Liberada,Aguardando anuência,Órgão anuente
+REL00529,CGO00529,Sim,2026-03-08 17:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00530,CGO00530,Sim,2026-03-08 10:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00531,CGO00531,Sim,2026-03-10 01:27,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00532,CGO00532,Não,2026-03-09 13:14,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00533,CGO00533,Sim,2026-03-07 21:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00534,CGO00534,Sim,2026-01-02 16:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00535,CGO00535,Sim,2026-01-03 06:38,Sim,Exército,2026-01-04 18:34,Liberada,,Sem atraso
+REL00536,CGO00536,Sim,2026-01-04 00:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00537,CGO00537,Sim,2026-01-03 01:07,Sim,Ibama,2026-01-03 06:04,Liberada,Aguardando anuência,Órgão anuente
+REL00538,CGO00538,Sim,2026-01-04 00:04,Sim,Exército,2026-01-04 03:03,Liberada,Aguardando anuência,Órgão anuente
+REL00539,CGO00539,Sim,2026-01-03 21:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00540,CGO00540,Sim,2026-01-02 14:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00541,CGO00541,Não,2026-01-02 13:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00542,CGO00542,Sim,2026-01-03 11:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00543,CGO00543,Sim,2026-03-04 11:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00544,CGO00544,Sim,2026-03-05 01:35,Sim,Ibama,2026-03-05 11:32,Liberada,Aguardando anuência,Órgão anuente
+REL00545,CGO00545,Sim,2026-03-06 02:29,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00546,CGO00546,Sim,2026-03-04 10:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00547,CGO00547,Sim,2026-03-04 00:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00548,CGO00548,Sim,2026-03-04 05:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00549,CGO00549,Sim,2026-03-03 23:29,Sim,Exército,2026-03-06 12:56,Liberada,Aguardando anuência,Órgão anuente
+REL00550,CGO00550,Sim,2026-03-04 15:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00551,CGO00551,Não,2026-03-03 15:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00552,CGO00552,Sim,2026-03-04 04:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL00553,CGO00553,Sim,2026-02-12 09:20,Sim,Inmetro,2026-02-13 03:49,Liberada,Aguardando anuência,Órgão anuente
+REL00554,CGO00554,Sim,2026-02-15 02:32,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00555,CGO00555,Sim,2026-02-11 11:56,Sim,Inmetro,2026-02-12 09:01,Liberada,,Sem atraso
+REL00556,CGO00556,Sim,2026-02-11 10:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL00557,CGO00557,Sim,2026-02-11 16:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00558,CGO00558,Sim,2026-02-12 07:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00559,CGO00559,Sim,2026-02-11 03:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00560,CGO00560,Sim,2026-02-11 18:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00561,CGO00561,Sim,2026-02-11 18:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00562,CGO00562,Sim,2026-02-11 01:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00563,CGO00563,Sim,2026-02-12 09:36,Sim,Anvisa,2026-02-14 18:38,Liberada,Aguardando anuência,Órgão anuente
+REL00564,CGO00564,Sim,2026-02-11 06:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00565,CGO00565,Sim,2026-02-13 20:15,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00566,CGO00566,Sim,2026-01-15 19:36,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00567,CGO00567,Sim,2026-01-14 03:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL00568,CGO00568,Sim,2026-01-14 09:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00569,CGO00569,Sim,2026-01-14 16:41,Sim,Inmetro,2026-01-15 23:38,Liberada,Aguardando anuência,Órgão anuente
+REL00570,CGO00570,Sim,2026-01-13 23:15,Não,Não aplicável,,Liberada,,Sem atraso
+REL00571,CGO00571,Sim,2026-01-14 06:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00572,CGO00572,Sim,2026-01-16 23:38,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00573,CGO00573,Sim,2026-01-14 16:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00574,CGO00574,Sim,2026-01-14 02:27,Sim,Ministério da Agricultura,2026-01-14 09:47,Liberada,Aguardando anuência,Órgão anuente
+REL00575,CGO00575,Não,2026-01-13 22:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00576,CGO00576,Sim,2026-01-17 17:28,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00577,CGO00577,Sim,2026-01-14 19:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00578,CGO00578,Sim,2026-01-23 04:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00579,CGO00579,Sim,2026-01-23 05:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00580,CGO00580,Não,2026-01-22 21:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00581,CGO00581,Sim,2026-01-24 05:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00582,CGO00582,Sim,2026-01-23 00:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00583,CGO00583,Não,2026-01-22 20:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00584,CGO00584,Não,2026-01-22 20:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00585,CGO00585,Sim,2026-01-23 21:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00586,CGO00586,Sim,2026-01-23 09:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00587,CGO00587,Sim,2026-01-23 05:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00588,CGO00588,Não,2026-01-22 21:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00589,CGO00589,Sim,2026-01-23 08:58,Sim,Exército,2026-01-24 06:48,Liberada,Aguardando anuência,Órgão anuente
+REL00590,CGO00590,Não,2026-01-22 20:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00591,CGO00591,Não,2026-01-22 20:03,Não,Não aplicável,,Liberada,,Sem atraso
+REL00592,CGO00592,Sim,2026-01-04 22:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00593,CGO00593,Sim,2026-01-05 02:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00594,CGO00594,Sim,2026-01-05 16:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00595,CGO00595,Sim,2026-01-05 07:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00596,CGO00596,Sim,2026-01-05 03:26,Sim,Ministério da Agricultura,2026-01-07 17:07,Liberada,Aguardando anuência,Órgão anuente
+REL00597,CGO00597,Sim,2026-01-07 03:50,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00598,CGO00598,Sim,2026-03-30 06:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00599,CGO00599,Sim,2026-03-30 20:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00600,CGO00600,Sim,2026-03-31 02:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00601,CGO00601,Não,2026-03-29 17:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00602,CGO00602,Sim,2026-03-29 16:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00603,CGO00603,Sim,2026-03-31 06:36,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00604,CGO00604,Não,2026-03-29 17:20,Sim,Ibama,2026-04-01 10:53,Liberada,Aguardando anuência,Órgão anuente
+REL00605,CGO00605,Sim,2026-03-30 05:49,Sim,Exército,2026-03-31 18:05,Liberada,Aguardando anuência,Órgão anuente
+REL00606,CGO00606,Sim,2026-03-30 23:40,Sim,Inmetro,2026-04-01 22:01,Liberada,Aguardando anuência,Órgão anuente
+REL00607,CGO00607,Sim,2026-02-15 12:09,Sim,Ibama,2026-02-16 11:03,Liberada,Aguardando anuência,Órgão anuente
+REL00608,CGO00608,Não,2026-02-14 07:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00609,CGO00609,Sim,2026-02-14 15:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00610,CGO00610,Sim,2026-02-14 12:40,Sim,Inmetro,2026-02-16 04:00,Liberada,Aguardando anuência,Órgão anuente
+REL00611,CGO00611,Sim,2026-02-14 17:24,Sim,Ibama,2026-02-16 22:35,Liberada,Aguardando anuência,Órgão anuente
+REL00612,CGO00612,Sim,2026-02-17 06:16,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00613,CGO00613,Sim,2026-02-14 09:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00614,CGO00614,Sim,2026-02-15 01:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00615,CGO00615,Sim,2026-02-17 05:54,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00616,CGO00616,Sim,2026-02-15 16:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00617,CGO00617,Sim,2026-02-15 11:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00618,CGO00618,Sim,2026-02-14 21:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00619,CGO00619,Sim,2026-01-19 02:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00620,CGO00620,Sim,2026-01-18 20:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00621,CGO00621,Sim,2026-01-19 09:14,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00622,CGO00622,Não,2026-01-18 13:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00623,CGO00623,Sim,2026-01-18 15:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00624,CGO00624,Sim,2026-01-18 14:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00625,CGO00625,Sim,2026-01-19 03:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00626,CGO00626,Sim,2026-01-19 20:54,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00627,CGO00627,Sim,2026-01-21 00:31,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00628,CGO00628,Sim,2026-03-17 17:46,Sim,Exército,2026-03-18 11:25,Liberada,Aguardando anuência,Órgão anuente
+REL00629,CGO00629,Sim,2026-03-18 17:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00630,CGO00630,Sim,2026-03-17 21:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00631,CGO00631,Sim,2026-03-18 11:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00632,CGO00632,Sim,2026-03-17 13:47,Sim,Inmetro,2026-03-18 03:57,Liberada,Aguardando anuência,Órgão anuente
+REL00633,CGO00633,Sim,2026-02-24 05:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00634,CGO00634,Sim,2026-02-26 17:48,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00635,CGO00635,Sim,2026-02-24 17:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00636,CGO00636,Sim,2026-02-24 09:32,Sim,Inmetro,2026-02-25 14:50,Liberada,Aguardando anuência,Órgão anuente
+REL00637,CGO00637,Sim,2026-02-23 17:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00638,CGO00638,Sim,2026-02-26 16:58,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00639,CGO00639,Sim,2026-02-23 14:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00640,CGO00640,Não,2026-02-23 08:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00641,CGO00641,Sim,2026-02-23 13:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00642,CGO00642,Não,2026-02-23 07:29,Sim,Anvisa,2026-02-24 18:43,Liberada,Aguardando anuência,Órgão anuente
+REL00643,CGO00643,Não,2026-02-23 08:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00644,CGO00644,Não,2026-02-23 07:27,Sim,Exército,2026-02-24 20:27,Liberada,Aguardando anuência,Órgão anuente
+REL00645,CGO00645,Sim,2026-03-02 10:10,Sim,Exército,2026-03-04 03:45,Liberada,Aguardando anuência,Órgão anuente
+REL00646,CGO00646,Não,2026-03-02 04:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00647,CGO00647,Não,2026-03-02 06:28,Sim,Inmetro,2026-03-04 06:22,Liberada,Aguardando anuência,Órgão anuente
+REL00648,CGO00648,Sim,2026-03-03 04:13,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00649,CGO00649,Sim,2026-03-03 14:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00650,CGO00650,Sim,2026-03-05 10:57,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00651,CGO00651,Sim,2026-03-02 11:28,Não,Não aplicável,,Liberada,,Sem atraso
+REL00652,CGO00652,Não,2026-03-02 05:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00653,CGO00653,Sim,2026-03-02 09:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00654,CGO00654,Não,2026-03-02 06:43,Sim,Inmetro,2026-03-03 03:04,Liberada,,Sem atraso
+REL00655,CGO00655,Sim,2026-03-03 06:11,Sim,Inmetro,2026-03-04 23:53,Liberada,Aguardando anuência,Órgão anuente
+REL00656,CGO00656,Sim,2026-03-03 00:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00657,CGO00657,Sim,2026-01-26 08:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00658,CGO00658,Sim,2026-01-26 11:57,Sim,Exército,2026-01-28 06:54,Liberada,,Sem atraso
+REL00659,CGO00659,Sim,2026-01-26 19:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00660,CGO00660,Sim,2026-01-28 00:50,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00661,CGO00661,Sim,2026-01-26 19:42,Sim,Inmetro,2026-01-27 12:51,Liberada,Aguardando anuência,Órgão anuente
+REL00662,CGO00662,Sim,2026-01-26 22:40,Sim,Ibama,2026-01-29 02:23,Liberada,Aguardando anuência,Órgão anuente
+REL00663,CGO00663,Sim,2026-01-27 10:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00664,CGO00664,Sim,2026-01-29 16:58,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00665,CGO00665,Sim,2026-01-26 07:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00666,CGO00666,Não,2026-01-26 02:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00667,CGO00667,Sim,2026-01-27 02:46,Sim,Anvisa,2026-01-28 20:20,Liberada,Aguardando anuência,Órgão anuente
+REL00668,CGO00668,Sim,2026-01-27 06:07,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00669,CGO00669,Sim,2026-01-26 07:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00670,CGO00670,Sim,2026-01-26 18:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00671,CGO00671,Sim,2026-03-15 16:49,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00672,CGO00672,Não,2026-03-13 16:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00673,CGO00673,Sim,2026-03-14 06:37,Sim,Inmetro,2026-03-16 20:49,Liberada,Aguardando anuência,Órgão anuente
+REL00674,CGO00674,Não,2026-03-13 17:50,Sim,Inmetro,2026-03-15 14:51,Liberada,Aguardando anuência,Órgão anuente
+REL00675,CGO00675,Não,2026-03-14 21:27,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00676,CGO00676,Sim,2026-03-14 04:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00677,CGO00677,Sim,2026-03-14 02:09,Sim,Exército,2026-03-15 04:15,Liberada,Aguardando anuência,Órgão anuente
+REL00678,CGO00678,Sim,2026-03-14 22:01,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00679,CGO00679,Sim,2026-02-26 09:11,Sim,Exército,2026-02-27 23:58,Liberada,,Sem atraso
+REL00680,CGO00680,Sim,2026-02-26 20:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00681,CGO00681,Não,2026-02-26 00:14,Não,Não aplicável,,Liberada,,Sem atraso
+REL00682,CGO00682,Sim,2026-02-26 17:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00683,CGO00683,Sim,2026-02-26 04:59,Não,Não aplicável,,Liberada,,Sem atraso
+REL00684,CGO00684,Sim,2026-02-27 06:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00685,CGO00685,Não,2026-02-26 08:16,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00686,CGO00686,Não,2026-02-25 23:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00687,CGO00687,Sim,2026-02-25 23:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00688,CGO00688,Sim,2026-03-21 22:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00689,CGO00689,Sim,2026-03-20 18:39,Sim,Ministério da Agricultura,2026-03-22 23:03,Liberada,Aguardando anuência,Órgão anuente
+REL00690,CGO00690,Sim,2026-03-20 18:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00691,CGO00691,Sim,2026-03-21 06:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00692,CGO00692,Sim,2026-03-20 13:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00693,CGO00693,Sim,2026-03-21 12:35,Sim,Anvisa,2026-03-24 08:06,Liberada,Aguardando anuência,Órgão anuente
+REL00694,CGO00694,Sim,2026-03-21 15:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00695,CGO00695,Sim,2026-03-21 15:38,Sim,Anvisa,2026-03-23 00:12,Liberada,Aguardando anuência,Órgão anuente
+REL00696,CGO00696,Não,2026-03-20 13:25,Sim,Inmetro,2026-03-21 08:14,Liberada,Aguardando anuência,Órgão anuente
+REL00697,CGO00697,Sim,2026-03-20 22:00,Sim,Exército,2026-03-23 12:40,Liberada,,Sem atraso
+REL00698,CGO00698,Sim,2026-03-21 15:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00699,CGO00699,Sim,2026-02-28 11:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00700,CGO00700,Sim,2026-02-28 06:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00701,CGO00701,Sim,2026-02-28 15:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00702,CGO00702,Sim,2026-02-27 12:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00703,CGO00703,Sim,2026-02-28 11:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00704,CGO00704,Sim,2026-02-28 15:13,Sim,Ibama,2026-03-03 00:06,Liberada,Aguardando anuência,Órgão anuente
+REL00705,CGO00705,Sim,2026-02-28 14:31,Sim,Exército,2026-02-28 16:33,Liberada,Aguardando anuência,Órgão anuente
+REL00706,CGO00706,Sim,2026-02-26 19:03,Sim,Ministério da Agricultura,2026-03-01 05:07,Liberada,Aguardando anuência,Órgão anuente
+REL00707,CGO00707,Sim,2026-02-26 09:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00708,CGO00708,Sim,2026-02-26 15:22,Sim,Inmetro,2026-03-01 10:13,Liberada,Aguardando anuência,Órgão anuente
+REL00709,CGO00709,Não,2026-02-26 01:03,Sim,Ibama,2026-02-27 23:30,Liberada,Aguardando anuência,Órgão anuente
+REL00710,CGO00710,Sim,2026-02-26 22:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00711,CGO00711,Sim,2026-02-26 07:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00712,CGO00712,Sim,2026-02-26 05:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00713,CGO00713,Sim,2026-02-28 22:51,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00714,CGO00714,Sim,2026-02-26 12:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL00715,CGO00715,Sim,2026-01-04 19:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00716,CGO00716,Sim,2026-01-05 02:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00717,CGO00717,Sim,2026-01-05 07:58,Sim,Ministério da Agricultura,2026-01-07 21:20,Liberada,Aguardando anuência,Órgão anuente
+REL00718,CGO00718,Sim,2026-01-04 00:06,Sim,Ibama,2026-01-06 12:04,Liberada,Aguardando anuência,Órgão anuente
+REL00719,CGO00719,Sim,2026-01-04 04:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00720,CGO00720,Sim,2026-03-01 04:53,Sim,Inmetro,2026-03-03 23:48,Liberada,Aguardando anuência,Órgão anuente
+REL00721,CGO00721,Sim,2026-03-01 02:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00722,CGO00722,Sim,2026-03-01 17:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00723,CGO00723,Sim,2026-02-28 23:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00724,CGO00724,Sim,2026-03-02 11:27,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00725,CGO00725,Sim,2026-03-01 10:33,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00726,CGO00726,Sim,2026-02-09 20:00,Sim,Ibama,2026-02-12 00:15,Liberada,Aguardando anuência,Órgão anuente
+REL00727,CGO00727,Sim,2026-02-10 08:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00728,CGO00728,Sim,2026-02-10 10:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00729,CGO00729,Sim,2026-02-10 04:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00730,CGO00730,Sim,2026-02-10 08:31,Sim,Inmetro,2026-02-12 21:10,Liberada,Aguardando anuência,Órgão anuente
+REL00731,CGO00731,Sim,2026-02-10 04:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00732,CGO00732,Sim,2026-02-11 23:57,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00733,CGO00733,Sim,2026-02-09 12:26,Sim,Exército,2026-02-09 20:29,Liberada,Aguardando anuência,Órgão anuente
+REL00734,CGO00734,Sim,2026-02-09 08:55,Sim,Exército,2026-02-09 20:09,Liberada,Aguardando anuência,Órgão anuente
+REL00735,CGO00735,Sim,2026-02-10 04:58,Sim,Inmetro,2026-02-10 21:16,Liberada,Aguardando anuência,Órgão anuente
+REL00736,CGO00736,Sim,2026-02-03 20:45,Sim,Ministério da Agricultura,2026-02-04 08:24,Liberada,,Sem atraso
+REL00737,CGO00737,Sim,2026-02-07 16:16,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00738,CGO00738,Sim,2026-02-04 23:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00739,CGO00739,Sim,2026-02-05 00:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00740,CGO00740,Sim,2026-02-04 16:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL00741,CGO00741,Não,2026-02-03 19:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00742,CGO00742,Sim,2026-02-14 23:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00743,CGO00743,Sim,2026-02-15 12:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00744,CGO00744,Sim,2026-02-14 23:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00745,CGO00745,Não,2026-02-14 09:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00746,CGO00746,Sim,2026-02-14 17:59,Não,Não aplicável,,Liberada,,Sem atraso
+REL00747,CGO00747,Não,2026-02-14 10:17,Sim,Inmetro,2026-02-15 06:29,Liberada,Aguardando anuência,Órgão anuente
+REL00748,CGO00748,Sim,2026-03-15 17:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00749,CGO00749,Sim,2026-03-15 13:21,Sim,Inmetro,2026-03-18 11:17,Liberada,Aguardando anuência,Órgão anuente
+REL00750,CGO00750,Não,2026-03-14 16:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00751,CGO00751,Não,2026-03-14 17:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00752,CGO00752,Sim,2026-03-15 20:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00753,CGO00753,Sim,2026-03-15 08:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00754,CGO00754,Sim,2026-03-16 00:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00755,CGO00755,Sim,2026-03-14 17:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00756,CGO00756,Não,2026-03-14 16:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL00757,CGO00757,Sim,2026-03-15 15:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL00758,CGO00758,Sim,2026-03-12 06:17,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00759,CGO00759,Sim,2026-03-10 23:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00760,CGO00760,Sim,2026-03-10 13:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00761,CGO00761,Não,2026-03-10 00:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00762,CGO00762,Não,2026-03-10 00:55,Sim,Anvisa,2026-03-10 23:22,Liberada,,Sem atraso
+REL00763,CGO00763,Sim,2026-03-10 06:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00764,CGO00764,Sim,2026-03-11 08:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00765,CGO00765,Sim,2026-03-12 07:40,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00766,CGO00766,Não,2026-03-09 22:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00767,CGO00767,Sim,2026-03-10 03:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00768,CGO00768,Não,2026-03-12 22:19,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00769,CGO00769,Sim,2026-03-11 03:00,Sim,Ibama,2026-03-12 18:08,Liberada,Aguardando anuência,Órgão anuente
+REL00770,CGO00770,Não,2026-01-29 06:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00771,CGO00771,Sim,2026-01-31 04:23,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00772,CGO00772,Não,2026-01-29 04:49,Não,Não aplicável,,Liberada,,Sem atraso
+REL00773,CGO00773,Sim,2026-01-29 21:22,Sim,Ministério da Agricultura,2026-01-31 07:25,Liberada,Aguardando anuência,Órgão anuente
+REL00774,CGO00774,Sim,2026-01-29 18:46,Não,Não aplicável,,Liberada,,Sem atraso
+REL00775,CGO00775,Sim,2026-01-30 10:14,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00776,CGO00776,Sim,2026-01-29 23:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00777,CGO00777,Sim,2026-01-29 22:43,Sim,Ibama,2026-01-31 03:57,Liberada,,Sem atraso
+REL00778,CGO00778,Sim,2026-01-30 09:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00779,CGO00779,Sim,2026-01-31 16:17,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00780,CGO00780,Sim,2026-01-30 03:11,Sim,Ibama,2026-01-30 09:52,Liberada,Aguardando anuência,Órgão anuente
+REL00781,CGO00781,Sim,2026-01-30 13:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL00782,CGO00782,Sim,2026-01-25 13:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00783,CGO00783,Sim,2026-01-25 09:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00784,CGO00784,Sim,2026-01-26 22:41,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00785,CGO00785,Sim,2026-01-25 14:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00786,CGO00786,Sim,2026-01-25 10:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00787,CGO00787,Sim,2026-01-31 13:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00788,CGO00788,Sim,2026-01-31 06:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00789,CGO00789,Sim,2026-01-31 00:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00790,CGO00790,Sim,2026-02-01 04:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00791,CGO00791,Sim,2026-01-31 10:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00792,CGO00792,Sim,2026-02-01 03:33,Sim,Anvisa,2026-02-01 09:51,Liberada,Aguardando anuência,Órgão anuente
+REL00793,CGO00793,Sim,2026-01-31 07:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00794,CGO00794,Não,2026-01-31 01:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00795,CGO00795,Sim,2026-02-01 08:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00796,CGO00796,Sim,2026-01-31 04:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00797,CGO00797,Sim,2026-02-02 20:46,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00798,CGO00798,Sim,2026-01-31 00:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL00799,CGO00799,Sim,2026-01-07 15:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00800,CGO00800,Sim,2026-01-08 05:04,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00801,CGO00801,Sim,2026-01-07 19:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00802,CGO00802,Sim,2026-01-07 06:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00803,CGO00803,Sim,2026-01-07 17:03,Sim,Ministério da Agricultura,2026-01-07 21:12,Liberada,Aguardando anuência,Órgão anuente
+REL00804,CGO00804,Sim,2026-04-01 18:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00805,CGO00805,Não,2026-03-31 13:25,Sim,Ibama,2026-04-02 02:56,Liberada,Aguardando anuência,Órgão anuente
+REL00806,CGO00806,Sim,2026-04-01 08:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00807,CGO00807,Sim,2026-04-01 03:24,Não,Não aplicável,,Liberada,,Sem atraso
+REL00808,CGO00808,Sim,2026-04-03 23:56,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00809,CGO00809,Sim,2026-04-01 02:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL00810,CGO00810,Não,2026-03-31 13:26,Sim,Ministério da Agricultura,2026-03-31 15:36,Liberada,,Sem atraso
+REL00811,CGO00811,Sim,2026-01-29 13:55,Sim,Inmetro,2026-01-29 21:57,Liberada,Aguardando anuência,Órgão anuente
+REL00812,CGO00812,Sim,2026-01-29 00:28,Sim,Ibama,2026-01-31 12:08,Liberada,Aguardando anuência,Órgão anuente
+REL00813,CGO00813,Sim,2026-01-30 01:16,Sim,Ministério da Agricultura,2026-01-31 01:41,Liberada,Aguardando anuência,Órgão anuente
+REL00814,CGO00814,Sim,2026-01-29 22:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00815,CGO00815,Sim,2026-01-29 09:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00816,CGO00816,Sim,2026-01-29 19:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00817,CGO00817,Sim,2026-01-29 02:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00818,CGO00818,Sim,2026-01-28 16:24,Sim,Ministério da Agricultura,2026-01-29 12:46,Liberada,Aguardando anuência,Órgão anuente
+REL00819,CGO00819,Sim,2026-01-28 20:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00820,CGO00820,Sim,2026-01-03 22:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00821,CGO00821,Sim,2026-01-04 06:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00822,CGO00822,Não,2026-01-03 09:48,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00823,CGO00823,Sim,2026-01-03 14:26,Sim,Exército,2026-01-06 09:31,Liberada,Aguardando anuência,Órgão anuente
+REL00824,CGO00824,Sim,2026-01-03 10:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00825,CGO00825,Sim,2026-01-03 00:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00826,CGO00826,Sim,2026-01-03 17:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00827,CGO00827,Sim,2026-04-01 12:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00828,CGO00828,Sim,2026-04-01 10:47,Sim,Inmetro,2026-04-03 19:32,Liberada,Aguardando anuência,Órgão anuente
+REL00829,CGO00829,Sim,2026-03-31 19:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00830,CGO00830,Sim,2026-03-31 17:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00831,CGO00831,Sim,2026-04-01 05:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL00832,CGO00832,Sim,2026-04-02 05:38,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00833,CGO00833,Sim,2026-04-03 11:41,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00834,CGO00834,Sim,2026-04-01 12:09,Sim,Anvisa,2026-04-04 08:01,Liberada,Aguardando anuência,Órgão anuente
+REL00835,CGO00835,Sim,2026-04-01 00:24,Não,Não aplicável,,Liberada,,Sem atraso
+REL00836,CGO00836,Sim,2026-04-01 08:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00837,CGO00837,Sim,2026-04-02 02:06,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00838,CGO00838,Sim,2026-03-31 22:18,Sim,Ministério da Agricultura,2026-04-02 07:36,Liberada,,Sem atraso
+REL00839,CGO00839,Não,2026-01-09 21:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00840,CGO00840,Não,2026-01-09 21:37,Sim,Anvisa,2026-01-11 20:40,Liberada,Aguardando anuência,Órgão anuente
+REL00841,CGO00841,Sim,2026-01-09 22:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00842,CGO00842,Sim,2026-01-10 12:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00843,CGO00843,Sim,2026-01-09 22:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00844,CGO00844,Sim,2026-01-11 05:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00845,CGO00845,Sim,2026-01-10 14:32,Sim,Ministério da Agricultura,2026-01-13 00:00,Liberada,Aguardando anuência,Órgão anuente
+REL00846,CGO00846,Sim,2026-01-10 01:19,Não,Não aplicável,,Liberada,,Sem atraso
+REL00847,CGO00847,Não,2026-01-09 23:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00848,CGO00848,Sim,2026-01-11 01:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL00849,CGO00849,Sim,2026-01-10 00:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00850,CGO00850,Sim,2026-01-11 06:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00851,CGO00851,Sim,2026-01-11 04:03,Não,Não aplicável,,Liberada,,Sem atraso
+REL00852,CGO00852,Sim,2026-03-07 01:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL00853,CGO00853,Sim,2026-03-07 10:17,Sim,Inmetro,2026-03-09 01:00,Liberada,Aguardando anuência,Órgão anuente
+REL00854,CGO00854,Sim,2026-03-07 16:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00855,CGO00855,Sim,2026-03-07 02:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00856,CGO00856,Sim,2026-03-07 06:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00857,CGO00857,Sim,2026-03-08 04:30,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00858,CGO00858,Sim,2026-02-12 05:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00859,CGO00859,Sim,2026-02-13 07:38,Sim,Ministério da Agricultura,2026-02-14 19:56,Liberada,Aguardando anuência,Órgão anuente
+REL00860,CGO00860,Sim,2026-02-12 21:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00861,CGO00861,Sim,2026-02-12 19:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL00862,CGO00862,Sim,2026-02-12 11:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00863,CGO00863,Sim,2026-02-12 15:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00864,CGO00864,Sim,2026-01-31 08:30,Sim,Inmetro,2026-02-02 20:46,Liberada,Aguardando anuência,Órgão anuente
+REL00865,CGO00865,Não,2026-01-30 11:33,Sim,Ministério da Agricultura,2026-02-01 05:52,Liberada,Aguardando anuência,Órgão anuente
+REL00866,CGO00866,Não,2026-01-30 11:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00867,CGO00867,Sim,2026-01-30 12:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00868,CGO00868,Sim,2026-01-30 21:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00869,CGO00869,Não,2026-01-31 17:27,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00870,CGO00870,Sim,2026-01-31 13:15,Não,Não aplicável,,Liberada,,Sem atraso
+REL00871,CGO00871,Sim,2026-02-01 02:37,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00872,CGO00872,Não,2026-01-30 10:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00873,CGO00873,Sim,2026-01-31 12:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00874,CGO00874,Sim,2026-01-31 05:12,Sim,Ibama,2026-02-01 18:58,Liberada,,Sem atraso
+REL00875,CGO00875,Sim,2026-02-13 17:23,Não,Não aplicável,,Liberada,,Sem atraso
+REL00876,CGO00876,Sim,2026-02-14 10:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00877,CGO00877,Não,2026-02-13 01:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00878,CGO00878,Sim,2026-02-13 06:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00879,CGO00879,Sim,2026-02-14 11:52,Sim,Ministério da Agricultura,2026-02-15 04:56,Liberada,,Sem atraso
+REL00880,CGO00880,Sim,2026-02-13 14:35,Sim,Exército,2026-02-16 10:05,Liberada,Aguardando anuência,Órgão anuente
+REL00881,CGO00881,Sim,2026-01-27 08:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL00882,CGO00882,Sim,2026-01-27 03:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00883,CGO00883,Sim,2026-01-26 20:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00884,CGO00884,Sim,2026-01-28 02:03,Não,Não aplicável,,Liberada,,Sem atraso
+REL00885,CGO00885,Sim,2026-01-27 07:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00886,CGO00886,Sim,2026-02-06 22:39,Não,Não aplicável,,Liberada,,Sem atraso
+REL00887,CGO00887,Sim,2026-02-09 08:07,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00888,CGO00888,Não,2026-02-05 13:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00889,CGO00889,Sim,2026-02-05 14:11,Não,Não aplicável,,Liberada,,Sem atraso
+REL00890,CGO00890,Sim,2026-02-05 20:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00891,CGO00891,Sim,2026-02-07 22:30,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00892,CGO00892,Sim,2026-02-05 22:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL00893,CGO00893,Sim,2026-02-05 23:26,Sim,Ibama,2026-02-06 02:09,Liberada,,Sem atraso
+REL00894,CGO00894,Sim,2026-02-05 20:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00895,CGO00895,Sim,2026-02-07 04:40,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00896,CGO00896,Sim,2026-02-08 00:26,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00897,CGO00897,Sim,2026-01-19 21:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00898,CGO00898,Sim,2026-01-19 02:37,Sim,Anvisa,2026-01-19 21:40,Liberada,Aguardando anuência,Órgão anuente
+REL00899,CGO00899,Sim,2026-01-19 03:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00900,CGO00900,Sim,2026-01-19 03:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00901,CGO00901,Sim,2026-01-20 01:53,Sim,Exército,2026-01-22 03:50,Liberada,Aguardando anuência,Órgão anuente
+REL00902,CGO00902,Sim,2026-01-19 14:22,Não,Não aplicável,,Liberada,,Sem atraso
+REL00903,CGO00903,Sim,2026-01-19 22:40,Não,Não aplicável,,Liberada,,Sem atraso
+REL00904,CGO00904,Sim,2026-01-19 20:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00905,CGO00905,Sim,2026-02-18 23:06,Sim,Ministério da Agricultura,2026-02-21 02:00,Liberada,Aguardando anuência,Órgão anuente
+REL00906,CGO00906,Sim,2026-02-19 15:54,Sim,Ibama,2026-02-22 06:53,Liberada,Aguardando anuência,Órgão anuente
+REL00907,CGO00907,Sim,2026-02-19 12:20,Sim,Ministério da Agricultura,2026-02-21 03:22,Liberada,Aguardando anuência,Órgão anuente
+REL00908,CGO00908,Sim,2026-02-20 00:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL00909,CGO00909,Sim,2026-02-19 10:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00910,CGO00910,Sim,2026-02-19 04:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00911,CGO00911,Sim,2026-02-20 10:12,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00912,CGO00912,Sim,2026-02-19 23:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00913,CGO00913,Sim,2026-02-20 01:53,Sim,Exército,2026-02-21 16:36,Liberada,Aguardando anuência,Órgão anuente
+REL00914,CGO00914,Sim,2026-01-26 21:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00915,CGO00915,Sim,2026-01-26 04:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL00916,CGO00916,Não,2026-01-25 23:30,Sim,Inmetro,2026-01-28 08:02,Liberada,Aguardando anuência,Órgão anuente
+REL00917,CGO00917,Sim,2026-01-26 06:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL00918,CGO00918,Não,2026-01-27 08:37,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00919,CGO00919,Sim,2026-01-27 06:55,Sim,Inmetro,2026-01-28 00:04,Liberada,Aguardando anuência,Órgão anuente
+REL00920,CGO00920,Sim,2026-01-26 22:23,Sim,Inmetro,2026-01-29 16:49,Liberada,Aguardando anuência,Órgão anuente
+REL00921,CGO00921,Sim,2026-01-27 00:37,Sim,Ministério da Agricultura,2026-01-27 12:45,Liberada,,Sem atraso
+REL00922,CGO00922,Sim,2026-01-25 12:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00923,CGO00923,Sim,2026-01-25 22:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00924,CGO00924,Sim,2026-01-25 15:43,Não,Não aplicável,,Liberada,,Sem atraso
+REL00925,CGO00925,Sim,2026-01-26 18:22,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00926,CGO00926,Sim,2026-01-25 21:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00927,CGO00927,Sim,2026-01-25 15:43,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00928,CGO00928,Não,2026-01-24 23:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00929,CGO00929,Sim,2026-01-26 07:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00930,CGO00930,Sim,2026-01-26 08:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00931,CGO00931,Não,2026-01-27 21:22,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00932,CGO00932,Sim,2026-01-27 04:48,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00933,CGO00933,Sim,2026-03-30 04:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL00934,CGO00934,Sim,2026-03-29 00:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL00935,CGO00935,Sim,2026-03-30 05:48,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00936,CGO00936,Sim,2026-03-30 09:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL00937,CGO00937,Sim,2026-03-30 12:19,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL00938,CGO00938,Sim,2026-03-29 11:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL00939,CGO00939,Sim,2026-03-30 03:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL00940,CGO00940,Sim,2026-03-30 04:51,Sim,Inmetro,2026-04-02 04:47,Liberada,Aguardando anuência,Órgão anuente
+REL00941,CGO00941,Sim,2026-03-10 13:24,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00942,CGO00942,Sim,2026-03-08 11:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00943,CGO00943,Não,2026-03-07 04:17,Não,Não aplicável,,Liberada,,Sem atraso
+REL00944,CGO00944,Sim,2026-03-08 00:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00945,CGO00945,Sim,2026-03-08 13:19,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL00946,CGO00946,Não,2026-03-07 06:04,Não,Não aplicável,,Liberada,,Sem atraso
+REL00947,CGO00947,Não,2026-03-07 05:20,Sim,Exército,2026-03-09 08:02,Liberada,Aguardando anuência,Órgão anuente
+REL00948,CGO00948,Sim,2026-03-07 23:57,Sim,Anvisa,2026-03-10 06:23,Liberada,Aguardando anuência,Órgão anuente
+REL00949,CGO00949,Sim,2026-03-07 10:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00950,CGO00950,Sim,2026-03-07 11:49,Sim,Ministério da Agricultura,2026-03-09 09:20,Liberada,Aguardando anuência,Órgão anuente
+REL00951,CGO00951,Sim,2026-03-08 03:15,Não,Não aplicável,,Liberada,,Sem atraso
+REL00952,CGO00952,Sim,2026-03-08 02:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL00953,CGO00953,Sim,2026-03-11 03:01,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00954,CGO00954,Sim,2026-03-14 00:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL00955,CGO00955,Sim,2026-03-15 07:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL00956,CGO00956,Sim,2026-03-14 05:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00957,CGO00957,Sim,2026-03-14 21:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00958,CGO00958,Sim,2026-03-14 11:38,Sim,Ibama,2026-03-15 08:48,Liberada,Aguardando anuência,Órgão anuente
+REL00959,CGO00959,Sim,2026-03-14 15:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL00960,CGO00960,Sim,2026-03-14 07:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00961,CGO00961,Sim,2026-03-14 03:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00962,CGO00962,Sim,2026-03-14 08:15,Não,Não aplicável,,Liberada,,Sem atraso
+REL00963,CGO00963,Sim,2026-03-14 10:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00964,CGO00964,Sim,2026-02-02 14:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL00965,CGO00965,Sim,2026-02-02 13:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL00966,CGO00966,Sim,2026-02-04 23:07,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00967,CGO00967,Sim,2026-02-02 21:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00968,CGO00968,Sim,2026-02-02 03:01,Não,Não aplicável,,Liberada,,Sem atraso
+REL00969,CGO00969,Não,2026-02-01 19:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL00970,CGO00970,Sim,2026-01-07 14:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL00971,CGO00971,Sim,2026-01-07 21:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL00972,CGO00972,Sim,2026-01-07 07:47,Sim,Ibama,2026-01-09 14:55,Liberada,Aguardando anuência,Órgão anuente
+REL00973,CGO00973,Sim,2026-01-08 07:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00974,CGO00974,Não,2026-01-07 03:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL00975,CGO00975,Sim,2026-01-07 13:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00976,CGO00976,Sim,2026-03-14 08:21,Sim,Exército,2026-03-15 10:09,Liberada,Aguardando anuência,Órgão anuente
+REL00977,CGO00977,Não,2026-03-13 06:16,Não,Não aplicável,,Liberada,,Sem atraso
+REL00978,CGO00978,Sim,2026-03-14 04:15,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00979,CGO00979,Sim,2026-03-14 10:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00980,CGO00980,Sim,2026-03-13 05:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL00981,CGO00981,Não,2026-03-13 04:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL00982,CGO00982,Sim,2026-03-15 19:34,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL00983,CGO00983,Sim,2026-03-14 00:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL00984,CGO00984,Sim,2026-03-06 18:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00985,CGO00985,Sim,2026-03-06 23:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00986,CGO00986,Sim,2026-03-07 01:02,Sim,Ministério da Agricultura,2026-03-09 07:29,Liberada,Aguardando anuência,Órgão anuente
+REL00987,CGO00987,Sim,2026-03-06 02:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL00988,CGO00988,Sim,2026-03-07 06:28,Não,Não aplicável,,Liberada,,Sem atraso
+REL00989,CGO00989,Não,2026-03-05 20:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL00990,CGO00990,Sim,2026-03-06 22:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL00991,CGO00991,Sim,2026-03-07 02:33,Não,Não aplicável,,Liberada,,Sem atraso
+REL00992,CGO00992,Sim,2026-01-19 21:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL00993,CGO00993,Sim,2026-01-20 06:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL00994,CGO00994,Sim,2026-01-20 07:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL00995,CGO00995,Sim,2026-01-19 20:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL00996,CGO00996,Não,2026-01-19 19:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL00997,CGO00997,Sim,2026-02-05 18:52,Não,Não aplicável,,Liberada,,Sem atraso
+REL00998,CGO00998,Sim,2026-02-05 12:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL00999,CGO00999,Sim,2026-02-06 11:00,Sim,Ministério da Agricultura,2026-02-09 03:00,Liberada,Aguardando anuência,Órgão anuente
+REL01000,CGO01000,Não,2026-02-05 05:29,Sim,Inmetro,2026-02-06 10:39,Liberada,,Sem atraso
+REL01001,CGO01001,Sim,2026-02-06 13:41,Não,Não aplicável,,Liberada,,Sem atraso
+REL01002,CGO01002,Sim,2026-01-06 16:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL01003,CGO01003,Sim,2026-01-06 07:57,Não,Não aplicável,,Liberada,,Sem atraso
+REL01004,CGO01004,Sim,2026-01-07 12:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL01005,CGO01005,Sim,2026-01-07 09:38,Sim,Ibama,2026-01-07 13:12,Liberada,,Sem atraso
+REL01006,CGO01006,Sim,2026-01-06 13:32,Sim,Ministério da Agricultura,2026-01-06 20:51,Liberada,,Sem atraso
+REL01007,CGO01007,Sim,2026-01-06 16:07,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01008,CGO01008,Sim,2026-02-26 18:31,Não,Não aplicável,,Liberada,,Sem atraso
+REL01009,CGO01009,Sim,2026-02-27 16:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL01010,CGO01010,Sim,2026-02-27 14:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL01011,CGO01011,Não,2026-02-26 05:20,Não,Não aplicável,,Liberada,,Sem atraso
+REL01012,CGO01012,Não,2026-02-27 05:19,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01013,CGO01013,Sim,2026-02-26 08:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL01014,CGO01014,Sim,2026-02-27 07:32,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01015,CGO01015,Não,2026-02-26 06:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL01016,CGO01016,Sim,2026-02-26 23:54,Sim,Anvisa,2026-03-01 07:23,Liberada,Aguardando anuência,Órgão anuente
+REL01017,CGO01017,Sim,2026-02-26 20:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL01018,CGO01018,Sim,2026-03-25 18:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL01019,CGO01019,Sim,2026-03-25 10:10,Não,Não aplicável,,Liberada,,Sem atraso
+REL01020,CGO01020,Sim,2026-03-24 21:10,Sim,Ministério da Agricultura,2026-03-25 11:48,Liberada,Aguardando anuência,Órgão anuente
+REL01021,CGO01021,Não,2026-03-24 22:21,Não,Não aplicável,,Liberada,,Sem atraso
+REL01022,CGO01022,Não,2026-03-24 21:48,Sim,Anvisa,2026-03-25 04:30,Liberada,,Sem atraso
+REL01023,CGO01023,Sim,2026-03-26 03:24,Não,Não aplicável,,Liberada,,Sem atraso
+REL01024,CGO01024,Sim,2026-03-25 08:56,Não,Não aplicável,,Liberada,,Sem atraso
+REL01025,CGO01025,Sim,2026-03-25 06:14,Sim,Exército,2026-03-25 15:27,Liberada,,Sem atraso
+REL01026,CGO01026,Não,2026-03-24 22:27,Não,Não aplicável,,Liberada,,Sem atraso
+REL01027,CGO01027,Sim,2026-03-26 03:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL01028,CGO01028,Sim,2026-03-26 06:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL01029,CGO01029,Sim,2026-03-25 10:08,Não,Não aplicável,,Liberada,,Sem atraso
+REL01030,CGO01030,Sim,2026-03-26 05:47,Sim,Exército,2026-03-28 14:05,Liberada,Aguardando anuência,Órgão anuente
+REL01031,CGO01031,Sim,2026-03-02 11:30,Sim,Exército,2026-03-02 17:33,Liberada,Aguardando anuência,Órgão anuente
+REL01032,CGO01032,Sim,2026-03-02 17:15,Sim,Ministério da Agricultura,2026-03-04 10:01,Liberada,Aguardando anuência,Órgão anuente
+REL01033,CGO01033,Não,2026-03-01 08:07,Não,Não aplicável,,Liberada,,Sem atraso
+REL01034,CGO01034,Sim,2026-03-01 14:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL01035,CGO01035,Sim,2026-03-05 08:19,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL01036,CGO01036,Sim,2026-03-03 17:05,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01037,CGO01037,Sim,2026-03-02 12:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL01038,CGO01038,Sim,2026-03-27 16:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL01039,CGO01039,Sim,2026-03-27 08:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL01040,CGO01040,Sim,2026-03-29 22:56,Não,Não aplicável,,Liberada,Pendência documental,Importador / despachante
+REL01041,CGO01041,Sim,2026-03-28 13:31,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01042,CGO01042,Sim,2026-03-27 14:13,Não,Não aplicável,,Liberada,,Sem atraso
+REL01043,CGO01043,Sim,2026-03-27 10:36,Não,Não aplicável,,Liberada,,Sem atraso
+REL01044,CGO01044,Sim,2026-03-28 08:50,Não,Não aplicável,,Liberada,,Sem atraso
+REL01045,CGO01045,Sim,2026-03-27 02:51,Não,Não aplicável,,Liberada,,Sem atraso
+REL01046,CGO01046,Sim,2026-03-28 00:18,Não,Não aplicável,,Liberada,,Sem atraso
+REL01047,CGO01047,Sim,2026-03-27 22:15,Sim,Exército,2026-03-28 11:27,Liberada,Aguardando anuência,Órgão anuente
+REL01048,CGO01048,Sim,2026-03-01 04:28,Sim,Exército,2026-03-01 17:06,Liberada,Aguardando anuência,Órgão anuente
+REL01049,CGO01049,Sim,2026-02-28 09:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL01050,CGO01050,Sim,2026-02-28 05:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL01051,CGO01051,Sim,2026-02-28 00:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL01052,CGO01052,Sim,2026-02-28 00:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL01053,CGO01053,Sim,2026-03-01 04:03,Sim,Inmetro,2026-03-02 00:45,Liberada,Aguardando anuência,Órgão anuente
+REL01054,CGO01054,Sim,2026-02-28 01:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL01055,CGO01055,Sim,2026-03-01 03:03,Sim,Exército,2026-03-03 13:14,Liberada,Aguardando anuência,Órgão anuente
+REL01056,CGO01056,Sim,2026-02-27 21:38,Não,Não aplicável,,Liberada,,Sem atraso
+REL01057,CGO01057,Sim,2026-03-01 01:45,Sim,Ibama,2026-03-03 17:47,Liberada,Aguardando anuência,Órgão anuente
+REL01058,CGO01058,Não,2026-02-27 19:26,Sim,Exército,2026-02-28 15:26,Liberada,Aguardando anuência,Órgão anuente
+REL01059,CGO01059,Sim,2026-03-01 05:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL01060,CGO01060,Sim,2026-02-28 00:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL01061,CGO01061,Sim,2026-02-28 08:15,Não,Não aplicável,,Liberada,,Sem atraso
+REL01062,CGO01062,Sim,2026-03-11 04:08,Sim,Anvisa,2026-03-11 15:05,Liberada,,Sem atraso
+REL01063,CGO01063,Não,2026-03-10 13:37,Não,Não aplicável,,Liberada,,Sem atraso
+REL01064,CGO01064,Sim,2026-03-11 15:54,Não,Não aplicável,,Liberada,,Sem atraso
+REL01065,CGO01065,Sim,2026-03-11 01:04,Sim,Ministério da Agricultura,2026-03-13 08:15,Liberada,Aguardando anuência,Órgão anuente
+REL01066,CGO01066,Sim,2026-03-11 15:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL01067,CGO01067,Sim,2026-02-18 11:26,Não,Não aplicável,,Liberada,,Sem atraso
+REL01068,CGO01068,Sim,2026-02-18 15:32,Sim,Exército,2026-02-19 18:37,Liberada,Aguardando anuência,Órgão anuente
+REL01069,CGO01069,Sim,2026-02-18 18:45,Não,Não aplicável,,Liberada,,Sem atraso
+REL01070,CGO01070,Sim,2026-02-19 13:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL01071,CGO01071,Sim,2026-02-18 20:27,Sim,Ibama,2026-02-20 20:42,Liberada,Aguardando anuência,Órgão anuente
+REL01072,CGO01072,Não,2026-02-18 07:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL01073,CGO01073,Sim,2026-02-18 11:02,Não,Não aplicável,,Liberada,,Sem atraso
+REL01074,CGO01074,Sim,2026-02-18 19:09,Não,Não aplicável,,Liberada,,Sem atraso
+REL01075,CGO01075,Sim,2026-02-19 05:32,Não,Não aplicável,,Liberada,,Sem atraso
+REL01076,CGO01076,Sim,2026-02-18 16:34,Não,Não aplicável,,Liberada,,Sem atraso
+REL01077,CGO01077,Sim,2026-02-19 05:25,Sim,Ibama,2026-02-19 13:05,Liberada,Aguardando anuência,Órgão anuente
+REL01078,CGO01078,Sim,2026-01-13 17:12,Não,Não aplicável,,Liberada,,Sem atraso
+REL01079,CGO01079,Sim,2026-01-14 21:20,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01080,CGO01080,Sim,2026-01-13 14:14,Sim,Anvisa,2026-01-15 13:52,Liberada,,Sem atraso
+REL01081,CGO01081,Sim,2026-01-12 23:06,Não,Não aplicável,,Liberada,,Sem atraso
+REL01082,CGO01082,Sim,2026-01-12 12:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL01083,CGO01083,Não,2026-01-12 10:32,Sim,Anvisa,2026-01-15 07:24,Liberada,Aguardando anuência,Órgão anuente
+REL01084,CGO01084,Sim,2026-01-13 20:31,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01085,CGO01085,Sim,2026-02-16 21:36,Sim,Ministério da Agricultura,2026-02-19 04:45,Liberada,,Sem atraso
+REL01086,CGO01086,Sim,2026-02-18 10:52,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01087,CGO01087,Sim,2026-02-17 13:13,Sim,Exército,2026-02-18 10:26,Liberada,,Sem atraso
+REL01088,CGO01088,Sim,2026-02-16 14:55,Não,Não aplicável,,Liberada,,Sem atraso
+REL01089,CGO01089,Não,2026-02-17 09:26,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL01090,CGO01090,Sim,2026-02-19 01:29,Não,Não aplicável,,Liberada,Aguardando despachante,Importador / despachante
+REL01091,CGO01091,Não,2026-02-16 03:05,Não,Não aplicável,,Liberada,,Sem atraso
+REL01092,CGO01092,Sim,2026-02-16 13:42,Não,Não aplicável,,Liberada,,Sem atraso
+REL01093,CGO01093,Sim,2026-02-16 18:48,Não,Não aplicável,,Liberada,,Sem atraso
+REL01094,CGO01094,Sim,2026-02-17 10:01,Sim,Anvisa,2026-02-20 06:27,Liberada,,Sem atraso
+REL01095,CGO01095,Sim,2026-02-16 22:44,Não,Não aplicável,,Liberada,,Sem atraso
+REL01096,CGO01096,Não,2026-02-16 03:10,Sim,Anvisa,2026-02-17 08:12,Liberada,Aguardando anuência,Órgão anuente
+REL01097,CGO01097,Sim,2026-02-16 12:35,Não,Não aplicável,,Liberada,,Sem atraso
+REL01098,CGO01098,Sim,2026-02-22 08:46,Sim,Inmetro,2026-02-22 16:31,Liberada,,Sem atraso
+REL01099,CGO01099,Sim,2026-02-21 16:49,Sim,Inmetro,2026-02-21 23:36,Liberada,Aguardando anuência,Órgão anuente
+REL01100,CGO01100,Sim,2026-02-21 09:29,Não,Não aplicável,,Liberada,,Sem atraso
+REL01101,CGO01101,Sim,2026-02-21 21:49,Sim,Ministério da Agricultura,2026-02-23 20:54,Liberada,Aguardando anuência,Órgão anuente
+REL01102,CGO01102,Sim,2026-02-21 14:53,Não,Não aplicável,,Liberada,,Sem atraso
+REL01103,CGO01103,Sim,2026-02-22 02:25,Não,Não aplicável,,Liberada,,Sem atraso
+REL01104,CGO01104,Não,2026-02-21 04:58,Não,Não aplicável,,Liberada,,Sem atraso
+REL01105,CGO01105,Sim,2026-02-22 09:38,Não,Não aplicável,,Liberada,Aguardando Receita Federal,Receita Federal
+REL01106,CGO01106,Sim,2026-02-22 04:00,Não,Não aplicável,,Liberada,,Sem atraso
+REL01107,CGO01107,Sim,2026-02-22 14:30,Não,Não aplicável,,Liberada,,Sem atraso
+REL01108,CGO01108,Sim,2026-02-22 09:46,Não,Não aplicável,,Liberada,,Sem atraso
+REL01109,CGO01109,Sim,2026-02-22 02:47,Não,Não aplicável,,Liberada,,Sem atraso
+REL01110,CGO01110,Não,2026-02-21 04:24,Sim,Exército,2026-02-22 10:29,Liberada,Aguardando anuência,Órgão anuente
+REL01111,CGO01111,Sim,2026-02-21 17:29,Não,Não aplicável,,Liberada,,Sem atraso
