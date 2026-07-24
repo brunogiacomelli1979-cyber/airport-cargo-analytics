@@ -13,6 +13,7 @@ cargo 1 ─── 1 operations
 cargo 1 ─── N inconsistencies
 cargo 1 ─── 1 release_process
 cargo 1 ─── 1 delivery
+cargo 1 ─── N warehouse_flow_events
 ```
 
 ## 1. flights
@@ -128,6 +129,27 @@ Tabela com dados de disponibilização, retirada e entrega da carga.
 | delivery_status               | text     | Status da entrega                         | Entregue                 |
 | delivery_delay_flag           | boolean  | Indica atraso na retirada/entrega         | Não                      |
 | delivery_responsibility_group | text     | Grupo responsável por eventual atraso     | Transportadora / cliente |
+
+## 8. warehouse_flow_events
+
+Tabela com eventos operacionais por etapa do fluxo físico do armazém.
+
+Esta tabela permite analisar a movimentação de cargas nos fluxos de importação e exportação, medindo tempos por etapa, área de armazenagem, status operacional e necessidade de reforço de equipe.
+
+| Campo | Tipo | Descrição | Exemplo |
+|---|---|---|---|
+| event_id | text | Identificador único do evento operacional | EVT0001 |
+| cargo_id | text | Identificador da carga relacionada | CGO0001 |
+| operation_type | text | Tipo de operação | Importação |
+| cargo_profile | text | Perfil da carga | Perecível |
+| process_stage | text | Etapa operacional do fluxo | Armazenagem |
+| warehouse_area | text | Área do armazém | Área refrigerada |
+| stage_entry_datetime | datetime | Data/hora de entrada na etapa | 2026-01-10 10:30 |
+| stage_exit_datetime | datetime | Data/hora de saída da etapa | 2026-01-10 11:05 |
+| stage_duration_minutes | integer | Tempo da etapa em minutos | 35 |
+| acceptable_time_minutes | integer | Tempo operacional aceitável para a etapa | 30 |
+| stage_status | text | Status da etapa em relação ao tempo aceitável | Atenção |
+| staff_required_flag | boolean | Indica necessidade de reforço operacional | Sim |
 
 ## Observação
 
