@@ -125,7 +125,8 @@ airport-cargo-analytics/
 │   ├── methodology.md
 │   ├── process_flow.md
 │   ├── data_dictionary.md
-│   └── kpi_definitions.md
+│   ├── kpi_definitions.md
+│   └── warehouse_monitoring.md
 │
 ├── sql/
 │   ├── 01_create_tables.sql
@@ -144,7 +145,7 @@ airport-cargo-analytics/
 
 Em desenvolvimento.
 
-Fase atual: base simulada criada e arquivos CSV processados. Próxima etapa: criação da estrutura SQL e consultas analíticas.
+Fase atual: base simulada criada, arquivos CSV processados e documentação inicial concluída. Próxima etapa: criação da estrutura SQL e consultas analíticas.
 
 ## Próximos Passos
 
