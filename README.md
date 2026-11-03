@@ -10,7 +10,7 @@ Cloudflare Workers Free + D1 Free. Branch exclusiva: `paletes-cloudflare-free` d
 - Esquema existente inspecionado: havia apenas `bloqueios_acesso`. Foram criados `registros` e os três índices da migração, sem apagar dados. Não reaplicar cegamente uma migração já executada pelo console.
 - Teste HTTPS real: saúde e D1 OK; dois logins independentes; escrita concorrente resultou em HTTP 201 e HTTP 409; os dois clientes leram o mesmo registro com CIA `001`.
 - CSV de relatório e backup autenticados verificados. O único lançamento TESTCODEX foi excluído logicamente no mesmo dia; zero registros ativos após os testes. Sua linha permanece no backup para auditoria.
-- O código temporário de teste deve ser substituído pelo código operacional em **Settings → Variables and Secrets → ACCESS_CODE → Secret**, diretamente no Cloudflare, antes do uso. Nunca publicar o valor no GitHub, chat ou logs.
+- O solicitante substituiu o código temporário por seu código operacional diretamente em Cloudflare Secrets. Login definitivo confirmado no navegador e saúde HTTPS 200 após a troca. Nunca publicar o valor no GitHub, chat ou logs.
 - `SESSION_SECRET` foi gerado criptograficamente e enviado diretamente ao Cloudflare Secrets, sem gravar seu valor em arquivos. Não é necessário recuperá-lo; para revogar todas as sessões, substitua-o por outro segredo aleatório de pelo menos 32 caracteres.
 - Publicação por Wrangler autenticado; não foi criada integração de builds GitHub. Deploys futuros são feitos manualmente a partir desta branch.
 
@@ -65,7 +65,7 @@ Antes de qualquer migração futura, inspecione o esquema e o histórico. `npm r
 
 41 testes JavaScript e 15 testes SQL Python aprovados, incluindo integração da API com SQLite real isolado, cobrança entre meses/anos, mudança de CIA, turno ausente, exclusão lógica, dois clientes e concorrência. Testes de faturamento usam banco isolado; não foram inseridas sequências históricas artificiais no banco de produção. `npm install` com Wrangler 4.157.0: zero vulnerabilidades apontadas.
 
-O teste remoto automatizado usa dois clientes HTTP com logins separados. A validação física em Android/iOS, instalação da PWA e saída de impressão/PDF continuam sendo verificações manuais; não confundir dois clientes HTTP com dois aparelhos físicos. Sem plano pago, cartão ou upgrade ativado por esta implantação.
+O teste remoto automatizado usa dois clientes HTTP com logins separados. Login definitivo, coleta, foco inicial, data automática, marca e relatórios foram conferidos no Chrome. Layout de coleta e relatório verificado em viewport de 390 px, sem transbordamento horizontal; backup mensal baixado pelo navegador mesmo sem registros ativos. A validação física em Android/iOS, instalação da PWA e saída de impressão/PDF continuam sendo verificações manuais; não confundir dois clientes HTTP com dois aparelhos físicos. Sem plano pago, cartão ou upgrade ativado por esta implantação.
 
 Custo esperado: R$0 dentro das cotas Free da conta. Workers: 100 mil requisições/dia compartilhadas na conta. D1: 5 milhões de linhas lidas/dia, 100 mil linhas gravadas/dia, 500 MB por banco e 5 GB totais. Polling usa até 480 requisições/hora por tela visível (duas consultas a cada 15 s); monitore o uso da conta. Ao exceder o Free, o serviço pode recusar requisições/consultas; não habilitar plano pago automaticamente.
 
