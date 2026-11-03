@@ -9,11 +9,13 @@ const json = (data, status = 200, headers = {}) => new Response(JSON.stringify(d
 });
 const error = (detail,status=422) => json({detail},status);
 const headerPolicy = {
+  'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'",
   'X-Content-Type-Options':'nosniff', 'Referrer-Policy':'no-referrer',
   'X-Frame-Options':'DENY', 'Permissions-Policy':'camera=(), microphone=(), geolocation=()'
 };
 
-export function validateEntry({turno,palete,cia} = {}) {
+export function validateEntry(input = {}) {
+  const {turno,palete,cia} = input ?? {};
   if (typeof palete !== 'string' || !/^[A-Za-z0-9]{1,30}$/.test(palete)) throw new Error('O palete deve conter de 1 a 30 letras ou números, sem espaços ou símbolos.');
   if (typeof cia !== 'string' || !/^[0-9]{3}$/.test(cia)) throw new Error('O código da companhia aérea deve conter exatamente 3 números.');
   if (turno !== '08:00' && turno !== '20:00') throw new Error('O horário deve ser 08:00 ou 20:00.');
@@ -34,7 +36,7 @@ export function localClock(at = new Date()) {
   return {data,data_legivel:`${parts.day}/${parts.month}/${parts.year}`,mes:`${parts.year}-${parts.month}`,
     turno_sugerido:Number(parts.hour)<14?'08:00':'20:00',fuso:'America/Sao_Paulo'};
 }
-export function csvCell(x) {const v=String(x ?? '');return /[;"\n\r]/.test(v)?`"${v.replaceAll('"','""')}"`:v;}
+export function csvCell(x) {let v=String(x ?? '');if (/^[=+@\-\t\r]/.test(v)) v="'"+v;return /[;"\n\r]/.test(v)?`"${v.replaceAll('"','""')}"`:v;}
 const csvRow = items => items.map(csvCell).join(';');
 function base64url(bytes) {return btoa(String.fromCharCode(...bytes)).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'');}
 async function hmac(secret, value) {
@@ -54,7 +56,7 @@ async function makeCookie(env) {
   return `${COOKIE}=${expires}.${await hmac(env.SESSION_SECRET,'paletes:'+expires)}; Max-Age=${SESSION_SECONDS}; HttpOnly; Secure; SameSite=Lax; Path=/`;
 }
 function safeDevice(request) {const d=request.headers.get('X-Device-Id');return /^[A-Za-z0-9-]{1,64}$/.test(d||'')?d:null;}
-async function getBody(request) {try {const s=await request.text();if(s.length>2048)throw new Error();return JSON.parse(s);}catch{throw new Error('Conteúdo JSON inválido.');}}
+async function getBody(request) {try {const s=await request.text();if(s.length>2048)throw new Error();const body=JSON.parse(s);if(!body || typeof body!=='object' || Array.isArray(body))throw new Error();return body;}catch{throw new Error('Conteúdo JSON inválido.');}}
 function cleanMonthAndCia(url) {const mes=url.searchParams.get('mes'),cia=url.searchParams.get('cia');const b=monthBounds(mes);if(!/^\d{3}$/.test(cia||''))throw new Error('O filtro de companhia deve conter 3 números.');return {mes,cia,...b};}
 function reportOutput(mes,cia,items) {
   const result=items.map(r=>({...r,horas_cobraveis:Number(r.periodos_cobraveis)*12}));
@@ -173,7 +175,7 @@ export default {
    return new Response(response.body,{status:response.status,headers});
   }catch(e){
     if(/Mês inválido|filtro de companhia|Conteúdo JSON inválido|palete deve|código da companhia|horário deve/.test(e.message))return error(e.message,422);
-    console.error('Falha interna',e.message);
+    console.error('Falha interna no serviço de paletes.');
     return error('Erro interno. Nenhum lançamento foi confirmado; tente novamente e verifique a listagem.',500);
   }
  }

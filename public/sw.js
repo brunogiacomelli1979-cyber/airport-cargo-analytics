@@ -1,6 +1,6 @@
 // A interface pode ser cacheada, mas páginas protegidas, API e dados não ficam disponíveis offline.
-const CACHE = 'paletes-assets-v3';
-const ASSETS = ['/static/style.css','/static/app.js','/static/reports.js','/static/common.js','/static/login.js','/static/icons/icon-192.png','/static/icons/icon-512.png'];
+const CACHE = 'paletes-assets-v5';
+const ASSETS = ['/static/style.css','/static/app.js','/static/reports.js','/static/common.js','/static/login.js','/static/icons/icon-192.png','/static/icons/icon-512.png','/static/brand/viracopos-oficial.png'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', event => {

@@ -7,7 +7,9 @@
   <title>Paletes | Relatórios mensais</title>
 </head>
 <body>
-  <header class="topbar"><div class="brand"><div class="brand-icon">▤</div><div><strong>CONTROLE DE PALETES</strong><small>Registro de permanência aeroportuária</small></div></div><nav class="nav"><a href="/">Lançamentos</a><a href="/relatorios" aria-current="page">Relatórios</a></nav></header>
+  <header class="topbar"><div class="brand"><div class="brand-logo-panel">
+      <img class="brand-logo" src="/static/brand/viracopos-oficial.png" alt="Viracopos — Aeroportos Brasil" />
+    </div><div><strong>CONTROLE DE PALETES</strong><small>Registro de permanência aeroportuária</small></div></div><nav class="nav"><a href="/">Lançamentos</a><a href="/relatorios" aria-current="page">Relatórios</a></nav></header>
   <main class="page report-page">
     <div class="page-heading"><div><p class="eyebrow">ADMINISTRAÇÃO · APURAÇÃO</p><h1>Relatórios mensais</h1><p class="muted">Apuração separada por companhia aérea e mês de cobrança.</p></div><span class="report-symbol">12H</span></div>
     <section class="panel filter-panel no-print">
@@ -16,10 +18,12 @@
         <label class="field"><span>Companhia aérea (3 dígitos)</span><select id="company" required><option value="">Carregando…</option></select></label>
         <button type="submit" class="primary">Gerar relatório</button>
       </form>
+      <button type="button" class="secondary" id="backupCsv">Backup do mês (todos os registros)</button>
       <p id="filterMessage" class="feedback" role="status" aria-live="polite"></p>
     </section>
     <section class="panel report-panel" id="reportSection" hidden>
-      <div class="report-title"><div><p class="eyebrow">RELATÓRIO DE PERMANÊNCIA</p><h2 id="reportHeading">Companhia aérea ---</h2><p class="muted" id="reportPeriod">Mês: ---</p></div><div class="report-actions no-print"><button type="button" class="secondary" id="downloadCsv">Exportar CSV</button><button type="button" class="secondary" id="backupCsv">Backup do mês (todos os registros)</button><button type="button" class="secondary" id="printReport">Imprimir / PDF</button></div></div>
+      <div class="report-print-brand"><img src="/static/brand/viracopos-oficial.png" alt="Viracopos — Aeroportos Brasil"><span>Controle de permanência de paletes aeronáuticos</span></div>
+      <div class="report-title"><div><p class="eyebrow">RELATÓRIO DE PERMANÊNCIA</p><h2 id="reportHeading">Companhia aérea ---</h2><p class="muted" id="reportPeriod">Mês: ---</p></div><div class="report-actions no-print"><button type="button" class="secondary" id="downloadCsv">Exportar CSV</button><button type="button" class="secondary" id="printReport">Imprimir / PDF</button></div></div>
       <div class="metrics"><div class="metric"><span>Paletes faturáveis</span><strong id="totalPallets">0</strong></div><div class="metric"><span>Períodos cobrados</span><strong id="totalPeriods">0</strong></div><div class="metric"><span>Horas equivalentes</span><strong id="totalHours">0 h</strong></div></div>
       <div class="table-scroll"><table class="records report-table"><thead><tr><th>Palete / sigla</th><th>Registros no mês</th><th>Maior sequência</th><th>Períodos cobrados</th><th>Horas cobradas</th></tr></thead><tbody id="reportRows"></tbody></table></div>
       <p class="report-note"><b>Critério de apuração:</b> as duas primeiras ocorrências consecutivas do mesmo palete na mesma companhia aérea são isentas; a partir da terceira ocorrência, cada nova coleta consecutiva representa 1 período faturável de 12 horas. Interrupção de coleta ou troca de companhia encerra a sequência. Registros de outros meses são considerados apenas para verificar a continuidade, sem refaturamento.</p>

@@ -18,7 +18,7 @@ async function getJson(url, options = {}) {
   }
   let response;
   try { response = await fetch(url, {cache:'no-store', credentials:'same-origin', ...options, headers}); }
-  catch (_error) { throw new Error('Sem conexão com o servidor. O registro não foi salvo.'); }
+  catch (_error) { throw new Error('Sem conexão com o servidor. Salvamento não confirmado. Verifique a listagem e tente novamente; duplicidades serão bloqueadas.'); }
   let payload;
   try { payload = await response.json(); } catch (_error) { payload = {}; }
   if (response.status === 401 && url !== '/api/acesso/entrar') {

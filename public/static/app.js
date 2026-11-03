@@ -101,3 +101,20 @@ entryForm.addEventListener('submit', async (event) => {
   }
 });
 loadContext();
+palletInput.focus();
+let refreshing = false;
+async function refreshEntries() {
+  if (document.hidden || refreshing || saveBtn.disabled) return;
+  refreshing = true;
+  try {
+    const context = await getJson('/api/contexto');
+    document.getElementById('today').textContent = context.data_legivel;
+    await loadEntries();
+    setConnection(true);
+  } catch (_error) { setConnection(false); }
+  finally { refreshing = false; }
+}
+setInterval(refreshEntries, 15000);
+document.addEventListener('visibilitychange', refreshEntries);
+window.addEventListener('online', refreshEntries);
+window.addEventListener('offline', () => setConnection(false));

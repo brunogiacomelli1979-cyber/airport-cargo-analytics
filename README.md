@@ -1,83 +1,76 @@
-# Controle de Paletes Aeronáuticos — implantação GRATUITA no Cloudflare
+# Controle de Paletes Aeronáuticos
 
-Aplicação web para uso simultâneo por vários celulares, com banco **Cloudflare D1** compartilhado (SQLite), servidor **Cloudflare Workers**, PWA e relatórios por companhia aérea. Sem contas individuais. O acesso operacional é protegido por um código compartilhado, armazenado **somente nos segredos do servidor**.
+Cloudflare Workers Free + D1 Free. Branch exclusiva: `paletes-cloudflare-free` do repositório `brunogiacomelli1979-cyber/airport-cargo-analytics`. Main e paletes-railway-prod não foram alteradas.
 
-## O que funciona
+## Implantação em 03/11/2026
 
-- Data sempre fornecida pelo servidor no fuso `America/Sao_Paulo`; coleta 08:00/20:00, selecionada na tela.
-- Palete de 1 a 30 letras/números sem espaços, sempre salvo em **maiúsculas**; CIA com **exatamente 3 dígitos**, incluindo zeros à esquerda.
-- Registro centralizado e concorrente. O mesmo palete não pode ser salvo duas vezes no mesmo dia/turno, independentemente da CIA.
-- Exclusão apenas de lançamentos do dia, **lógica e auditável**. Excluir e relançar é possível; alterações posteriores ao dia exigem procedimento administrativo e não estão disponíveis na tela.
-- Apuração mensal por CIA: duas primeiras coletas consecutivas gratuitas; terceiro período e seguintes geram **12h por período**. Falta de coleta interrompe a sequência. A troca de companhia também interrompe. Continuidade entre meses é respeitada sem faturar período duas vezes.
-- Relatório web por CIA, CSV de cobrança, impressão/PDF e **backup CSV mensal completo** (registros ativos/excluídos, para arquivamento).
-- Compatível com Android e iPhone, adicionar à tela inicial via navegador. É preciso estar online para registrar.
+- URL HTTPS publicada: https://controle-paletes-aeronauticos.bruno-giacomelli1979.workers.dev
+- Worker: `controle-paletes-aeronauticos`.
+- D1: `paletes-producao`, ID público `1bc139d5-6d9a-4e93-9b83-511099dd3753`, binding `DB`.
+- Esquema existente inspecionado: havia apenas `bloqueios_acesso`. Foram criados `registros` e os três índices da migração, sem apagar dados. Não reaplicar cegamente uma migração já executada pelo console.
+- Teste HTTPS real: saúde e D1 OK; dois logins independentes; escrita concorrente resultou em HTTP 201 e HTTP 409; os dois clientes leram o mesmo registro com CIA `001`.
+- CSV de relatório e backup autenticados verificados. O único lançamento TESTCODEX foi excluído logicamente no mesmo dia; zero registros ativos após os testes. Sua linha permanece no backup para auditoria.
+- O código temporário de teste deve ser substituído pelo código operacional em **Settings → Variables and Secrets → ACCESS_CODE → Secret**, diretamente no Cloudflare, antes do uso. Nunca publicar o valor no GitHub, chat ou logs.
+- `SESSION_SECRET` foi gerado criptograficamente e enviado diretamente ao Cloudflare Secrets, sem gravar seu valor em arquivos. Não é necessário recuperá-lo; para revogar todas as sessões, substitua-o por outro segredo aleatório de pelo menos 32 caracteres.
+- Publicação por Wrangler autenticado; não foi criada integração de builds GitHub. Deploys futuros são feitos manualmente a partir desta branch.
 
-## Publicar em zero reais (Cloudflare Workers Free + D1 Free)
+## Operação
 
-> Atenção: ainda não está implantado na Cloudflare. Para publicar, é necessário acesso à sua conta Cloudflare. **Não publique senhas nem códigos operacionais em arquivos do GitHub.**
+A data vem do servidor em America/Sao_Paulo. O operador seleciona somente 08:00 ou 20:00. Palete: 1–30 caracteres ASCII alfanuméricos, persistidos em maiúsculas. CIA é texto de três dígitos; `001` é preservado no banco e na API.
 
-### 1) Criar o banco (no navegador)
+A lista dos últimos 80 registros ativos do dia atualiza a cada 15 segundos enquanto a tela está visível, e ao retornar à tela. Não se trata de atualização instantânea por WebSocket. Sem conexão, não há fila de salvamento offline. Se a resposta da gravação for perdida, a interface informa salvamento não confirmado e orienta verificar a lista; o índice único impede duplicidade numa nova tentativa.
 
-1. Entre em <https://dash.cloudflare.com/> com uma conta Free.
-2. Entre em **Storage & databases → D1 SQL database → Create database**.
-3. Nome do banco: `paletes-producao`.
-4. Abra o banco criado, copie seu `Database ID` (identificador UUID, não é uma senha).
-5. Na aba **Console**, cole o conteúdo completo de [`migrations/0001_schema.sql`](migrations/0001_schema.sql) e clique **Execute**. Confirme que surgiram as tabelas `registros` e `bloqueios_acesso`.
+O índice parcial único `(data, turno, palete) WHERE ativo=1` garante deduplicação atômica entre dispositivos, independentemente da CIA. Correção é exclusão lógica somente no dia atual, com timestamp e identificador do dispositivo, seguida de novo lançamento. Não há exclusão física automática nem contas individuais: todos que conhecem o código têm o mesmo acesso. A auditoria identifica dispositivo, não pessoa.
 
-### 2) Atualizar o identificador do banco no GitHub
+Cada coleta representa 12 horas. As duas primeiras consecutivas na mesma CIA são isentas; a terceira e seguintes geram um período faturável cada. Um turno ausente ou troca de CIA reinicia a isenção. O SQL considera meses anteriores para continuidade e cobra somente no mês do turno faturável. Os relatórios mostram apenas paletes com cobrança, sem calcular reais por não haver tarifa.
 
-1. Abra o repositório GitHub e a **branch** `paletes-cloudflare-free`.
-2. Abra o arquivo [`wrangler.jsonc`](wrangler.jsonc) e clique no lápis (**Edit**).
-3. Substitua **somente** o texto `SUBSTITUIR_PELO_ID_DO_D1` pelo `Database ID` copiado, e salve na **mesma branch**.
-4. Não mude `binding`: ele precisa continuar como `DB`; nem `database_name`: `paletes-producao`.
+## Backup e CSV
 
-### 3) Publicar o aplicativo grátis
+Em Relatórios, selecione o mês e use **Backup do mês (todos os registros)**. O botão também funciona em meses sem registros ativos. O CSV contém ativos e excluídos, datas, CIA, dispositivo e auditoria da exclusão. Guarde cópias protegidas ao menos mensalmente e, de preferência, também no meio do mês.
 
-1. Cloudflare → **Workers & Pages → Create application → GitHub** (conecte sua conta se necessário).
-2. Escolha o repositório `brunogiacomelli1979-cyber/airport-cargo-analytics`.
-3. Escolha **production branch** `paletes-cloudflare-free` (nunca `main` ou `paletes-railway-prod`). Se a tela inicial não permitir, altere depois em **Settings → Build → Branch control**.
-4. Nome do Worker: `controle-paletes-aeronauticos`. O nome deve ser idêntico ao de `wrangler.jsonc`.
-5. Diretório-raiz: `/` (vazio). Build command: opcional/vazio; Deploy command: `npx wrangler deploy`.
-6. Em **Settings → Variables & Secrets**, crie os segredos de tempo de execução:
-   - `ACCESS_CODE`: código operacional compartilhado de **no mínimo 8 caracteres**, difícil de adivinhar.
-   - `SESSION_SECRET`: texto aleatório, **no mínimo 32 caracteres**, único; guarde com segurança.
-7. Se os segredos forem adicionados depois do primeiro deploy, execute **Redeploy**. Em **Bindings**, confirme que `DB` aponta para `paletes-producao`.
-8. Ative o subdomínio gratuito `*.workers.dev` fornecido pela Cloudflare. **Nunca use a versão local dos dados como fonte de cobrança depois da implantação.**
-9. Abra `/api/saude` para confirmar `{"status":"ok"}`. Acesse `/entrar`, digite o código e faça um lançamento de teste. Verifique se outro celular visualiza o mesmo lançamento. Gere e confira o relatório. Corrija ou exclua o lançamento de teste no mesmo dia.
+O relatório por CIA permite CSV e Imprimir / PDF. No navegador, escolha Salvar como PDF. Ao abrir CSV em Excel ou similares, importe a coluna CIA como **Texto**, para que o programa não converta `001` em número. Fórmulas em células CSV são neutralizadas. Não há preço monetário configurado.
 
-Se o painel da Cloudflare mostrar etapas ligeiramente diferentes, a documentação oficial de [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/) traz a sequência atualizada. O processo não exige cartão de crédito para contratar plano pago; **sempre selecione o plano gratuito**.
+## Marca
 
-## Testes locais
+Arte original PNG obtida no site institucional e servida localmente: `public/static/brand/viracopos-oficial.png`. O solicitante confirmou autorização para uso neste sistema interno em 03/11/2026. Procedência e SHA-256 em `public/static/brand/ORIGEM_E_USO_DA_MARCA.md`. A marca branca é exibida em fundo azul escuro no acesso, coleta, relatórios e impressão. A reconstrução `viracopos-referencia.svg` não é usada pela interface.
 
-Instale Node.js LTS e depois, na pasta do projeto:
+## Desenvolvimento e publicação
 
-```bash
-npm install
+Node.js 22.13+ (validado com Node 24), Python 3 e npm. Wrangler fixado em versão exata, com package-lock.json reproduzível.
+
+```sh
+npm ci
 npm test
 python -m unittest discover -s tests -p 'test_*.py'
+npx wrangler deploy --dry-run
+npx wrangler login
+npx wrangler deploy
 ```
 
-Se quiser simular o Worker e o banco localmente, antes de `npm run dev`:
+Para desenvolvimento local, copie `.dev.vars.example` para `.dev.vars` e preencha segredos locais. O arquivo é ignorado pelo Git. Depois execute `npm run db:local` e `npm run dev`. Não usar dados locais como fonte de cobrança de produção.
 
-1. Configure o `database_id` em `wrangler.jsonc` ou siga a configuração local do Wrangler.
-2. Copie `.dev.vars.example` para `.dev.vars` e substitua os exemplos por segredos locais.
-3. Execute `npm run db:local` e `npm run dev`.
+Segredos de produção são configurados por **Settings → Variables and Secrets**, tipo Secret, ou pelos prompts interativos abaixo (não passar o valor na linha de comando):
 
-Para migrações futuras em um projeto já publicado, use `npm run db:remote`; não reexecute uma migração que já foi aplicada manualmente no console.
+```sh
+npx wrangler secret put ACCESS_CODE
+npx wrangler secret put SESSION_SECRET
+npx wrangler secret list
+```
 
-## Cuidados de operação e limites gratuitos
+ACCESS_CODE exige pelo menos 8 caracteres, e SESSION_SECRET pelo menos 32. Cookies: HttpOnly, Secure, SameSite=Lax. API privada sem cache; SQL parametrizado; proteção de origem e cabeçalho de mutação; CSP; bloqueio de tentativas de acesso; erros sem conteúdo sensível em logs.
 
-- **Cloudflare Workers Free**: até 100 mil requisições/dia. **Cloudflare D1 Free**: 5 milhões de linhas lidas/dia, 100 mil linhas gravadas/dia, **até 500 MB por banco** e **5 GB no total da conta** (limites públicos consultados em novembro/2026).
-- Dados não são apagados ao fechar navegador nem trocar de celular, mas o serviço online depende de disponibilidade da Cloudflare e dos limites da conta gratuita.
-- D1 Free oferece recuperação Time Travel de até **7 dias**; baixe o **backup CSV mensal**, preferencialmente também um backup adicional no meio do mês. Guarde cópias em lugar protegido.
-- Qualquer pessoa com o código compartilhado consegue ver relatórios e corrigir registros do dia. Se isso deixar de ser adequado, evoluir para acesso separado de coleta e administração.
-- Não há armazenamento offline: falta de conexão significa que **nada é gravado**; a tela avisa a falha de conexão.
-- A data de registro é a data atual do servidor. A escolha do turno 08h/20h é permitida a qualquer momento do dia, conforme a regra solicitada.
-- Relatório não calcula valores em reais: tarifa ainda não definida.
-- Se uma coleta for esquecida, a contagem sequencial é interrompida conforme critério original. Se a regra real de cobrança for diferente, valide-a antes da primeira cobrança oficial.
+Antes de qualquer migração futura, inspecione o esquema e o histórico. `npm run db:remote` aplica migrações pendentes, mas a primeira migração desta implantação foi aplicada pelo console e não tem registro no histórico do Wrangler. Não confundir a ausência desse histórico com ausência das tabelas.
+
+## Evidências e limites
+
+41 testes JavaScript e 15 testes SQL Python aprovados, incluindo integração da API com SQLite real isolado, cobrança entre meses/anos, mudança de CIA, turno ausente, exclusão lógica, dois clientes e concorrência. Testes de faturamento usam banco isolado; não foram inseridas sequências históricas artificiais no banco de produção. `npm install` com Wrangler 4.157.0: zero vulnerabilidades apontadas.
+
+O teste remoto automatizado usa dois clientes HTTP com logins separados. A validação física em Android/iOS, instalação da PWA e saída de impressão/PDF continuam sendo verificações manuais; não confundir dois clientes HTTP com dois aparelhos físicos. Sem plano pago, cartão ou upgrade ativado por esta implantação.
+
+Custo esperado: R$0 dentro das cotas Free da conta. Workers: 100 mil requisições/dia compartilhadas na conta. D1: 5 milhões de linhas lidas/dia, 100 mil linhas gravadas/dia, 500 MB por banco e 5 GB totais. Polling usa até 480 requisições/hora por tela visível (duas consultas a cada 15 s); monitore o uso da conta. Ao exceder o Free, o serviço pode recusar requisições/consultas; não habilitar plano pago automaticamente.
+
+Fontes oficiais: https://developers.cloudflare.com/workers/platform/limits/ e https://developers.cloudflare.com/d1/platform/pricing/.
 
 ## Endpoints
 
-`GET /api/saude` (saúde), `POST /api/acesso/entrar`, `GET /api/contexto`, `POST /api/registros`, `GET /api/registros`, `DELETE /api/registros/{id}`, `GET /api/cias?mes=AAAA-MM`, `GET /api/relatorios?mes=AAAA-MM&cia=001`, `GET /api/relatorios/csv?mes=AAAA-MM&cia=001`, `GET /api/backup/csv?mes=AAAA-MM`.
-
-Código principal em [`src/worker.mjs`](src/worker.mjs), SQL inicial em [`migrations/0001_schema.sql`](migrations/0001_schema.sql) e cálculo SQL em [`src/report-query.sql`](src/report-query.sql). `src/report-sql.mjs` contém a mesma consulta como módulo importável.
+`GET /api/saude`, `POST /api/acesso/entrar`, `POST /api/acesso/sair`, `GET /api/contexto`, `GET/POST /api/registros`, `DELETE /api/registros/{id}`, `GET /api/cias?mes=AAAA-MM`, `GET /api/relatorios?mes=AAAA-MM&cia=001`, `GET /api/relatorios/csv?mes=AAAA-MM&cia=001`, `GET /api/backup/csv?mes=AAAA-MM`.
