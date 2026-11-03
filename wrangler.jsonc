@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "controle-paletes-aeronauticos",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-11-03",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "paletes-producao",
+      "database_id": "SUBSTITUIR_PELO_ID_DO_D1"
+    }
+  ]
+}

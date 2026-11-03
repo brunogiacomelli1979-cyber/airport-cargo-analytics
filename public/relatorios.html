@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#102e4e" />
+  <link rel="manifest" href="/manifest.webmanifest" /><link rel="apple-touch-icon" href="/static/icons/icon-180.png" />
+  <link rel="icon" type="image/png" href="/static/icons/icon-192.png" /><link rel="stylesheet" href="/static/style.css" />
+  <title>Paletes | Relatórios mensais</title>
+</head>
+<body>
+  <header class="topbar"><div class="brand"><div class="brand-icon">▤</div><div><strong>CONTROLE DE PALETES</strong><small>Registro de permanência aeroportuária</small></div></div><nav class="nav"><a href="/">Lançamentos</a><a href="/relatorios" aria-current="page">Relatórios</a></nav></header>
+  <main class="page report-page">
+    <div class="page-heading"><div><p class="eyebrow">ADMINISTRAÇÃO · APURAÇÃO</p><h1>Relatórios mensais</h1><p class="muted">Apuração separada por companhia aérea e mês de cobrança.</p></div><span class="report-symbol">12H</span></div>
+    <section class="panel filter-panel no-print">
+      <form id="filterForm" class="filters">
+        <label class="field"><span>Mês de referência</span><input id="month" type="month" required /></label>
+        <label class="field"><span>Companhia aérea (3 dígitos)</span><select id="company" required><option value="">Carregando…</option></select></label>
+        <button type="submit" class="primary">Gerar relatório</button>
+      </form>
+      <p id="filterMessage" class="feedback" role="status" aria-live="polite"></p>
+    </section>
+    <section class="panel report-panel" id="reportSection" hidden>
+      <div class="report-title"><div><p class="eyebrow">RELATÓRIO DE PERMANÊNCIA</p><h2 id="reportHeading">Companhia aérea ---</h2><p class="muted" id="reportPeriod">Mês: ---</p></div><div class="report-actions no-print"><button type="button" class="secondary" id="downloadCsv">Exportar CSV</button><button type="button" class="secondary" id="backupCsv">Backup do mês (todos os registros)</button><button type="button" class="secondary" id="printReport">Imprimir / PDF</button></div></div>
+      <div class="metrics"><div class="metric"><span>Paletes faturáveis</span><strong id="totalPallets">0</strong></div><div class="metric"><span>Períodos cobrados</span><strong id="totalPeriods">0</strong></div><div class="metric"><span>Horas equivalentes</span><strong id="totalHours">0 h</strong></div></div>
+      <div class="table-scroll"><table class="records report-table"><thead><tr><th>Palete / sigla</th><th>Registros no mês</th><th>Maior sequência</th><th>Períodos cobrados</th><th>Horas cobradas</th></tr></thead><tbody id="reportRows"></tbody></table></div>
+      <p class="report-note"><b>Critério de apuração:</b> as duas primeiras ocorrências consecutivas do mesmo palete na mesma companhia aérea são isentas; a partir da terceira ocorrência, cada nova coleta consecutiva representa 1 período faturável de 12 horas. Interrupção de coleta ou troca de companhia encerra a sequência. Registros de outros meses são considerados apenas para verificar a continuidade, sem refaturamento.</p>
+      <p class="report-note"><b>Observação:</b> valores financeiros não são calculados porque não há tarifa por período configurada. Este relatório apresenta quantidades e horas para faturamento.</p>
+      <div class="report-footer">Gerado em <span id="generatedAt"></span> · Horário de Brasília</div>
+    </section>
+    <div class="bottom no-print"><span>Imprimir / PDF: escolha “Salvar como PDF” no navegador.</span></div>
+  </main>
+  <script src="/static/common.js" defer></script><script src="/static/reports.js" defer></script>
+</body>
+</html>

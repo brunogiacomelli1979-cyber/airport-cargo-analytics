@@ -1,159 +1,83 @@
-# Airport Cargo Operations Analytics
+# Controle de Paletes Aeronáuticos — implantação GRATUITA no Cloudflare
 
-Projeto de análise de dados aplicado à logística aeroportuária de cargas de importação, com foco em KPIs operacionais, conformidade regulatória, gargalos, qualidade da informação e responsabilidade dos atrasos.
+Aplicação web para uso simultâneo por vários celulares, com banco **Cloudflare D1** compartilhado (SQLite), servidor **Cloudflare Workers**, PWA e relatórios por companhia aérea. Sem contas individuais. O acesso operacional é protegido por um código compartilhado, armazenado **somente nos segredos do servidor**.
 
-## Visão Geral
+## O que funciona
 
-Este projeto simula um cenário operacional de um terminal de cargas de importação em um aeroporto internacional brasileiro.
+- Data sempre fornecida pelo servidor no fuso `America/Sao_Paulo`; coleta 08:00/20:00, selecionada na tela.
+- Palete de 1 a 30 letras/números sem espaços, sempre salvo em **maiúsculas**; CIA com **exatamente 3 dígitos**, incluindo zeros à esquerda.
+- Registro centralizado e concorrente. O mesmo palete não pode ser salvo duas vezes no mesmo dia/turno, independentemente da CIA.
+- Exclusão apenas de lançamentos do dia, **lógica e auditável**. Excluir e relançar é possível; alterações posteriores ao dia exigem procedimento administrativo e não estão disponíveis na tela.
+- Apuração mensal por CIA: duas primeiras coletas consecutivas gratuitas; terceiro período e seguintes geram **12h por período**. Falta de coleta interrompe a sequência. A troca de companhia também interrompe. Continuidade entre meses é respeitada sem faturar período duas vezes.
+- Relatório web por CIA, CSV de cobrança, impressão/PDF e **backup CSV mensal completo** (registros ativos/excluídos, para arquivamento).
+- Compatível com Android e iPhone, adicionar à tela inicial via navegador. É preciso estar online para registrar.
 
-O objetivo é analisar a jornada da carga desde a chegada da aeronave até a entrega/retirada, considerando etapas como recebimento físico, registro no sistema do depositário, armazenagem, conferência, tratamento de inconsistências, encerramento no Siscomex/Mantra, liberação aduaneira, anuências externas e disponibilização da carga.
+## Publicar em zero reais (Cloudflare Workers Free + D1 Free)
 
-A proposta principal é diferenciar o tempo total da carga no terminal dos tempos efetivamente controláveis pelo fiel depositário.
+> Atenção: ainda não está implantado na Cloudflare. Para publicar, é necessário acesso à sua conta Cloudflare. **Não publique senhas nem códigos operacionais em arquivos do GitHub.**
 
-## Problema de Negócio
+### 1) Criar o banco (no navegador)
 
-Em operações aeroportuárias de importação, o tempo total da carga no terminal pode ser influenciado por diferentes agentes e etapas do processo.
+1. Entre em <https://dash.cloudflare.com/> com uma conta Free.
+2. Entre em **Storage & databases → D1 SQL database → Create database**.
+3. Nome do banco: `paletes-producao`.
+4. Abra o banco criado, copie seu `Database ID` (identificador UUID, não é uma senha).
+5. Na aba **Console**, cole o conteúdo completo de [`migrations/0001_schema.sql`](migrations/0001_schema.sql) e clique **Execute**. Confirme que surgiram as tabelas `registros` e `bloqueios_acesso`.
 
-Nem todo atraso está sob responsabilidade direta do aeroporto. Gargalos podem ser causados por inconsistências de manifesto informadas pela companhia aérea, divergências de peso ou volumes, necessidade de retrabalho, pendências de Receita Federal, órgãos anuentes, importadores, despachantes ou transportadoras.
+### 2) Atualizar o identificador do banco no GitHub
 
-Este projeto busca criar uma visão analítica capaz de medir a performance operacional de forma mais justa, separando gargalos internos, externos, regulatórios e documentais.
+1. Abra o repositório GitHub e a **branch** `paletes-cloudflare-free`.
+2. Abra o arquivo [`wrangler.jsonc`](wrangler.jsonc) e clique no lápis (**Edit**).
+3. Substitua **somente** o texto `SUBSTITUIR_PELO_ID_DO_D1` pelo `Database ID` copiado, e salve na **mesma branch**.
+4. Não mude `binding`: ele precisa continuar como `DB`; nem `database_name`: `paletes-producao`.
 
-## Objetivos do Projeto
+### 3) Publicar o aplicativo grátis
 
-* Medir os principais tempos operacionais da carga aérea de importação
-* Analisar o tempo até o encerramento no Siscomex/Mantra
-* Identificar gargalos entre recebimento no sistema do depositário e encerramento no Siscomex/Mantra
-* Monitorar conformidade com prazo regulatório
-* Avaliar inconsistências de manifesto, divergências, DSIC, avarias e retrabalhos
-* Verificar conformidade de armazenagem conforme a natureza declarada da carga
-* Diferenciar atrasos controláveis e não controláveis pelo aeroporto
-* Criar indicadores e visualizações em Power BI para apoio à decisão operacional
+1. Cloudflare → **Workers & Pages → Create application → GitHub** (conecte sua conta se necessário).
+2. Escolha o repositório `brunogiacomelli1979-cyber/airport-cargo-analytics`.
+3. Escolha **production branch** `paletes-cloudflare-free` (nunca `main` ou `paletes-railway-prod`). Se a tela inicial não permitir, altere depois em **Settings → Build → Branch control**.
+4. Nome do Worker: `controle-paletes-aeronauticos`. O nome deve ser idêntico ao de `wrangler.jsonc`.
+5. Diretório-raiz: `/` (vazio). Build command: opcional/vazio; Deploy command: `npx wrangler deploy`.
+6. Em **Settings → Variables & Secrets**, crie os segredos de tempo de execução:
+   - `ACCESS_CODE`: código operacional compartilhado de **no mínimo 8 caracteres**, difícil de adivinhar.
+   - `SESSION_SECRET`: texto aleatório, **no mínimo 32 caracteres**, único; guarde com segurança.
+7. Se os segredos forem adicionados depois do primeiro deploy, execute **Redeploy**. Em **Bindings**, confirme que `DB` aponta para `paletes-producao`.
+8. Ative o subdomínio gratuito `*.workers.dev` fornecido pela Cloudflare. **Nunca use a versão local dos dados como fonte de cobrança depois da implantação.**
+9. Abra `/api/saude` para confirmar `{"status":"ok"}`. Acesse `/entrar`, digite o código e faça um lançamento de teste. Verifique se outro celular visualiza o mesmo lançamento. Gere e confira o relatório. Corrija ou exclua o lançamento de teste no mesmo dia.
 
-## Escopo
+Se o painel da Cloudflare mostrar etapas ligeiramente diferentes, a documentação oficial de [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/) traz a sequência atualizada. O processo não exige cartão de crédito para contratar plano pago; **sempre selecione o plano gratuito**.
 
-O projeto considera as seguintes etapas:
+## Testes locais
 
-1. Chegada da aeronave
-2. Recebimento físico da carga
-3. Registro/armazenagem no sistema do depositário
-4. Direcionamento da carga para área adequada
-5. Conferência e conciliação
-6. Tratamento de inconsistências
-7. Retrabalho operacional, quando aplicável
-8. Encerramento no Siscomex/Mantra
-9. Liberação pela Receita Federal ou órgãos anuentes
-10. Disponibilização e entrega/retirada da carga
+Instale Node.js LTS e depois, na pasta do projeto:
 
-## Premissas
-
-* O cenário representa um aeroporto internacional brasileiro genérico
-* O sistema oficial de referência do projeto é o Siscomex/Mantra
-* Os dados utilizados são simulados e criados apenas para fins educacionais e de portfólio
-* Nenhum dado real, sigiloso ou operacional de empresas, aeroportos, companhias aéreas, importadores ou órgãos públicos é utilizado
-* O projeto não aborda cálculo tarifário de armazenagem ou capatazia
-* O projeto não detalha documentos como DI, DUIMP ou CCT
-* O foco é análise de dados, BI operacional, SQL e Power BI
-
-## Metodologia
-
-O projeto segue as etapas do processo de análise de dados apresentado no Google Data Analytics Professional Certificate:
-
-* Ask
-* Prepare
-* Process
-* Analyze
-* Share
-* Act
-
-Essas etapas foram adaptadas para um contexto de BI operacional aplicado à logística aeroportuária de cargas de importação.
-
-## Ferramentas Utilizadas
-
-* Excel
-* Power Query
-* Power BI
-* DAX
-* SQL
-* MySQL
-* DBeaver
-* GitHub
-* Markdown
-* Mermaid
-
-## Principais KPIs
-
-* Total de voos
-* Total de cargas/AWBs
-* Total de volumes
-* Peso total movimentado
-* Tempo até recebimento no sistema do depositário
-* Tempo entre recebimento no depositário e encerramento no Siscomex/Mantra
-* Tempo total até encerramento no Siscomex/Mantra
-* Percentual de encerramentos dentro do prazo regulatório
-* Percentual de voos com inconsistências
-* Taxa de erro de manifesto
-* Taxa de retrabalho operacional
-* Tempo médio de retrabalho
-* Cargo dwell time total
-* Cargo dwell time operacional limpo
-* Percentual de atrasos por grupo responsável
-* Percentual de atrasos controláveis pelo aeroporto
-* Taxa de conformidade de armazenagem
-
-## Estrutura do Repositório
-
-```text
-airport-cargo-analytics/
-│
-├── README.md
-│
-├── data/
-│   ├── raw/
-│   │   └── airport_cargo_operations_sample.xlsx
-│   │
-│   └── processed/
-│       └── csv/
-│           ├── flights.csv
-│           ├── cargo.csv
-│           ├── manifest.csv
-│           ├── operations.csv
-│           ├── inconsistencies.csv
-│           ├── release_process.csv
-│           └── delivery.csv
-│
-├── docs/
-│   ├── methodology.md
-│   ├── process_flow.md
-│   ├── data_dictionary.md
-│   ├── kpi_definitions.md
-│   └── warehouse_monitoring.md
-│
-├── sql/
-│   ├── 01_create_tables.sql
-│   └── 02_analysis_queries.sql
-│
-├── powerbi/
-│   └── airport_cargo_dashboard.pbix
-│
-└── images/
-    ├── dashboard_overview.png
-    ├── data_model.png
-    └── process_flow.png
+```bash
+npm install
+npm test
+python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-## Status do Projeto
+Se quiser simular o Worker e o banco localmente, antes de `npm run dev`:
 
-Em desenvolvimento.
+1. Configure o `database_id` em `wrangler.jsonc` ou siga a configuração local do Wrangler.
+2. Copie `.dev.vars.example` para `.dev.vars` e substitua os exemplos por segredos locais.
+3. Execute `npm run db:local` e `npm run dev`.
 
-Fase atual: base simulada criada, arquivos CSV processados e documentação inicial concluída. Próxima etapa: criação da estrutura SQL e consultas analíticas.
+Para migrações futuras em um projeto já publicado, use `npm run db:remote`; não reexecute uma migração que já foi aplicada manualmente no console.
 
-## Próximos Passos
+## Cuidados de operação e limites gratuitos
 
-* Criar o script SQL de criação das tabelas
-* Importar os arquivos CSV no MySQL via DBeaver
-* Criar consultas SQL para validação e análise dos dados
-* Conectar os dados ao Power BI
-* Tratar os dados com Power Query
-* Criar medidas DAX
-* Desenvolver o dashboard em Power BI
-* Atualizar a documentação com prints, métricas e principais insights
+- **Cloudflare Workers Free**: até 100 mil requisições/dia. **Cloudflare D1 Free**: 5 milhões de linhas lidas/dia, 100 mil linhas gravadas/dia, **até 500 MB por banco** e **5 GB no total da conta** (limites públicos consultados em novembro/2026).
+- Dados não são apagados ao fechar navegador nem trocar de celular, mas o serviço online depende de disponibilidade da Cloudflare e dos limites da conta gratuita.
+- D1 Free oferece recuperação Time Travel de até **7 dias**; baixe o **backup CSV mensal**, preferencialmente também um backup adicional no meio do mês. Guarde cópias em lugar protegido.
+- Qualquer pessoa com o código compartilhado consegue ver relatórios e corrigir registros do dia. Se isso deixar de ser adequado, evoluir para acesso separado de coleta e administração.
+- Não há armazenamento offline: falta de conexão significa que **nada é gravado**; a tela avisa a falha de conexão.
+- A data de registro é a data atual do servidor. A escolha do turno 08h/20h é permitida a qualquer momento do dia, conforme a regra solicitada.
+- Relatório não calcula valores em reais: tarifa ainda não definida.
+- Se uma coleta for esquecida, a contagem sequencial é interrompida conforme critério original. Se a regra real de cobrança for diferente, valide-a antes da primeira cobrança oficial.
+
+## Endpoints
+
+`GET /api/saude` (saúde), `POST /api/acesso/entrar`, `GET /api/contexto`, `POST /api/registros`, `GET /api/registros`, `DELETE /api/registros/{id}`, `GET /api/cias?mes=AAAA-MM`, `GET /api/relatorios?mes=AAAA-MM&cia=001`, `GET /api/relatorios/csv?mes=AAAA-MM&cia=001`, `GET /api/backup/csv?mes=AAAA-MM`.
+
+Código principal em [`src/worker.mjs`](src/worker.mjs), SQL inicial em [`migrations/0001_schema.sql`](migrations/0001_schema.sql) e cálculo SQL em [`src/report-query.sql`](src/report-query.sql). `src/report-sql.mjs` contém a mesma consulta como módulo importável.

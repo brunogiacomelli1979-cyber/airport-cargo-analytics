@@ -1,0 +1,3 @@
+# Copiar para .dev.vars apenas para desenvolvimento local (NUNCA enviar segredos ao Git).
+ACCESS_CODE=CODIGO_OPERACIONAL_FORTE_AQUI
+SESSION_SECRET=SEGREDO_DE_SESSAO_COM_32_CARACTERES_OU_MAIS
