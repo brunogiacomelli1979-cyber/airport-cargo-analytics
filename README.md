@@ -18,12 +18,15 @@ Versão 2.0: aplicativo funcional para **vários celulares usando o mesmo banco 
 
 ## Publicação definitiva no Railway (interface web, sem CLI)
 
-### A. Criar repositório dedicado no GitHub
+### A. Código já publicado no GitHub
 
-1. Extraia este ZIP, abra a pasta `controle-paletes`.
-2. Entre em https://github.com/new; crie o repositório **`controle-paletes-aeronauticos`** como *privado*, se a sua conta Railway tiver permissão de importar repositórios privados.
-3. No repositório vazio, use **uploading an existing file**, arraste **todos os arquivos e pastas de dentro de `controle-paletes`** (não o ZIP fechado). Faça o commit na branch `main`.
-4. Nunca envie ao GitHub os valores reais de `ACCESS_CODE`, `SESSION_SECRET` e `DATABASE_URL`. O arquivo `.env.example` possui somente exemplos/instruções.
+O código desta versão está na branch **`paletes-railway-prod`** do repositório `brunogiacomelli1979-cyber/airport-cargo-analytics`:
+
+https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics/tree/paletes-railway-prod
+
+**IMPORTANTE:** Não utilize a branch `main` no Railway. Ela contém outro projeto. No serviço Railway, ajuste a **Source / Branch** para `paletes-railway-prod` antes de fazer o deploy. A branch foi isolada para não alterar o projeto já existente.
+
+Se no futuro quiser separar em um repositório próprio, use o ZIP com a pasta `controle-paletes` e crie `controle-paletes-aeronauticos`; mantenha os segredos apenas no Railway.
 
 ### B. Criar aplicação e PostgreSQL no Railway
 
