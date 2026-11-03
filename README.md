@@ -74,3 +74,7 @@ Fontes oficiais: https://developers.cloudflare.com/workers/platform/limits/ e ht
 ## Endpoints
 
 `GET /api/saude`, `POST /api/acesso/entrar`, `POST /api/acesso/sair`, `GET /api/contexto`, `GET/POST /api/registros`, `DELETE /api/registros/{id}`, `GET /api/cias?mes=AAAA-MM`, `GET /api/relatorios?mes=AAAA-MM&cia=001`, `GET /api/relatorios/csv?mes=AAAA-MM&cia=001`, `GET /api/backup/csv?mes=AAAA-MM`.
+
+## Solução de problemas de acesso
+
+Se o serviço retornar HTTP 503 com “Serviço ainda não configurado”, confira os segredos em produção: ACCESS_CODE precisa de pelo menos 8 caracteres e SESSION_SECRET de pelo menos 32. Um código de 6 dígitos não atende à configuração. Ao alterar um segredo no painel, clique em **Implantar**, não apenas em Salvar versão. Aguarde a implantação e recarregue `/api/saude`; a resposta esperada é `{"status":"ok"}`. Nunca envie o código ao chat ou registre seu valor em arquivos.
