@@ -1,0 +1,57 @@
+name: Validar dados e publicar dashboard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Integridade CSV, testes e JavaScript
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validar base e gerar recibo JSON
+        run: python scripts/validate_data.py --output quality-summary.json
+      - name: Testar regras e totais
+        run: python -m unittest discover -s tests -v
+      - name: Validar sintaxe JavaScript
+        run: node --check assets/dashboard.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quality-summary
+          path: quality-summary.json
+
+  pages:
+    name: Publicar dashboard GitHub Pages
+    needs: quality
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
