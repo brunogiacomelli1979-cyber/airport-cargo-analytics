@@ -1,0 +1,8 @@
+node_modules/
+.agents/
+.codex/
+__pycache__/
+test-results/
+playwright-report/
+dist/
+evidence/

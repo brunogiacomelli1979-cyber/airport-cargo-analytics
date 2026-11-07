@@ -36,8 +36,10 @@ class AirportCargoTests(unittest.TestCase):
         js = (ROOT / "assets" / "dashboard.js").read_text(encoding="utf-8")
         self.assertIn("BASE SIMULADA", html)
         self.assertIn('id="filter-airline"', html)
-        self.assertIn("Promise.all(FILES.map", js)
-        self.assertIn("flightIds", js)
+        self.assertTrue((ROOT / "assets" / "analytics.js").exists())
+        analytics = (ROOT / "assets" / "analytics.js").read_text(encoding="utf-8")
+        self.assertIn("flightIds", analytics)
+        self.assertIn("function prepare", analytics)
         self.assertIn("function exportCargo", js)
         for name in ["flights", "cargo", "manifest", "operations", "inconsistencies", "release_process", "delivery"]:
             self.assertTrue((ROOT / "data" / "processed" / "csv" / (name + ".csv")).exists())

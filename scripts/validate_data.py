@@ -77,6 +77,34 @@ def validate():
         except (ValueError, TypeError) as exc:
             errors.append(f"{item['inconsistency_id']}: data invalida: {exc}")
 
+    # Validate every stored datetime without imputing missing optional events.
+    for name, rows in data.items():
+        for row in rows:
+            for key, value in row.items():
+                if key.endswith("_datetime") and value:
+                    try:
+                        timestamp(value)
+                    except (ValueError, TypeError):
+                        errors.append(f"{name}: {key} invalida")
+    event_pairs = {
+        "operations": [("physical_receiving_start_datetime", "physical_receiving_end_datetime"),
+                       ("physical_receiving_end_datetime", "depositary_system_receiving_datetime"),
+                       ("conference_start_datetime", "conference_end_datetime")],
+        "delivery": [("cargo_available_datetime", "pickup_request_datetime"),
+                     ("pickup_request_datetime", "delivery_datetime")],
+    }
+    for name, pairs in event_pairs.items():
+        for row in data[name]:
+            for start, end in pairs:
+                try:
+                    if hours(row[start], row[end]) < 0:
+                        errors.append(f"{name}: {end} anterior a {start}")
+                except (ValueError, TypeError):
+                    errors.append(f"{name}: evento obrigatorio invalido")
+    for row in data["release_process"]:
+        if row["anuence_required"] == "Sim" and not row["anuence_release_datetime"]:
+            errors.append("release_process: anuencia exigida sem data")
+
     on_time = 0
     late = 0
     for f in data["flights"]:
@@ -94,6 +122,7 @@ def validate():
     awb = set()
     dwell_hours = []
     receiving_hours = []
+    post_depositary_hours = []
     received_pieces = 0
     received_kg = 0.0
     for item in data["cargo"]:
@@ -111,6 +140,7 @@ def validate():
             if min(receiv, closure, dwell) < 0:
                 errors.append(f"{cid}: duracao operacional negativa")
             receiving_hours.append(receiv)
+            post_depositary_hours.append(closure)
             dwell_hours.append(dwell)
             pieces = int(item["received_pieces"])
             weight = float(item["received_weight_kg"])
@@ -137,6 +167,11 @@ def validate():
         "avg_hours_arrival_to_delivery": round(sum(dwell_hours) / len(dwell_hours), 3) if dwell_hours else None,
         "avg_hours_arrival_to_depositary": round(sum(receiving_hours) / len(receiving_hours), 3) if receiving_hours else None,
         "occurrences_by_responsibility": dict(sorted(Counter(x["responsibility_group"] for x in data["inconsistencies"]).items())),
+        "avg_hours_depositary_to_closure": round(sum(post_depositary_hours) / len(post_depositary_hours), 3) if post_depositary_hours else None,
+        "avg_hours_arrival_to_closure_per_flight": round(sum(hours(f["aircraft_arrival_datetime"], f["mantra_closure_datetime"]) for f in data["flights"]) / len(flights), 3),
+        "avg_occurrence_resolution_hours": round(sum(hours(i["detected_datetime"], i["resolved_datetime"]) for i in data["inconsistencies"]) / len(data["inconsistencies"]), 3),
+        "physical_weight_divergence_cargo": sum(float(c["declared_weight_kg"]) != float(c["received_weight_kg"]) for c in data["cargo"]),
+        "physical_pieces_divergence_cargo": sum(int(c["declared_pieces"]) != int(c["received_pieces"]) for c in data["cargo"]),
         "coverage_warning": "Sem eventos de warehouse_flow_events ou exportacao; nao calcular dwell operacional limpo ou ocupacao.",
         "errors": errors[:50],
         "error_count": len(errors),
