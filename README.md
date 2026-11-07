@@ -102,5 +102,6 @@ Documentação: docs/validation_report.md, docs/kpi_definitions.md, docs/data_di
 - [x] Views e consultas com denominadores e definições auditáveis.
 - [x] Dashboard web com filtros e exportação.
 - [x] Testes automáticos e workflow de publicação configurados.
-- [ ] Confirmar execução verde do GitHub Actions após a integração na main e acessibilidade do GitHub Pages.
+- [x] Testes CSV/Python/JavaScript aprovados na main ([execução 42383580278](https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics/actions/runs/42383580278)).
+- [ ] Habilitar GitHub Pages nas configurações; [issue #2 com instruções](https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics/issues/2). A publicação foi pulada por falta desta ativação.
 - [ ] Construir e validar PBIX nativo no Power BI Desktop, se essa entrega também for exigida.
