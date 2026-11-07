@@ -29,7 +29,7 @@ for (const [name, width, height] of sizes)
       page.on("response", (r) => {
         if (r.status() >= 400) errors.push(r.url() + ": " + r.status());
       });
-      await page.goto("/");
+      await page.goto("./");
       await expect(page.locator("#scope")).toContainText("1.111 AWBs");
       for (const view of [
         "overview",
@@ -80,7 +80,7 @@ for (const [name, width, height] of sizes)
 test("filters reconcile with original CSV, table, export, drilldown and keyboard", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("./");
   await expect(page.locator("#scope")).toContainText("1.111");
   for (const f of [
     { month: "2026-02", airline: "all", type: "all" },
@@ -151,7 +151,7 @@ test("loading, HTTP error and retry", async ({ page }) => {
   await page.route("**/flights.csv", (r) =>
     r.fulfill({ status: 503, body: "unavailable" }),
   );
-  await page.goto("/");
+  await page.goto("./");
   await expect(page.locator("#status")).toContainText("HTTP 503");
   await expect(page.locator("#retry")).toBeVisible();
   await page.unroute("**/flights.csv");
@@ -160,7 +160,7 @@ test("loading, HTTP error and retry", async ({ page }) => {
 });
 test("empty global intersection and reduced motion", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.goto("/");
+  await page.goto("./");
   await expect(page.locator("#scope")).toContainText("1.111");
   await page
     .locator("#filter-month")
@@ -178,7 +178,7 @@ test("analysis URL restores global filters and exploration state", async ({
   page,
 }) => {
   await page.goto(
-    "/?month=2026-02&airline=Atlas+Air&q=Geral&quality=manifest#explore",
+    "./?month=2026-02&airline=Atlas+Air&q=Geral&quality=manifest#explore",
   );
   await expect(page.locator("#filter-month")).toHaveValue("2026-02");
   await expect(page.locator("#filter-airline")).toHaveValue("Atlas Air");

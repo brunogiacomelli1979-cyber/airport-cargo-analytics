@@ -24,3 +24,5 @@ Auditoria npm: zero vulnerabilidades conhecidas no momento da execução. Dados 
 A rodada final também cobre URLs que restauram período, companhia, perfil e estado da exploração ao recarregar. Formulários receberam nomes e autocomplete apropriados; licenças transitivas ZRender e tslib acompanham o runtime. A ordenação de peso decimal é numérica e possui teste com 9,11 < 9,9 < 100,1.
 
 Inspeção das 24 capturas finais: a distribuição de dwell ainda juntava as unidades dos intervalos em tablet/mobile. Os rótulos passaram a separar faixa e unidade em duas linhas, preservando limites e contagens. Rechecagem no navegador após a correção.
+
+O CI Linux identificou diferença CRLF/LF no aviso de licença tslib, ausente na execução Windows. O processo vendor normaliza os avisos para LF e o Git fixa esse padrão. A média de encerramento por voo usa soma de segundos inteiros e arredondamento decimal explícito no recibo Python, evitando diferença na terceira casa entre versões do Python. A tela mantém duas casas.

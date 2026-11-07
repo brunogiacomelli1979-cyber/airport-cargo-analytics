@@ -9,6 +9,7 @@ import csv
 import json
 from collections import Counter, defaultdict
 from datetime import datetime
+from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -168,7 +169,7 @@ def validate():
         "avg_hours_arrival_to_depositary": round(sum(receiving_hours) / len(receiving_hours), 3) if receiving_hours else None,
         "occurrences_by_responsibility": dict(sorted(Counter(x["responsibility_group"] for x in data["inconsistencies"]).items())),
         "avg_hours_depositary_to_closure": round(sum(post_depositary_hours) / len(post_depositary_hours), 3) if post_depositary_hours else None,
-        "avg_hours_arrival_to_closure_per_flight": round(sum(hours(f["aircraft_arrival_datetime"], f["mantra_closure_datetime"]) for f in data["flights"]) / len(flights), 3),
+        "avg_hours_arrival_to_closure_per_flight": float((Decimal(sum(int((timestamp(f["mantra_closure_datetime"]) - timestamp(f["aircraft_arrival_datetime"])).total_seconds()) for f in data["flights"])) / Decimal(3600 * len(flights))).quantize(Decimal("0.001"), rounding=ROUND_HALF_UP)),
         "avg_occurrence_resolution_hours": round(sum(hours(i["detected_datetime"], i["resolved_datetime"]) for i in data["inconsistencies"]) / len(data["inconsistencies"]), 3),
         "physical_weight_divergence_cargo": sum(float(c["declared_weight_kg"]) != float(c["received_weight_kg"]) for c in data["cargo"]),
         "physical_pieces_divergence_cargo": sum(int(c["declared_pieces"]) != int(c["received_pieces"]) for c in data["cargo"]),

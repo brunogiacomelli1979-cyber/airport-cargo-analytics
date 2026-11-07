@@ -15,3 +15,9 @@ fs.copyFileSync(
   "node_modules/tslib/LICENSE.txt",
   "assets/vendor/TSLIB-LICENSE.txt",
 );
+
+// Canonical line endings keep license verification reproducible on Windows/Linux.
+for (const name of fs.readdirSync("assets/vendor").filter(name => name.endsWith(".txt"))) {
+  const target = "assets/vendor/" + name;
+  fs.writeFileSync(target, fs.readFileSync(target,"utf8").replace(/\r\n/g,"\n"));
+}
