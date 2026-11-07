@@ -72,6 +72,20 @@ jobs:
           node-version: '24'
       - name: Preparar somente arquivos públicos
         run: npm run build
+      - name: Recuperar capturas aprovadas pelo Playwright
+        uses: actions/download-artifact@v4
+        with:
+          name: quality-evidence
+          path: _quality
+      - name: Incluir capturas na galeria publica
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/screenshots
+          install -m 644 _quality/evidence/screenshots/after-desktop-overview.png dist/screenshots/visao-geral.png
+          install -m 644 _quality/evidence/screenshots/after-desktop-performance.png dist/screenshots/performance-operacional.png
+          test -s dist/screenshots/visao-geral.png
+          test -s dist/screenshots/performance-operacional.png
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
