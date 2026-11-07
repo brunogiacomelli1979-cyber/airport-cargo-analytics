@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "frontend-design": {
+      "source": "../work/anthropic-skills",
+      "sourceType": "local",
+      "computedHash": "106acf230014cbb43ca34e6410371321b56ca742f9ee0442e8ec05bf02eb0384"
+    },
+    "ui-ux-pro-max": {
+      "source": "../work/ui-ux",
+      "sourceType": "local",
+      "computedHash": "83d2fd122d7d6ff09fb6819d412761021c48a54f4455c763f8d50d77a0b057b0"
+    },
+    "web-design-guidelines": {
+      "source": "../work/vercel-skills",
+      "sourceType": "local",
+      "computedHash": "d8e7d3afe37dcc8a97b99ffb5afdb4d0919ae0092ea8b68f44eb201f035e33ac"
+    }
+  }
+}

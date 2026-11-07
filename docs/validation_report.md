@@ -53,3 +53,22 @@ Execute python scripts/validate_data.py. O script confere linhas, chaves, integr
 python scripts/validate_data.py --output quality-summary.json
 
 Este documento representa uma inspeção dos CSVs no GitHub, não uma certificação de dados reais.
+
+## Reconciliação ampliada da versão 2 — 07/11/2026
+
+As fontes CSV e a planilha original permanecem byte a byte no histórico sem alterações nesta evolução. Validador ampliado para todas as datas preenchidas, ordem de recebimento físico, registro, conferência, disponibilidade, solicitação e entrega; anuência exigida deve possuir data. Nenhum erro observado na base atual.
+
+Novas métricas reconciliadas independentemente em Python e JavaScript:
+
+| Indicador | Resumo / contagem verificada | Grão |
+|---|---:|---|
+| Registro → encerramento | 9,825 h (resumo a 3 casas) | Média por AWB |
+| Chegada → encerramento | 12,283 h (resumo a 3 casas) | Média por voo |
+| Detecção → resolução | 3,444 h (resumo a 3 casas) | Média por ocorrência |
+| Divergência física de peso | 24 | AWBs |
+| Divergência física de volumes | 32 | AWBs |
+
+A média de chegada→registro somada à média registro→encerramento é ponderada por AWB; não deve ser igualada à média de encerramento por voo, porque são populações com pesos distintos. Divergências físicas comparam os campos declarados e recebidos sem tolerância presumida; não equivalem automaticamente ao flag de manifesto.
+
+Observação da liberação: 159 registros têm customs_release_required = Não e data aduaneira preenchida. Os valores são preservados, sem imputação e sem inferência de obrigação jurídica. Esta interface não apresenta duração aduaneira como indicador validado.
+

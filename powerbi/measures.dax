@@ -1,0 +1,28 @@
+// Create each measure separately. cargo_type slicer must filter cargo, never the occurrence table.
+Voos =
+VAR SelectedFlights = VALUES(cargo[flight_id])
+RETURN CALCULATE(DISTINCTCOUNT(flights[flight_id]), KEEPFILTERS(TREATAS(SelectedFlights, flights[flight_id])))
+
+Voos No Prazo =
+VAR SelectedFlights = VALUES(cargo[flight_id])
+RETURN CALCULATE(DISTINCTCOUNT(flights[flight_id]), KEEPFILTERS(TREATAS(SelectedFlights, flights[flight_id])), flights[Closed On Time] = 1)
+
+Conformidade Encerramento % = DIVIDE([Voos No Prazo], [Voos])
+AWBs = DISTINCTCOUNT(cargo[cargo_id])
+Volumes Recebidos = SUM(cargo[received_pieces])
+Peso Recebido kg = SUM(cargo[received_weight_kg])
+Erros De Manifesto = CALCULATE(DISTINCTCOUNT(manifest[cargo_id]), manifest[manifest_error_flag] = "Sim")
+Taxa Erro Manifesto % = DIVIDE([Erros De Manifesto], [AWBs])
+Cargas Com Inconsistencia = DISTINCTCOUNT(inconsistencies[cargo_id])
+Taxa Inconsistencia % = DIVIDE([Cargas Com Inconsistencia], [AWBs])
+Cargas Com Retrabalho = CALCULATE(DISTINCTCOUNT(inconsistencies[cargo_id]), inconsistencies[rework_flag] = "Sim")
+Taxa Retrabalho % = DIVIDE([Cargas Com Retrabalho], [AWBs])
+Armazenagem Conforme = CALCULATE(DISTINCTCOUNT(operations[cargo_id]), operations[storage_compliance_status] = "Conforme")
+Taxa Conformidade Armazenagem % = DIVIDE([Armazenagem Conforme], [AWBs])
+Dwell Total Medio h = AVERAGE(delivery[Dwell Total Hours])
+Chegada Registro Medio h = AVERAGE(operations[Arrival To Depositary Hours])
+Registro Encerramento Medio h = AVERAGE(operations[Depositary To Closure Hours])
+Ocorrencias = COUNTROWS(inconsistencies)
+Resolucao Ocorrencias Media h =
+AVERAGEX(inconsistencies, IF(NOT ISBLANK(inconsistencies[resolved_datetime]) && inconsistencies[resolved_datetime] >= inconsistencies[detected_datetime],
+    DIVIDE(DATEDIFF(inconsistencies[detected_datetime], inconsistencies[resolved_datetime], MINUTE),60)))

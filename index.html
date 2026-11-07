@@ -1,67 +1,161 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Dashboard demonstrativo de logística aeroportuária — dados simulados, análise auditável de voos, cargas e gargalos.">
-<title>Airport Cargo Analytics | Inteligência Operacional</title>
-<link rel="stylesheet" href="./assets/dashboard.css">
-<script src="./assets/dashboard.js" defer></script>
-</head>
-<body>
-<a class="skip" href="#conteudo">Ir para o conteúdo</a>
-<header class="topbar">
-  <div class="brand"><span class="brand-icon" aria-hidden="true">▥</span>
-    <span><strong>AIRPORT CARGO</strong><small>OPERATIONS ANALYTICS</small></span>
-  </div>
-  <span class="demo-pill">BASE SIMULADA · PORTFÓLIO</span>
-</header>
-<main id="conteudo" class="layout">
-  <div class="intro">
-    <div><span class="eyebrow">INTELIGÊNCIA OPERACIONAL / IMPORTAÇÃO</span>
-      <h1>Performance da carga aérea</h1>
-      <p>Do pouso à entrega: tempos, conformidade, retrabalhos e qualidade documental em um único painel.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Inteligência operacional de carga aérea: voos, AWBs, conformidade e tempos. Base inteiramente simulada."
+    />
+    <meta name="theme-color" content="#102b46" />
+    <title>Airport Cargo Analytics | Visão geral</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23102b46'/%3E%3Cpath d='M8 28L30 8M9 17l12 2 2 12M16 10l4 9 9 4' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./assets/dashboard.css" />
+    <script defer src="./assets/vendor/echarts.min.js"></script>
+    <script defer src="./assets/analytics.js"></script>
+    <script defer src="./assets/dashboard.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <aside class="sidebar">
+      <a
+        class="brand"
+        href="#overview"
+        aria-label="Airport Cargo Analytics, início"
+        ><svg viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M8 30 31 7M8 17l14 2 2 13M16 9l5 10 11 5" /></svg
+        ><span>Airport Cargo<small>Analytics</small></span></a
+      >
+      <div class="terminal">
+        <span class="signal" aria-hidden="true"></span> Terminal de
+        importação<small>Ambiente de análise</small>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="#overview" data-view="overview"
+          ><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z"
+            /></svg
+          >Visão geral</a
+        >
+        <a href="#performance" data-view="performance"
+          ><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 19h18 M5 15l5-6 4 3 6-8 M15 4h5v5" /></svg
+          >Performance operacional</a
+        >
+        <a href="#quality" data-view="quality"
+          ><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2l8 4v6c0 5-8 10-8 10S4 17 4 12V6z M8 12l3 3 5-6"
+            /></svg
+          >Conformidade e qualidade</a
+        >
+        <a href="#bottlenecks" data-view="bottlenecks"
+          ><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18 M3 12h12 M3 18h18 M18 10l3 2-3 2" /></svg
+          >Gargalos e retrabalho</a
+        >
+        <a href="#explore" data-view="explore"
+          ><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 4h18v16H3z M3 9h18 M9 4v16 M3 14h18" /></svg
+          >Exploração de dados</a
+        >
+        <a href="#methodology" data-view="methodology"
+          ><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 8v1 M12 12v5 M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0"
+            /></svg
+          >Metodologia e fontes</a
+        >
+      </nav>
+      <label class="mobile-navigation"
+        >Navegar para<select id="mobile-nav" name="mobile-nav">
+          <option value="overview">Visão geral</option>
+          <option value="performance">Performance operacional</option>
+          <option value="quality">Conformidade e qualidade</option>
+          <option value="bottlenecks">Gargalos e retrabalho</option>
+          <option value="explore">Exploração de dados</option>
+          <option value="methodology">Metodologia e fontes</option>
+        </select></label
+      >
+      <div class="sidebar-foot">
+        <span class="demo-label">BASE SIMULADA</span>
+        <p>Dados fictícios para análise e portfólio.</p>
+        <a
+          href="https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Repositório e documentação</a
+        ><small>Airport Cargo Analytics / v2.0</small>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <span
+          >Operações <span class="slash">/</span>
+          <strong id="breadcrumb">Visão geral</strong></span
+        ><span class="dataset-tag"
+          >Importação <span aria-hidden="true">•</span> Jan–mar 2026</span
+        >
+      </header>
+      <main id="conteudo" tabindex="-1">
+        <div class="page-heading">
+          <div>
+            <p class="context">Inteligência operacional de carga aérea</p>
+            <h1 id="page-title">Visão geral</h1>
+            <p id="page-description">
+              Uma leitura do volume, dos tempos e da qualidade da operação.
+            </p>
+          </div>
+          <button id="open-explore" class="primary" type="button">
+            Explorar cargas <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <section class="filterbar" aria-label="Filtros globais">
+          <label
+            >Período de chegada<select id="filter-month" name="filter-month">
+              <option value="all">Todos os meses</option>
+            </select></label
+          >
+          <label
+            >Companhia aérea<select id="filter-airline" name="filter-airline">
+              <option value="all">Todas as companhias</option>
+            </select></label
+          >
+          <label
+            >Perfil da carga<select id="filter-type" name="filter-type">
+              <option value="all">Todos os perfis</option>
+            </select></label
+          >
+          <button id="reset" type="button">Limpar filtros</button>
+        </section>
+        <div class="scope-line">
+          <span id="scope">Preparando análise…</span
+          ><span id="status" role="status" aria-live="polite"
+            >Carregando os sete arquivos de origem…</span
+          >
+        </div>
+        <div id="view" aria-busy="true">
+          <div class="loading">Carregando indicadores e visualizações…</div>
+        </div>
+        <footer>
+          <span
+            >Dados simulados. Prazo de encerramento fictício, sem interpretação
+            jurídica.</span
+          ><a href="#methodology">Consultar metodologia e limites</a>
+        </footer>
+      </main>
     </div>
-    <a class="repo-link" href="https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics" target="_blank" rel="noopener noreferrer">Ver metodologia no GitHub ↗</a>
-  </div>
-  <div class="filterbar" aria-label="Filtros de análise">
-    <label>Mês de chegada<select id="filter-month"><option value="all">Todos os meses</option></select></label>
-    <label>Companhia aérea<select id="filter-airline"><option value="all">Todas as companhias</option></select></label>
-    <label>Tipo de carga<select id="filter-type"><option value="all">Todos os tipos</option></select></label>
-    <button id="reset" class="reset" type="button">Limpar filtros</button>
-  </div>
-  <div id="status" class="status" role="status">Carregando arquivos CSV...</div>
-  <section aria-label="Indicadores principais" class="kpi-grid" id="kpi-grid">
-    <article class="kpi"><span>Voos analisados</span><strong id="kpi-flights">—</strong><small>Grão: voo único</small></article>
-    <article class="kpi"><span>Cargas / AWBs</span><strong id="kpi-cargo">—</strong><small>Grão: carga única</small></article>
-    <article class="kpi"><span>Encerramento no prazo</span><strong id="kpi-compliance">—</strong><small>Prazo simulado por voo</small></article>
-    <article class="kpi"><span>Erros de manifesto</span><strong id="kpi-manifest">—</strong><small>Percentual das cargas</small></article>
-    <article class="kpi"><span>Retrabalho</span><strong id="kpi-rework">—</strong><small>Cargas com ≥1 ocorrência</small></article>
-    <article class="kpi"><span>Dwell total médio</span><strong id="kpi-dwell">—</strong><small>Chegada ao terminal → entrega</small></article>
-  </section>
-  <section class="section-head"><div><h2>Visão operacional</h2><p>Tempos e desempenho a partir dos registros simulados.</p></div><span id="scope-note"></span></section>
-  <div class="panels">
-    <section class="panel"><div class="panel-head"><h3>Volume de voos por mês</h3><small>Data de chegada</small></div><div id="chart-month" class="chart-bars" aria-label="Voos por mês"></div></section>
-    <section class="panel"><div class="panel-head"><h3>Conformidade por companhia</h3><small>Encerrados até o limite simulado</small></div><div id="chart-airline" class="chart-bars" aria-label="Conformidade por companhia aérea"></div></section>
-    <section class="panel"><div class="panel-head"><h3>Perfil das cargas</h3><small>Quantidade de AWBs por natureza</small></div><div id="chart-type" class="chart-bars" aria-label="Cargas por tipo"></div></section>
-    <section class="panel"><div class="panel-head"><h3>Responsabilidade das ocorrências</h3><small>Classificação registrada nas inconsistências; não é causa comprovada de atraso</small></div><div id="chart-responsibility" class="chart-bars" aria-label="Ocorrências por responsável"></div></section>
-  </div>
-  <section class="section-head"><div><h2>Qualidade e tempos</h2><p>Indicadores calculados no grão correto, com denominadores explícitos.</p></div></section>
-  <div class="secondary-grid">
-    <article class="mini"><span>Volumes recebidos</span><strong id="metric-pieces">—</strong></article>
-    <article class="mini"><span>Peso recebido</span><strong id="metric-kg">—</strong></article>
-    <article class="mini"><span>Chegada → registro no depositário</span><strong id="metric-depositary">—</strong></article>
-    <article class="mini"><span>Armazenagem conforme</span><strong id="metric-storage">—</strong></article>
-    <article class="mini"><span>Cargas com inconsistência</span><strong id="metric-inc">—</strong></article>
-    <article class="mini"><span>Ocorrências registradas</span><strong id="metric-occ">—</strong></article>
-  </div>
-  <section class="panel table-panel"><div class="panel-head">
-    <div><h3>Voos encerrados após o prazo simulado</h3><small>Ordenados pela maior ultrapassagem; a classificação não presume responsável pelo atraso.</small></div>
-    <button class="download" id="download-csv" type="button">Exportar cargas filtradas (CSV)</button>
-  </div>
-  <div class="table-wrap"><table><thead><tr><th>Voo</th><th>Companhia</th><th>Origem</th><th>Chegada</th><th>Excedente</th></tr></thead><tbody id="late-flights"><tr><td colspan="5">Carregando...</td></tr></tbody></table></div>
-  </section>
-  <footer><div><strong>Nota metodológica</strong><p>Todos os registros são fictícios. Datas são tratadas no mesmo fuso, sem conversão. Prazo de encerramento é uma regra simulada do arquivo, não afirmação sobre legislação em vigor. Indicadores de incidência não demonstram causalidade.</p></div>
-  <div><strong>Cobertura e limites</strong><p>7 CSVs de importação; não há eventos detalhados do armazém, operações de exportação, ocupação física ou intervalos externos suficientes para calcular “dwell operacional limpo”.</p></div></footer>
-</main>
-</body></html>
+    <dialog id="detail" aria-labelledby="detail-title">
+      <div class="dialog-head">
+        <h2 id="detail-title">Detalhe da carga</h2>
+        <button id="close-detail" type="button">Fechar</button>
+      </div>
+      <div id="detail-body"></div>
+    </dialog>
+    <noscript>Ative JavaScript para carregar os dados e os filtros.</noscript>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Airport Cargo Analytics",
+  "dataColors": ["#2368AD", "#237766", "#A26108", "#1E405F"],
+  "background": "#F3F6F9",
+  "foreground": "#152D43",
+  "tableAccent": "#2368AD"
+}

@@ -1,5 +1,8 @@
 # Monitoramento Operacional do Armazém
 
+> Escopo verificado em 07/11/2026: Proposta futura, sem dados para implementação. warehouse_flow_events, exportação, saldos de ocupação e intervalos de equipe não existem nos sete CSVs. Tempos aceitáveis abaixo são exemplos conceituais, não benchmarks usados no dashboard.
+
+
 Este documento descreve a proposta de monitoramento operacional do armazém no projeto **Airport Cargo Operations Analytics**.
 
 O objetivo deste módulo é representar visualmente os fluxos de movimentação de cargas de importação e exportação, permitindo acompanhar tempos por etapa, identificar gargalos e apoiar decisões de alocação de efetivo.

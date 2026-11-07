@@ -1,5 +1,8 @@
 # Fluxo Operacional
 
+> Escopo verificado em 07/11/2026: O fluxo abaixo é conceitual. A base permite medir intervalos registrados, mas não comprova responsabilidade pelos atrasos nem separa dwell limpo de dependências externas.
+
+
 Este documento descreve o fluxo operacional considerado no projeto **Airport Cargo Operations Analytics**.
 
 O projeto simula a jornada da carga aérea de importação em um aeroporto internacional brasileiro genérico, desde a chegada da aeronave até a entrega ou retirada da carga.

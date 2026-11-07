@@ -1,5 +1,8 @@
 # Metodologia
 
+> Escopo verificado em 07/11/2026: A análise entregue é descritiva. Dwell operacional limpo, separação causal de atrasos internos/externos e ocupação corrente não são calculáveis com esta base. As propostas históricas abaixo não constituem indicadores implementados; as definições vigentes estão em kpi_definitions.md.
+
+
 Este projeto utiliza como referência o processo de análise de dados apresentado no **Google Data Analytics Professional Certificate**:
 
 **Ask → Prepare → Process → Analyze → Share → Act**
