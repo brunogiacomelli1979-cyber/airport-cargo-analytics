@@ -22,3 +22,5 @@ Playwright cobre 1920×1080, 1366×768, 768×1024 e 390×844. Capturas de cada �
 Auditoria npm: zero vulnerabilidades conhecidas no momento da execução. Dados brutos e CSVs originais não alterados. Sem erros de execução JavaScript observados nas seis áreas testadas. A validação em produção é registrada separadamente no relatório final de entrega, com PR e execução do deploy.
 
 A rodada final também cobre URLs que restauram período, companhia, perfil e estado da exploração ao recarregar. Formulários receberam nomes e autocomplete apropriados; licenças transitivas ZRender e tslib acompanham o runtime. A ordenação de peso decimal é numérica e possui teste com 9,11 < 9,9 < 100,1.
+
+Inspeção das 24 capturas finais: a distribuição de dwell ainda juntava as unidades dos intervalos em tablet/mobile. Os rótulos passaram a separar faixa e unidade em duas linhas, preservando limites e contagens. Rechecagem no navegador após a correção.

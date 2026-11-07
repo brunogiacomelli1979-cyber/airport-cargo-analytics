@@ -132,6 +132,10 @@ function chart(
       color: "#526579",
       fontSize: 11,
       interval: 0,
+      formatter: (value) =>
+        !horizontal && value.endsWith(" h")
+          ? value.replace(/ h$/, "\nh")
+          : value,
       ...(horizontal
         ? { width: narrow ? 118 : 150, overflow: "break", lineHeight: 13 }
         : {}),
