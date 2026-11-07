@@ -1,107 +1,115 @@
-# Airport Cargo Operations Analytics
+# Airport Cargo Analytics
 
-**Projeto demonstrativo de BI operacional aplicado à logística aeroportuária de importação.** Transforma sete tabelas CSV fictícias em uma análise rastreável de voos, cargas, tempos, manifestações documentais, inconsistências, armazenagem e entrega.
+Aplicação de inteligência operacional para carga aérea de importação. Sete bases **inteiramente simuladas**, com navegação por tarefa, indicadores rastreáveis, gráficos interativos e exploração de AWBs.
 
-> **Aviso: dados simulados.** Nenhum registro representa operações reais de Viracopos, de companhias aéreas, clientes ou órgãos públicos. O prazo do dataset é uma premissa de simulação, não orientação regulatória.
+[Aplicação no GitHub Pages](https://brunogiacomelli1979-cyber.github.io/airport-cargo-analytics/) · [Workflows e evidências de publicação](https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics/actions)
 
-## Entrega atual
+> Nenhum registro representa operação real. O prazo de encerramento é fictício e não é interpretação jurídica de regulamentação.
 
-- **Dashboard web responsivo:** index.html + assets/dashboard.css + assets/dashboard.js.
-- **Filtros:** mês de chegada, companhia aérea, tipo de carga; indicadores, gráficos e ranking se recalculam.
-- **Exportação:** CSV filtrado de cargas, com grão de AWB preservado.
-- **Banco relacional MySQL 8:** sql/01_create_tables.sql.
-- **Consultas e views auditáveis:** sql/02_analysis_queries.sql.
-- **Validação automática:** scripts/validate_data.py e tests/test_data.py, sem bibliotecas Python externas.
-- **CI e publicação GitHub Pages:** .github/workflows/quality-and-pages.yml.
-- **Camada Power BI:** guia de importação, relacionamentos, DAX e páginas em powerbi/GUIA_DE_IMPLEMENTACAO.md. **O arquivo PBIX nativo não está incluído; precisa ser montado no Power BI Desktop.**
+## Versão 2
 
-## Executar o dashboard web localmente
+- **Visão geral:** volume, conformidade do encerramento, qualidade, tempos e voos para investigação.
+- **Performance operacional:** movimento mensal, companhias, etapas até encerramento, perfis e distribuição de dwell.
+- **Conformidade e qualidade:** manifesto, divergências físicas, prazo e armazenagem por segmento.
+- **Gargalos e retrabalho:** ocorrências, cargas afetadas, classificações e tempo decorrido de resolução.
+- **Exploração:** busca, oito colunas ordenáveis, filtros combinados, paginação, voo→AWBs e detalhe das sete fontes relacionadas. Exporta o conjunto filtrado inteiro, além da página visível.
+- **Metodologia:** arquivos de origem, contagens, fórmulas, denominadores e limitações.
 
-No diretório raiz do repositório:
+Exemplo: selecione fevereiro e uma companhia, abra um voo em “Ver cargas”, refine os AWBs com erro de manifesto e exporte o CSV. A busca e a condição da exploração afetam apenas tabela/CSV; os filtros superiores afetam todos os indicadores e gráficos relacionados. O recorte permanece ao navegar entre áreas.
 
-    python scripts/validate_data.py
-    python -m unittest discover -s tests -v
-    python -m http.server 8000
+## Executar localmente
 
-Acessar http://localhost:8000 no navegador. Abrir index.html diretamente como file:// pode bloquear o carregamento de CSV por segurança; use servidor HTTP.
+Requisitos: Python 3.11+ e Node.js 24 (CI), npm. O site já contém os arquivos de runtime e não precisa de instalação para servir.
 
-**Dashboard publicado via GitHub Pages** em 07/11/2026:
-https://brunogiacomelli1979-cyber.github.io/airport-cargo-analytics/
+```sh
+python -m http.server 8000
+```
 
-Publicação confirmada pelo workflow [#42385177235](https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics/actions/runs/42385177235), com etapa `actions/deploy-pages@v4` concluída com sucesso.
+Acesse http://localhost:8000. Não abra index.html como file://, pois isso pode bloquear fetch dos CSVs.
 
-## Modelo e cargas SQL
+Para desenvolver e validar:
 
-Requisito: MySQL 8.0+ e DBeaver (ou importador equivalente).
+```sh
+npm ci --ignore-scripts
+npx playwright install chromium
+python scripts/validate_data.py --output evidence/quality-summary.json
+python -m unittest discover -s tests -v
+npm test
+npm run test:ui
+npm audit --audit-level=high
+npm run vendor
+npm run build
+```
 
-1. Executar sql/01_create_tables.sql.
-2. Importar data/processed/csv/flights.csv primeiro.
-3. Importar cargo.csv em seguida.
-4. Importar manifest.csv, operations.csv, inconsistencies.csv, release_process.csv e delivery.csv.
-5. Usar cabeçalho, vírgula, texto UTF-8 com BOM e campos de data datetime; strings vazias opcionais devem ser NULL.
-6. Executar sql/02_analysis_queries.sql após a importação. O script cria duas views e executa verificações e consultas analíticas.
+No Linux/CI, use `npx playwright install --with-deps chromium`. Playwright usa Chromium completo, gera screenshots das seis áreas nas quatro resoluções e relatório em playwright-report. O diretório de screenshots padrão é ../outputs; ajuste SCREENSHOT_DIR se necessário. Para a versão pública, use BASE_URL com o endereço do site (o servidor local não será iniciado).
 
-A importação não é automatizada no GitHub Actions porque o projeto não possui banco MySQL de produção — o painel web consome os CSVs versionados e funciona independentemente do MySQL.
+## Tecnologias e manutenção
 
-## Resumo da base simulada
+HTML semântico, CSS com tokens e JavaScript sem framework. **Apache ECharts 6.1.0**, Apache-2.0, servido localmente com LICENSE/NOTICE. Não há CDN, backend, API paga ou hospedagem além do GitHub Pages. **Playwright 1.65.0** e **axe-core/playwright 4.14.0** validam interface e acessibilidade. Dependências fixadas em package-lock.json.
 
-| Medida | Valor |
-| --- | ---: |
-| Janela de chegada | janeiro–março de 2026 |
-| Companhias aéreas | 8 |
-| Voos | 120 |
-| Cargas/AWBs | 1.111 |
-| Inconsistências | 394, afetando 350 cargas |
-| Voos dentro do prazo simulado | 54 / 120 (45,0%) |
-| Cargas com erro de manifesto | 208 / 1.111 (18,7%) |
-| Cargas com retrabalho | 223 / 1.111 (20,1%) |
-| Cargas armazenadas conforme registro | 1.021 / 1.111 (91,9%) |
-| Peso recebido | 1.384.521,66 kg |
-| Volumes recebidos | 44.892 |
-| Dwell total médio | 70,11 horas |
+Tabler, TanStack Table, Tremor Dashboard OSS e shadcn/ui foram avaliados. Servem de referência, sem inclusão de frameworks ou cópia integral de templates. [Justificativas e design system](docs/architecture-and-design.md).
 
-**Importante:** 41 voos constam como "Próximo ao limite" no campo textual, mas possuem encerramento *depois* do horário limite. O dashboard e a view calculam a conformidade pelo horário, não pelo texto.
+Skills utilizadas: Frontend Design (Anthropic), UI UX Pro Max e Web Design Guidelines (Vercel), instaladas em .agents/skills no projeto com skills 1.7.6. [Revisões exatas, instalação e aplicação](docs/architecture-and-design.md#instalação-e-aplicação-das-skills). A skill validate-data orientou reconciliação e revisão metodológica.
 
-## Conceitos e limitações
+## Dados e definições
 
-- O grão de voo e de AWB é diferente: é incorreto multiplicar voos por número de cargas na mesma viagem.
-- Um AWB pode ter mais de uma ocorrência, então a taxa de cargas afetadas usa cargo_id distinto.
-- A distribuição de grupos responsáveis descreve **ocorrências**, não causalidade nem culpa por atraso.
-- "Dwell total" significa chegada da aeronave até entrega/retirada. A base não sustenta um cálculo de "dwell operacional limpo" sem eventos e tempos externos suficientes.
-- Não existem registros de warehouse_flow_events, exportações nem saldos para medir ocupação corrente ou necessidade real de reforço de equipe.
-- Datas são simuladas no mesmo fuso, sem timezone declarado; não alterar fuso durante o tratamento.
-- A análise é descritiva, educacional, não operacional ou jurídica.
+| Tabela | Registros |
+|---|---:|
+| flights | 120 |
+| cargo | 1.111 |
+| manifest | 1.111 |
+| operations | 1.111 |
+| inconsistencies | 394 |
+| release_process | 1.111 |
+| delivery | 1.111 |
 
-Documentação: docs/validation_report.md, docs/kpi_definitions.md, docs/data_dictionary.md, docs/methodology.md, docs/warehouse_monitoring.md.
+Chegadas: janeiro–março de 2026, oito companhias. Totais reconciliados: **44.892 volumes; 1.384.521,66 kg; 54/120 voos no prazo (45,0%); 208 AWBs com erro de manifesto; 223 com retrabalho; 1.021 com armazenagem conforme; 350 com ocorrências.** Dwell médio 70,107 h; chegada→registro 2,503 h; registro→encerramento 9,825 h por AWB; chegada→encerramento 12,283 h por voo; resolução média de ocorrência 3,444 h.
+
+- Prazo: chegada ≤ encerramento ≤ limite fictício. Os 41 voos com texto “Próximo ao limite” estão fora pelo timestamp.
+- Taxas de manifesto, retrabalho e armazenagem usam AWBs como denominador; prazo usa voos distintos.
+- Dwell total é chegada da aeronave→entrega, incluindo dependências externas.
+- Resolução de ocorrência é tempo decorrido, não tempo de trabalho ativo. Grupos não comprovam culpa por atraso.
+- Sem warehouse_flow_events, exportações ou saldos: não calcular ocupação atual, necessidade de equipe ou dwell operacional limpo.
+- Datas locais simuladas sem fuso declarado são preservadas. As fontes originais não foram alteradas.
+
+[Definições e fórmulas](docs/kpi_definitions.md) · [Validação da base](docs/validation_report.md) · [Auditoria do redesign](docs/redesign-audit.md)
 
 ## Estrutura
 
-    airport-cargo-analytics/
-    ├── index.html
-    ├── assets/
-    │   ├── dashboard.css
-    │   └── dashboard.js
-    ├── data/
-    │   ├── raw/airport_cargo_operations_sample.xlsx
-    │   └── processed/csv/{flights,cargo,manifest,operations,inconsistencies,release_process,delivery}.csv
-    ├── sql/
-    │   ├── 01_create_tables.sql
-    │   └── 02_analysis_queries.sql
-    ├── powerbi/GUIA_DE_IMPLEMENTACAO.md
-    ├── scripts/validate_data.py
-    ├── tests/test_data.py
-    ├── docs/
-    │   ├── validation_report.md
-    │   └── demais documentos de metodologia
-    └── .github/workflows/quality-and-pages.yml
+```text
+index.html                     estrutura e controles globais
+assets/dashboard.css           tokens, componentes e responsividade
+assets/analytics.js            parser, integridade, filtros, métricas e CSV
+assets/dashboard.js            rotas, gráficos, tabela e detalhe
+assets/vendor/                 ECharts fixado, licença e notice
+data/raw/                      planilha original preservada
+data/processed/csv/            sete fontes originais
+scripts/                       validação Python, build e vendor
+tests/                         Python, JavaScript e Playwright
+sql/                           modelo MySQL 8 e views analíticas
+powerbi/                       guia, Power Query, DAX e tema
+docs/                          metodologia, decisões e auditoria
+.github/workflows/             qualidade e deploy GitHub Pages
+```
 
-## Critérios de conclusão
+## SQL e Power BI
 
-- [x] Inventário e validação quantitativa dos sete CSVs.
-- [x] Modelo SQL com relacionamentos e proteção contra explosão de registros.
-- [x] Views e consultas com denominadores e definições auditáveis.
-- [x] Dashboard web com filtros e exportação.
-- [x] Testes automáticos e workflow de publicação configurados.
-- [x] Testes CSV/Python/JavaScript aprovados na main ([execução 42383580278](https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics/actions/runs/42383580278)).
-- [x] GitHub Pages habilitado e publicado, com testes e deploy aprovados na [execução #42385177235](https://github.com/brunogiacomelli1979-cyber/airport-cargo-analytics/actions/runs/42385177235).
-- [ ] Construir e validar PBIX nativo no Power BI Desktop, se essa entrega também for exigida.
+Modelo MySQL 8 em sql/01_create_tables.sql e consultas em sql/02_analysis_queries.sql. Importar flights→cargo→demais tabelas; CSV UTF-8 BOM, vírgula, cabeçalhos, decimais com ponto, datas yyyy-MM-dd HH:mm e vazios opcionais como NULL. As views agregam inconsistências antes da junção para não multiplicar pesos e volumes. SQL revisado estaticamente nesta versão; sem servidor MySQL configurado para validação de execução.
+
+[Guia Power BI](powerbi/GUIA_DE_IMPLEMENTACAO.md), função [Power Query](powerbi/LoadCargoCsv.pq), [colunas](powerbi/columns.dax), [medidas](powerbi/measures.dax) e [tema](powerbi/theme.json) permitem montagem reproduzível. As medidas de voos incluem TREATAS para filtros de perfil. **PBIX nativo pendente:** Power BI Desktop não disponível nesta execução. DAX/M foram revisados como texto; não foi alegada execução no motor Power BI.
+
+## Testes e evidências
+
+Validação local: **4 testes Python, 7 JavaScript e 7 Playwright aprovados**, incluindo seis áreas em 1920×1080, 1366×768, 768×1024 e 390×844. Reconciliação independente JS/Python; combinações de filtros; limite exato de prazo; CSV inválido; duplicatas 1:1; exportação exata; busca, ordenação, paginação; teclado e diálogo; falha HTTP e recuperação; recorte vazio e movimento reduzido. Axe executado para WCAG 2 A/AA e 2.1 AA nas seis áreas e quatro tamanhos. Não equivale a certificação de acessibilidade.
+
+A auditoria visual identificou e corrigiu eixos comprimidos, rótulos densos, filtros cortados e tabela rolável sem foco. Screenshots e traces ficam no artefato quality-evidence do workflow por 30 dias. Auditoria npm local: zero vulnerabilidades conhecidas. [Relatório de problemas e correções](docs/redesign-audit.md).
+
+## Publicação e reversão
+
+GitHub Pages deve estar configurado com Source = GitHub Actions. A PR executa o job de qualidade. Integre somente após aprovação dos testes. Push em main executa qualidade e depois configura Pages, publica apenas dist via actions/upload-pages-artifact@v3 e realiza **actions/deploy-pages@v4**. Falhas de configuração não são mascaradas como deploy bem-sucedido.
+
+Para confirmar uma publicação: abra a execução do commit integrado, confira o job Pages e a etapa real de deploy e execute testes no endereço público. Workflow verde sem a etapa de deploy concluída não comprova publicação.
+
+Para reverter: branch de main, `git revert -m 1 SHA_DO_MERGE`, PR, testes e integração; isso dispara nova publicação com o conteúdo restaurado. Não force-push em main. Consulte o histórico para recuperar a versão anterior d19b42e.
+
+Pendências separadas: PBIX nativo e execução do modelo em servidor MySQL. Nenhuma delas é necessária ao funcionamento da versão web estática.

@@ -1,0 +1,25 @@
+// Calculated column in flights
+Closed On Time =
+IF(NOT ISBLANK(flights[mantra_closure_datetime]) &&
+   flights[mantra_closure_datetime] >= flights[aircraft_arrival_datetime] &&
+   flights[mantra_closure_datetime] <= flights[legal_deadline_datetime], 1, 0)
+
+// Calculated column in operations
+Arrival To Depositary Hours =
+VAR FlightKey = LOOKUPVALUE(cargo[flight_id], cargo[cargo_id], operations[cargo_id])
+VAR Arrival = LOOKUPVALUE(flights[aircraft_arrival_datetime], flights[flight_id], FlightKey)
+RETURN IF(ISBLANK(Arrival) || ISBLANK(operations[depositary_system_receiving_datetime]) || operations[depositary_system_receiving_datetime] < Arrival,
+    BLANK(), DIVIDE(DATEDIFF(Arrival, operations[depositary_system_receiving_datetime], MINUTE),60))
+
+Depositary To Closure Hours =
+VAR FlightKey = LOOKUPVALUE(cargo[flight_id], cargo[cargo_id], operations[cargo_id])
+VAR Closure = LOOKUPVALUE(flights[mantra_closure_datetime], flights[flight_id], FlightKey)
+VAR Receiving = operations[depositary_system_receiving_datetime]
+RETURN IF(ISBLANK(Closure) || ISBLANK(Receiving) || Closure < Receiving, BLANK(), DIVIDE(DATEDIFF(Receiving, Closure, MINUTE),60))
+
+// Calculated column in delivery
+Dwell Total Hours =
+VAR FlightKey = LOOKUPVALUE(cargo[flight_id], cargo[cargo_id], delivery[cargo_id])
+VAR Arrival = LOOKUPVALUE(flights[aircraft_arrival_datetime], flights[flight_id], FlightKey)
+RETURN IF(ISBLANK(Arrival) || ISBLANK(delivery[delivery_datetime]) || delivery[delivery_datetime] < Arrival,
+    BLANK(), DIVIDE(DATEDIFF(Arrival, delivery[delivery_datetime], MINUTE),60))

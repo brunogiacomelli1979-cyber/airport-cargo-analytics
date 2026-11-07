@@ -75,7 +75,9 @@ Nome: Arrival To Depositary Hours
 
 ## 6. Medidas DAX
 
-    Voos = DISTINCTCOUNT(flights[flight_id])
+    Voos =
+    VAR SelectedFlights = VALUES(cargo[flight_id])
+    RETURN CALCULATE(DISTINCTCOUNT(flights[flight_id]), KEEPFILTERS(TREATAS(SelectedFlights, flights[flight_id])))
     AWBs = DISTINCTCOUNT(cargo[cargo_id])
     Volumes Recebidos = SUM(cargo[received_pieces])
     Peso Recebido kg = SUM(cargo[received_weight_kg])
@@ -105,3 +107,15 @@ Cuidado: filtros em inconsistency_type podem limitar o subconjunto do numerador 
 Antes de chamar o PBIX de finalizado, conferir os números com docs/validation_report.md e com o validador Python, testar filtros cruzados, conferir taxas no nível de voo versus carga, revisar datas/pesos com cultura correta e salvar screenshot das quatro páginas.
 
 Não publicar dados como reais e não calcular ocupação do armazém, exportação nem dwell operacional limpo a partir desta base.
+
+
+## 9. Artefatos reproduzíveis da versão 2
+
+- `LoadCargoCsv.pq`: função Power Query. Crie o parâmetro de texto `CsvFolder` com o caminho absoluto da pasta CSV, crie a consulta-função `LoadCargoCsv` e sete consultas com `LoadCargoCsv("flights")`, `LoadCargoCsv("cargo")`, etc. A função converte datas, pesos e inteiros com cultura en-US e preserva IDs como texto.
+- `columns.dax`: criar cada coluna separadamente na tabela indicada pelo comentário.
+- `measures.dax`: criar cada medida separadamente. Inclui TREATAS para que o filtro cargo_type alcance o denominador e o numerador de voos.
+- `theme.json`: importar por Exibição > Temas > Procurar temas.
+
+No Power BI, relacionamentos 1:1 são bidirecionais. Para reproduzir o fluxo pai→filho sem caminhos ambíguos, configure cargo como lado 1 e as tabelas auxiliares como lado muitos (mesmo com unicidade observada), direção única. Não habilite filtro reverso de inconsistencies para cargo. Use slicers de flights para período e companhia e cargo para perfil.
+
+Status: PBIX nativo pendente. Estes arquivos foram revisados como texto e reconciliados conceitualmente com os CSVs; não foram executados no motor DAX/M. A aprovação do PBIX exige montagem, recálculo e testes no Power BI Desktop. Campos de liberação aduaneira podem ter data mesmo com customs_release_required = Não; preservar os registros, sem assumir que essa data representa obrigação legal.

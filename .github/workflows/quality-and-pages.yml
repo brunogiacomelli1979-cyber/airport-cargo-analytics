@@ -1,18 +1,18 @@
-name: Validar dados e publicar dashboard
-
+name: Qualidade e publicação
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
-
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   quality:
-    name: Integridade CSV, testes e JavaScript
+    name: Dados, cálculos, interface e acessibilidade
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,20 +21,40 @@ jobs:
           python-version: '3.11'
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
-      - name: Validar base e gerar recibo JSON
-        run: python scripts/validate_data.py --output quality-summary.json
-      - name: Testar regras e totais
-        run: python -m unittest discover -s tests -v
-      - name: Validar sintaxe JavaScript
-        run: node --check assets/dashboard.js
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm audit --audit-level=high
+      - name: Validar CSVs e testes Python
+        run: |
+          python scripts/validate_data.py --output evidence/quality-summary.json
+          python -m unittest discover -s tests -v
+      - name: Validar JavaScript e reconciliação independente
+        run: |
+          node --check assets/dashboard.js
+          node --check assets/analytics.js
+          npm test
+      - run: npx playwright install --with-deps chromium
+      - name: Testar quatro resoluções, filtros, exportações e acessibilidade
+        run: npm run test:ui
+        env:
+          SCREENSHOT_DIR: evidence/screenshots
+      - name: Gerar e conferir pacote estático
+        run: |
+          npm run vendor
+          git diff --exit-code -- assets/vendor
+          npm run build
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: quality-summary
-          path: quality-summary.json
-
+          name: quality-evidence
+          path: |
+            evidence/
+            playwright-report/
+            test-results/
+          retention-days: 30
   pages:
-    name: Publicar dashboard GitHub Pages (se habilitado)
+    name: Publicar GitHub Pages
     needs: quality
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
@@ -47,27 +67,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Verificar se GitHub Pages esta habilitado
-        id: pages_status
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          code=$(curl -sS -o /dev/null -w '%{http_code}' \
-            -H 'Accept: application/vnd.github+json' \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/repos/$GITHUB_REPOSITORY/pages")
-          if [ "$code" = "200" ]; then
-            echo "enabled=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "enabled=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::GitHub Pages ainda nao esta habilitado (HTTP $code). Ative em Settings > Pages > Source: GitHub Actions; execute este workflow novamente."
-          fi
-      - uses: actions/configure-pages@v5
-        if: steps.pages_status.outputs.enabled == 'true'
-      - uses: actions/upload-pages-artifact@v3
-        if: steps.pages_status.outputs.enabled == 'true'
+      - uses: actions/setup-node@v4
         with:
-          path: .
+          node-version: '24'
+      - name: Preparar somente arquivos públicos
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
       - id: deployment
-        if: steps.pages_status.outputs.enabled == 'true'
+        name: Publicar versão validada
         uses: actions/deploy-pages@v4

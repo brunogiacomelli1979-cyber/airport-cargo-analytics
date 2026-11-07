@@ -1,5 +1,8 @@
 # Dicionário de Dados
 
+> Escopo verificado em 07/11/2026: warehouse_flow_events é apenas um modelo futuro: não existe CSV nem observações dessa tabela. Todos os prazos descritos como regulatórios são fictícios. Grupos classificam ocorrências, sem demonstrar causa de atraso.
+
+
 Este documento apresenta a estrutura da base de dados do projeto **Airport Cargo Operations Analytics**.
 
 Os dados são simulados e organizados para permitir análises de performance operacional, conformidade regulatória, armazenagem, inconsistências, gargalos e responsabilidade dos atrasos.
