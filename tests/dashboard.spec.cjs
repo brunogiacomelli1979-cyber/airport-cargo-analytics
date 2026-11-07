@@ -174,3 +174,25 @@ test("empty global intersection and reduced motion", async ({ page }) => {
   await page.locator("#reset").click();
   await expect(page.locator("#scope")).toContainText("1.111");
 });
+test("analysis URL restores global filters and exploration state", async ({
+  page,
+}) => {
+  await page.goto(
+    "/?month=2026-02&airline=Atlas+Air&q=Geral&quality=manifest#explore",
+  );
+  await expect(page.locator("#filter-month")).toHaveValue("2026-02");
+  await expect(page.locator("#filter-airline")).toHaveValue("Atlas Air");
+  await expect(page.locator("#search")).toHaveValue("Geral");
+  await expect(page.locator("#quality-select")).toHaveValue("manifest");
+  const expected = A.explore(
+    A.select(data, { month: "2026-02", airline: "Atlas Air" }).cargo,
+    { query: "Geral", quality: "manifest" },
+  );
+  await expect(page.locator("#table-summary")).toContainText(
+    expected.length + " AWBs",
+  );
+  await page.reload();
+  await expect(page.locator("#table-summary")).toContainText(
+    expected.length + " AWBs",
+  );
+});

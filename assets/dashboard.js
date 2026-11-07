@@ -435,7 +435,7 @@ function renderBottlenecks(s, m) {
 }
 function renderExplore() {
   $("view").innerHTML =
-    `<section class="panel"><div class="panel-head"><div><h2>Registros de carga</h2><p>Os filtros abaixo refinam a tabela e a exportação. Indicadores globais usam os filtros do cabeçalho.</p></div></div><div class="tools"><label>Buscar AWB, voo ou companhia<input id="search" type="search" placeholder="Ex.: 693-83197857" value="${esc(tableState.query)}"></label><label>Voo relacionado<select id="flight-select"></select></label><label>Condição da carga<select id="quality-select"><option value="all">Todas as condições</option><option value="manifest">Erro de manifesto</option><option value="storage">Armazenagem não conforme</option><option value="rework">Com retrabalho</option></select></label><button id="download-csv" class="primary">Exportar CSV</button></div><div class="table-wrap" tabindex="0" role="region" aria-label="Tabela de cargas, role horizontalmente para outras colunas"><table><caption id="table-caption">Cargas selecionadas</caption><thead><tr>${[
+    `<section class="panel"><div class="panel-head"><div><h2>Registros de carga</h2><p>Os filtros abaixo refinam a tabela e a exportação. Indicadores globais usam os filtros do cabeçalho.</p></div></div><div class="tools"><label>Buscar AWB, voo ou companhia<input id="search" name="awb-search" type="search" autocomplete="off" spellcheck="false" placeholder="Ex.: 693-83197857…" value="${esc(tableState.query)}"></label><label>Voo relacionado<select id="flight-select" name="flight"></select></label><label>Condição da carga<select id="quality-select" name="quality"><option value="all">Todas as condições</option><option value="manifest">Erro de manifesto</option><option value="storage">Armazenagem não conforme</option><option value="rework">Com retrabalho</option></select></label><button id="download-csv" class="primary">Exportar CSV</button></div><div class="table-wrap" tabindex="0" role="region" aria-label="Tabela de cargas, role horizontalmente para outras colunas"><table><caption id="table-caption">Cargas selecionadas</caption><thead><tr>${[
       ["awb_number", "AWB"],
       ["flight_number", "Voo"],
       ["airline", "Companhia"],
@@ -515,6 +515,7 @@ function updateTable() {
       )
       .join("") ||
     '<tr><td colspan="9">Nenhuma carga encontrada. Revise a busca ou limpe os filtros.</td></tr>';
+  syncUrl();
   $("table-summary").textContent =
     `${fmt(tableRows.length)} AWBs encontrados • Página ${tableState.page} de ${pages}`;
   $("table-caption").textContent =
@@ -647,10 +648,74 @@ function route() {
   });
   if (state) render();
 }
+function syncUrl() {
+  const url = new URL(location.href);
+  const values = {
+    ...filters(),
+    q: tableState.query,
+    flight: tableState.flight,
+    quality: tableState.quality,
+    sort: tableState.sort,
+    direction: tableState.direction,
+    page: String(tableState.page),
+  };
+  const defaults = {
+    month: "all",
+    airline: "all",
+    type: "all",
+    q: "",
+    flight: "all",
+    quality: "all",
+    sort: "arrival",
+    direction: "asc",
+    page: "1",
+  };
+  for (const [key, value] of Object.entries(values)) {
+    if (value === defaults[key]) url.searchParams.delete(key);
+    else url.searchParams.set(key, value);
+  }
+  history.replaceState(null, "", url);
+}
+function restoreUrl() {
+  const params = new URL(location.href).searchParams;
+  for (const [key, id] of [
+    ["month", "filter-month"],
+    ["airline", "filter-airline"],
+    ["type", "filter-type"],
+  ]) {
+    const value = params.get(key);
+    if ([...$(id).options].some((o) => o.value === value)) $(id).value = value;
+  }
+  tableState.query = params.get("q") || "";
+  tableState.flight = params.get("flight") || "all";
+  const quality = params.get("quality");
+  if (["all", "manifest", "storage", "rework"].includes(quality))
+    tableState.quality = quality;
+  const sort = params.get("sort");
+  if (
+    [
+      "awb_number",
+      "flight_number",
+      "airline",
+      "cargo_type",
+      "arrival",
+      "received_weight_kg",
+      "dwell",
+      "storage",
+    ].includes(sort)
+  )
+    tableState.sort = sort;
+  tableState.direction = params.get("direction") === "desc" ? "desc" : "asc";
+  tableState.page = Math.max(
+    1,
+    Math.min(100000, Number(params.get("page")) || 1),
+  );
+}
 function render() {
   charts.forEach((c) => c.dispose());
   charts = [];
   selected = A.select(state, filters());
+  syncUrl();
   const m = A.metrics(selected);
   $("scope").textContent =
     `${fmt(m.flights)} voos / ${fmt(m.cargo)} AWBs / ${fmt(m.occurrences)} ocorrências`;
@@ -707,6 +772,7 @@ async function init() {
       state.cargo.map((c) => c.cargo_type),
       "Todos os perfis",
     );
+    restoreUrl();
     for (const id of ["filter-month", "filter-airline", "filter-type"])
       $(id).onchange = () => {
         tableState.page = 1;

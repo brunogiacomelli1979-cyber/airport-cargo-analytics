@@ -139,7 +139,15 @@ test("table search, filters, numeric sorting and CSV preserve exact selection", 
   );
   assert.ok(A.csv([{ cargo_id: "=SUM(A1)" }]).includes("'=SUM(A1)"));
 });
-test('decimal weight sorting compares numeric values', () => {
-  const rows = [9.9, 9.11, 100.1].map((kg,i)=>({...d.rows[i],received_weight_kg:String(kg)}));
-  assert.deepEqual(A.explore(rows,{sort:'received_weight_kg'}).map(r=>r.received_weight_kg),['9.11','9.9','100.1']);
+test("decimal weight sorting compares numeric values", () => {
+  const rows = [9.9, 9.11, 100.1].map((kg, i) => ({
+    ...d.rows[i],
+    received_weight_kg: String(kg),
+  }));
+  assert.deepEqual(
+    A.explore(rows, { sort: "received_weight_kg" }).map(
+      (r) => r.received_weight_kg,
+    ),
+    ["9.11", "9.9", "100.1"],
+  );
 });

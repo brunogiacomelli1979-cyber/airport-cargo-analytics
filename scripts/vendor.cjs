@@ -6,3 +6,12 @@ for (const [source, target] of [
   ["NOTICE", "ECHARTS-NOTICE.txt"],
 ])
   fs.copyFileSync("node_modules/echarts/" + source, "assets/vendor/" + target);
+
+fs.copyFileSync(
+  "node_modules/zrender/LICENSE",
+  "assets/vendor/ZRENDER-LICENSE.txt",
+);
+fs.copyFileSync(
+  "node_modules/tslib/LICENSE.txt",
+  "assets/vendor/TSLIB-LICENSE.txt",
+);

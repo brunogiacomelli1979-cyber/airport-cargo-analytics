@@ -1035,3 +1035,17 @@ dialog pre {
     height: 290px;
   }
 }
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+dialog {
+  overscroll-behavior: contain;
+}
+button,
+a,
+select {
+  -webkit-tap-highlight-color: #2368ad33;
+}

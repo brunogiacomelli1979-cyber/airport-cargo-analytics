@@ -100,7 +100,7 @@ Modelo MySQL 8 em sql/01_create_tables.sql e consultas em sql/02_analysis_querie
 
 ## Testes e evidências
 
-Validação local: **4 testes Python, 7 JavaScript e 7 Playwright aprovados**, incluindo seis áreas em 1920×1080, 1366×768, 768×1024 e 390×844. Reconciliação independente JS/Python; combinações de filtros; limite exato de prazo; CSV inválido; duplicatas 1:1; exportação exata; busca, ordenação, paginação; teclado e diálogo; falha HTTP e recuperação; recorte vazio e movimento reduzido. Axe executado para WCAG 2 A/AA e 2.1 AA nas seis áreas e quatro tamanhos. Não equivale a certificação de acessibilidade.
+Validação local: **4 testes Python, 8 JavaScript e 8 Playwright aprovados**, incluindo seis áreas em 1920×1080, 1366×768, 768×1024 e 390×844. Reconciliação independente JS/Python; combinações de filtros; limite exato de prazo; CSV inválido; duplicatas 1:1; exportação exata; busca, ordenação, paginação; teclado e diálogo; falha HTTP e recuperação; recorte vazio e movimento reduzido. Axe executado para WCAG 2 A/AA e 2.1 AA nas seis áreas e quatro tamanhos. Não equivale a certificação de acessibilidade.
 
 A auditoria visual identificou e corrigiu eixos comprimidos, rótulos densos, filtros cortados e tabela rolável sem foco. Screenshots e traces ficam no artefato quality-evidence do workflow por 30 dias. Auditoria npm local: zero vulnerabilidades conhecidas. [Relatório de problemas e correções](docs/redesign-audit.md).
 
