@@ -1,159 +1,106 @@
 # Airport Cargo Operations Analytics
 
-Projeto de análise de dados aplicado à logística aeroportuária de cargas de importação, com foco em KPIs operacionais, conformidade regulatória, gargalos, qualidade da informação e responsabilidade dos atrasos.
+**Projeto demonstrativo de BI operacional aplicado à logística aeroportuária de importação.** Transforma sete tabelas CSV fictícias em uma análise rastreável de voos, cargas, tempos, manifestações documentais, inconsistências, armazenagem e entrega.
 
-## Visão Geral
+> **Aviso: dados simulados.** Nenhum registro representa operações reais de Viracopos, de companhias aéreas, clientes ou órgãos públicos. O prazo do dataset é uma premissa de simulação, não orientação regulatória.
 
-Este projeto simula um cenário operacional de um terminal de cargas de importação em um aeroporto internacional brasileiro.
+## Entrega atual
 
-O objetivo é analisar a jornada da carga desde a chegada da aeronave até a entrega/retirada, considerando etapas como recebimento físico, registro no sistema do depositário, armazenagem, conferência, tratamento de inconsistências, encerramento no Siscomex/Mantra, liberação aduaneira, anuências externas e disponibilização da carga.
+- **Dashboard web responsivo:** index.html + assets/dashboard.css + assets/dashboard.js.
+- **Filtros:** mês de chegada, companhia aérea, tipo de carga; indicadores, gráficos e ranking se recalculam.
+- **Exportação:** CSV filtrado de cargas, com grão de AWB preservado.
+- **Banco relacional MySQL 8:** sql/01_create_tables.sql.
+- **Consultas e views auditáveis:** sql/02_analysis_queries.sql.
+- **Validação automática:** scripts/validate_data.py e tests/test_data.py, sem bibliotecas Python externas.
+- **CI e publicação GitHub Pages:** .github/workflows/quality-and-pages.yml.
+- **Camada Power BI:** guia de importação, relacionamentos, DAX e páginas em powerbi/GUIA_DE_IMPLEMENTACAO.md. **O arquivo PBIX nativo não está incluído; precisa ser montado no Power BI Desktop.**
 
-A proposta principal é diferenciar o tempo total da carga no terminal dos tempos efetivamente controláveis pelo fiel depositário.
+## Executar o dashboard web localmente
 
-## Problema de Negócio
+No diretório raiz do repositório:
 
-Em operações aeroportuárias de importação, o tempo total da carga no terminal pode ser influenciado por diferentes agentes e etapas do processo.
+    python scripts/validate_data.py
+    python -m unittest discover -s tests -v
+    python -m http.server 8000
 
-Nem todo atraso está sob responsabilidade direta do aeroporto. Gargalos podem ser causados por inconsistências de manifesto informadas pela companhia aérea, divergências de peso ou volumes, necessidade de retrabalho, pendências de Receita Federal, órgãos anuentes, importadores, despachantes ou transportadoras.
+Acessar http://localhost:8000 no navegador. Abrir index.html diretamente como file:// pode bloquear o carregamento de CSV por segurança; use servidor HTTP.
 
-Este projeto busca criar uma visão analítica capaz de medir a performance operacional de forma mais justa, separando gargalos internos, externos, regulatórios e documentais.
+Quando o workflow de publicação GitHub Pages da branch main for executado com sucesso, o site deverá ficar disponível em:
+https://brunogiacomelli1979-cyber.github.io/airport-cargo-analytics/
 
-## Objetivos do Projeto
+Essa URL não deve ser considerada publicada antes da confirmação do job de deploy.
 
-* Medir os principais tempos operacionais da carga aérea de importação
-* Analisar o tempo até o encerramento no Siscomex/Mantra
-* Identificar gargalos entre recebimento no sistema do depositário e encerramento no Siscomex/Mantra
-* Monitorar conformidade com prazo regulatório
-* Avaliar inconsistências de manifesto, divergências, DSIC, avarias e retrabalhos
-* Verificar conformidade de armazenagem conforme a natureza declarada da carga
-* Diferenciar atrasos controláveis e não controláveis pelo aeroporto
-* Criar indicadores e visualizações em Power BI para apoio à decisão operacional
+## Modelo e cargas SQL
 
-## Escopo
+Requisito: MySQL 8.0+ e DBeaver (ou importador equivalente).
 
-O projeto considera as seguintes etapas:
+1. Executar sql/01_create_tables.sql.
+2. Importar data/processed/csv/flights.csv primeiro.
+3. Importar cargo.csv em seguida.
+4. Importar manifest.csv, operations.csv, inconsistencies.csv, release_process.csv e delivery.csv.
+5. Usar cabeçalho, vírgula, texto UTF-8 com BOM e campos de data datetime; strings vazias opcionais devem ser NULL.
+6. Executar sql/02_analysis_queries.sql após a importação. O script cria duas views e executa verificações e consultas analíticas.
 
-1. Chegada da aeronave
-2. Recebimento físico da carga
-3. Registro/armazenagem no sistema do depositário
-4. Direcionamento da carga para área adequada
-5. Conferência e conciliação
-6. Tratamento de inconsistências
-7. Retrabalho operacional, quando aplicável
-8. Encerramento no Siscomex/Mantra
-9. Liberação pela Receita Federal ou órgãos anuentes
-10. Disponibilização e entrega/retirada da carga
+A importação não é automatizada no GitHub Actions porque o projeto não possui banco MySQL de produção — o painel web consome os CSVs versionados e funciona independentemente do MySQL.
 
-## Premissas
+## Resumo da base simulada
 
-* O cenário representa um aeroporto internacional brasileiro genérico
-* O sistema oficial de referência do projeto é o Siscomex/Mantra
-* Os dados utilizados são simulados e criados apenas para fins educacionais e de portfólio
-* Nenhum dado real, sigiloso ou operacional de empresas, aeroportos, companhias aéreas, importadores ou órgãos públicos é utilizado
-* O projeto não aborda cálculo tarifário de armazenagem ou capatazia
-* O projeto não detalha documentos como DI, DUIMP ou CCT
-* O foco é análise de dados, BI operacional, SQL e Power BI
+| Medida | Valor |
+| --- | ---: |
+| Janela de chegada | janeiro–março de 2026 |
+| Companhias aéreas | 8 |
+| Voos | 120 |
+| Cargas/AWBs | 1.111 |
+| Inconsistências | 394, afetando 350 cargas |
+| Voos dentro do prazo simulado | 54 / 120 (45,0%) |
+| Cargas com erro de manifesto | 208 / 1.111 (18,7%) |
+| Cargas com retrabalho | 223 / 1.111 (20,1%) |
+| Cargas armazenadas conforme registro | 1.021 / 1.111 (91,9%) |
+| Peso recebido | 1.384.521,66 kg |
+| Volumes recebidos | 44.892 |
+| Dwell total médio | 70,11 horas |
 
-## Metodologia
+**Importante:** 41 voos constam como "Próximo ao limite" no campo textual, mas possuem encerramento *depois* do horário limite. O dashboard e a view calculam a conformidade pelo horário, não pelo texto.
 
-O projeto segue as etapas do processo de análise de dados apresentado no Google Data Analytics Professional Certificate:
+## Conceitos e limitações
 
-* Ask
-* Prepare
-* Process
-* Analyze
-* Share
-* Act
+- O grão de voo e de AWB é diferente: é incorreto multiplicar voos por número de cargas na mesma viagem.
+- Um AWB pode ter mais de uma ocorrência, então a taxa de cargas afetadas usa cargo_id distinto.
+- A distribuição de grupos responsáveis descreve **ocorrências**, não causalidade nem culpa por atraso.
+- "Dwell total" significa chegada da aeronave até entrega/retirada. A base não sustenta um cálculo de "dwell operacional limpo" sem eventos e tempos externos suficientes.
+- Não existem registros de warehouse_flow_events, exportações nem saldos para medir ocupação corrente ou necessidade real de reforço de equipe.
+- Datas são simuladas no mesmo fuso, sem timezone declarado; não alterar fuso durante o tratamento.
+- A análise é descritiva, educacional, não operacional ou jurídica.
 
-Essas etapas foram adaptadas para um contexto de BI operacional aplicado à logística aeroportuária de cargas de importação.
+Documentação: docs/validation_report.md, docs/kpi_definitions.md, docs/data_dictionary.md, docs/methodology.md, docs/warehouse_monitoring.md.
 
-## Ferramentas Utilizadas
+## Estrutura
 
-* Excel
-* Power Query
-* Power BI
-* DAX
-* SQL
-* MySQL
-* DBeaver
-* GitHub
-* Markdown
-* Mermaid
+    airport-cargo-analytics/
+    ├── index.html
+    ├── assets/
+    │   ├── dashboard.css
+    │   └── dashboard.js
+    ├── data/
+    │   ├── raw/airport_cargo_operations_sample.xlsx
+    │   └── processed/csv/{flights,cargo,manifest,operations,inconsistencies,release_process,delivery}.csv
+    ├── sql/
+    │   ├── 01_create_tables.sql
+    │   └── 02_analysis_queries.sql
+    ├── powerbi/GUIA_DE_IMPLEMENTACAO.md
+    ├── scripts/validate_data.py
+    ├── tests/test_data.py
+    ├── docs/
+    │   ├── validation_report.md
+    │   └── demais documentos de metodologia
+    └── .github/workflows/quality-and-pages.yml
 
-## Principais KPIs
+## Critérios de conclusão
 
-* Total de voos
-* Total de cargas/AWBs
-* Total de volumes
-* Peso total movimentado
-* Tempo até recebimento no sistema do depositário
-* Tempo entre recebimento no depositário e encerramento no Siscomex/Mantra
-* Tempo total até encerramento no Siscomex/Mantra
-* Percentual de encerramentos dentro do prazo regulatório
-* Percentual de voos com inconsistências
-* Taxa de erro de manifesto
-* Taxa de retrabalho operacional
-* Tempo médio de retrabalho
-* Cargo dwell time total
-* Cargo dwell time operacional limpo
-* Percentual de atrasos por grupo responsável
-* Percentual de atrasos controláveis pelo aeroporto
-* Taxa de conformidade de armazenagem
-
-## Estrutura do Repositório
-
-```text
-airport-cargo-analytics/
-│
-├── README.md
-│
-├── data/
-│   ├── raw/
-│   │   └── airport_cargo_operations_sample.xlsx
-│   │
-│   └── processed/
-│       └── csv/
-│           ├── flights.csv
-│           ├── cargo.csv
-│           ├── manifest.csv
-│           ├── operations.csv
-│           ├── inconsistencies.csv
-│           ├── release_process.csv
-│           └── delivery.csv
-│
-├── docs/
-│   ├── methodology.md
-│   ├── process_flow.md
-│   ├── data_dictionary.md
-│   ├── kpi_definitions.md
-│   └── warehouse_monitoring.md
-│
-├── sql/
-│   ├── 01_create_tables.sql
-│   └── 02_analysis_queries.sql
-│
-├── powerbi/
-│   └── airport_cargo_dashboard.pbix
-│
-└── images/
-    ├── dashboard_overview.png
-    ├── data_model.png
-    └── process_flow.png
-```
-
-## Status do Projeto
-
-Em desenvolvimento.
-
-Fase atual: base simulada criada, arquivos CSV processados e documentação inicial concluída. Próxima etapa: criação da estrutura SQL e consultas analíticas.
-
-## Próximos Passos
-
-* Criar o script SQL de criação das tabelas
-* Importar os arquivos CSV no MySQL via DBeaver
-* Criar consultas SQL para validação e análise dos dados
-* Conectar os dados ao Power BI
-* Tratar os dados com Power Query
-* Criar medidas DAX
-* Desenvolver o dashboard em Power BI
-* Atualizar a documentação com prints, métricas e principais insights
+- [x] Inventário e validação quantitativa dos sete CSVs.
+- [x] Modelo SQL com relacionamentos e proteção contra explosão de registros.
+- [x] Views e consultas com denominadores e definições auditáveis.
+- [x] Dashboard web com filtros e exportação.
+- [x] Testes automáticos e workflow de publicação configurados.
+- [ ] Confirmar execução verde do GitHub Actions após a integração na main e acessibilidade do GitHub Pages.
+- [ ] Construir e validar PBIX nativo no Power BI Desktop, se essa entrega também for exigida.
