@@ -34,7 +34,7 @@ jobs:
           path: quality-summary.json
 
   pages:
-    name: Publicar dashboard GitHub Pages
+    name: Publicar dashboard GitHub Pages (se habilitado)
     needs: quality
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
@@ -47,11 +47,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Verificar se GitHub Pages esta habilitado
+        id: pages_status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          code=$(curl -sS -o /dev/null -w '%{http_code}' \
+            -H 'Accept: application/vnd.github+json' \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/pages")
+          if [ "$code" = "200" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::GitHub Pages ainda nao esta habilitado (HTTP $code). Ative em Settings > Pages > Source: GitHub Actions; execute este workflow novamente."
+          fi
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
+        if: steps.pages_status.outputs.enabled == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.pages_status.outputs.enabled == 'true'
         with:
           path: .
       - id: deployment
+        if: steps.pages_status.outputs.enabled == 'true'
         uses: actions/deploy-pages@v4
